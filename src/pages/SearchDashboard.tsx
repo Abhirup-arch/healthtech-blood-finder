@@ -1,93 +1,112 @@
-import React, { useState, useMemo } from 'react';
-import BloodBankCard from '../components/common/BloodBankCard';
+import { useState, useMemo } from 'react';
+import BloodBankCard from '../components/BloodBankCard';
 import { useBloodData } from '../hooks/useBloodData';
-import './SearchDashboard.css';
+import { useAuth } from '../context/AuthContext';
 
-const SearchDashboard: React.FC = () => {
+export default function SearchDashboard() {
   const { data, loading, error } = useBloodData();
+  const { user } = useAuth();
   
-  const [bloodGroup, setBloodGroup] = useState('');
-  const [state, setState] = useState('');
-  const [district, setDistrict] = useState('');
-  
+  const [stateFilter, setStateFilter] = useState('');
+  const [cityFilter, setCityFilter] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
+
   const filteredData = useMemo(() => {
-    return data.filter(bank => {
-      const matchState = state ? bank.state === state : true;
-      const matchDistrict = district ? bank.district === district : true;
-      const matchGroup = bloodGroup ? bank.bloodGroup === bloodGroup : true;
-      return matchState && matchDistrict && matchGroup;
+    return data.filter(centre => {
+      const matchState = stateFilter ? centre.state === stateFilter : true;
+      const matchCity = cityFilter ? centre.city.toLowerCase().includes(cityFilter.toLowerCase()) : true;
+      const matchQuery = searchQuery 
+        ? centre.bloodCentreName.toLowerCase().includes(searchQuery.toLowerCase()) || 
+          centre.contactPerson.toLowerCase().includes(searchQuery.toLowerCase())
+        : true;
+      
+      return matchState && matchCity && matchQuery;
     });
-  }, [data, state, district, bloodGroup]);
-  
+  }, [data, stateFilter, cityFilter, searchQuery]);
+
+  // Extract unique states for dropdown
+  const states = useMemo(() => {
+    const unique = new Set(data.map(d => d.state).filter(Boolean));
+    return Array.from(unique).sort();
+  }, [data]);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-64">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="text-red-400 text-center p-8 glass-panel rounded-xl">
+        <p className="text-xl font-semibold mb-2">Failed to load directory</p>
+        <p>{error}</p>
+      </div>
+    );
+  }
+
   return (
-    <div className="dashboard-container">
-      <div className="dashboard-header glass-panel">
-        <h2>Find Blood Availability</h2>
-        <p>Real-time data from registered blood banks.</p>
-        
-        <div className="search-filters">
-          <select className="glass-select" value={state} onChange={(e) => { setState(e.target.value); setDistrict(''); }}>
-            <option value="">All States</option>
-            <option value="MH">Maharashtra</option>
-            <option value="DL">Delhi</option>
-            <option value="KA">Karnataka</option>
-          </select>
+    <div className="animate-fade-in p-6">
+      <div className="mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">IRCS Blood Centre Directory</h1>
+        <p className="text-gray-400">Welcome, {user?.displayName}. Search the official Indian Red Cross directory.</p>
+      </div>
+
+      {/* Search Controls */}
+      <div className="glass-panel p-6 rounded-2xl mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-300 mb-2">State</label>
+            <select 
+              className="w-full bg-dark/50 border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-primary transition-colors"
+              value={stateFilter}
+              onChange={(e) => setStateFilter(e.target.value)}
+            >
+              <option value="">All States</option>
+              {states.map(state => (
+                <option key={state} value={state}>{state}</option>
+              ))}
+            </select>
+          </div>
           
-          <select className="glass-select" value={district} onChange={(e) => setDistrict(e.target.value)} disabled={!state}>
-            <option value="">All Districts</option>
-            {state === 'MH' && (
-              <>
-                <option value="MUM">Mumbai</option>
-                <option value="PUN">Pune</option>
-              </>
-            )}
-            {state === 'DL' && <option value="NDL">New Delhi</option>}
-            {state === 'KA' && <option value="BLR">Bangalore</option>}
-          </select>
-          
-          <select className="glass-select" value={bloodGroup} onChange={(e) => setBloodGroup(e.target.value)}>
-            <option value="">All Blood Groups</option>
-            <option value="A+">A+</option>
-            <option value="A-">A-</option>
-            <option value="B+">B+</option>
-            <option value="B-">B-</option>
-            <option value="O+">O+</option>
-            <option value="O-">O-</option>
-            <option value="AB+">AB+</option>
-            <option value="AB-">AB-</option>
-          </select>
+          <div>
+            <label className="block text-sm font-medium text-gray-300 mb-2">City / District</label>
+            <input 
+              type="text"
+              placeholder="e.g. Mumbai"
+              className="w-full bg-dark/50 border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-primary transition-colors"
+              value={cityFilter}
+              onChange={(e) => setCityFilter(e.target.value)}
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-300 mb-2">Search Name</label>
+            <input 
+              type="text"
+              placeholder="Search by centre name..."
+              className="w-full bg-dark/50 border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-primary transition-colors"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
         </div>
       </div>
-      
-      <div className="results-container">
-        <h3>Available Blood Banks ({filteredData.length})</h3>
-        
-        {loading && <p style={{ color: 'var(--text-muted)' }}>Loading data...</p>}
-        {error && <p style={{ color: 'var(--primary-color)' }}>Error: {error}</p>}
-        
-        {!loading && !error && (
-          <div className="results-grid">
-            {filteredData.length > 0 ? (
-              filteredData.map((bank) => (
-                <BloodBankCard 
-                  key={bank.id}
-                  name={bank.name}
-                  units={bank.units}
-                  address={bank.address}
-                  contact={bank.contact}
-                  bloodGroup={bank.bloodGroup}
-                />
-              ))
-            ) : (
-              <p style={{ color: 'var(--text-muted)', gridColumn: '1 / -1', textAlign: 'center', padding: '2rem' }}>
-                No blood banks found matching your criteria.
-              </p>
-            )}
+
+      {/* Results Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filteredData.length > 0 ? (
+          filteredData.map(centre => (
+            <BloodBankCard key={centre.id} centre={centre} />
+          ))
+        ) : (
+          <div className="col-span-full text-center py-12 text-gray-400 glass-panel rounded-xl">
+            No blood centres found matching your search criteria.
           </div>
         )}
       </div>
     </div>
   );
-};
-
-export default SearchDashboard;
+}

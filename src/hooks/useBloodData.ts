@@ -1,33 +1,34 @@
 import { useState, useEffect } from 'react';
 
-export interface BloodBank {
+export interface BloodCentre {
   id: string;
-  name: string;
   state: string;
-  district: string;
-  units: number;
+  city: string;
+  bloodCentreName: string;
+  contactPerson: string;
+  designation: string;
+  phone: string;
+  email: string;
   address: string;
-  contact: string;
-  bloodGroup: string;
+  source: string;
 }
 
-export const useBloodData = () => {
-  const [data, setData] = useState<BloodBank[]>([]);
+export function useBloodData() {
+  const [data, setData] = useState<BloodCentre[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Appending timestamp to avoid caching during development/updates
-        const response = await fetch(`/data/blood_stock.json?t=${new Date().getTime()}`);
+        const response = await fetch('/data/blood_centres.json');
         if (!response.ok) {
-          throw new Error('Failed to fetch data');
+          throw new Error('Failed to fetch blood centre data');
         }
-        const result = await response.json();
-        setData(result);
-      } catch (err: any) {
-        setError(err.message);
+        const json = await response.json();
+        setData(json);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'An error occurred');
       } finally {
         setLoading(false);
       }
@@ -37,4 +38,4 @@ export const useBloodData = () => {
   }, []);
 
   return { data, loading, error };
-};
+}
