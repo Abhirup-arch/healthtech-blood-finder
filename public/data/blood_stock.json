@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "City General Hospital",
+    "state": "MH",
+    "district": "MUM",
+    "units": 12,
+    "address": "123 Main St, Mumbai",
+    "contact": "022-1234567",
+    "bloodGroup": "O+"
+  },
+  {
+    "id": "2",
+    "name": "Red Cross Society",
+    "state": "MH",
+    "district": "PUN",
+    "units": 3,
+    "address": "45 MG Road, Pune",
+    "contact": "020-7654321",
+    "bloodGroup": "A-"
+  },
+  {
+    "id": "3",
+    "name": "Lifeline Blood Bank",
+    "state": "DL",
+    "district": "NDL",
+    "units": 25,
+    "address": "78 Park Ave, New Delhi",
+    "contact": "011-9876543",
+    "bloodGroup": "B+"
+  },
+  {
+    "id": "4",
+    "name": "Sanjeevani Trust",
+    "state": "KA",
+    "district": "BLR",
+    "units": 0,
+    "address": "90 Link Road, Bangalore",
+    "contact": "080-3456789",
+    "bloodGroup": "AB+"
+  },
+  {
+    "id": "5",
+    "name": "Mumbai Central Blood Bank",
+    "state": "MH",
+    "district": "MUM",
+    "units": 45,
+    "address": "Station Road, Mumbai",
+    "contact": "022-9876543",
+    "bloodGroup": "A+"
+  }
+]
