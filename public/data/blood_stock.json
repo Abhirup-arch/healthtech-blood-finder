@@ -1,52 +1,202 @@
 [
   {
     "id": "1",
-    "name": "City General Hospital",
-    "state": "MH",
-    "district": "MUM",
-    "units": 12,
-    "address": "123 Main St, Mumbai",
-    "contact": "022-1234567",
-    "bloodGroup": "O+"
+    "name": "Blood Bank 1",
+    "state": "DL",
+    "district": "NDL",
+    "units": 37,
+    "address": "Random Address 1, NDL",
+    "contact": "000-1234501",
+    "bloodGroup": "A+"
   },
   {
     "id": "2",
-    "name": "Red Cross Society",
+    "name": "Blood Bank 2",
     "state": "MH",
     "district": "PUN",
-    "units": 3,
-    "address": "45 MG Road, Pune",
-    "contact": "020-7654321",
-    "bloodGroup": "A-"
+    "units": 46,
+    "address": "Random Address 2, PUN",
+    "contact": "000-1234502",
+    "bloodGroup": "O+"
   },
   {
     "id": "3",
-    "name": "Lifeline Blood Bank",
+    "name": "Blood Bank 3",
     "state": "DL",
     "district": "NDL",
-    "units": 25,
-    "address": "78 Park Ave, New Delhi",
-    "contact": "011-9876543",
-    "bloodGroup": "B+"
+    "units": 15,
+    "address": "Random Address 3, NDL",
+    "contact": "000-1234503",
+    "bloodGroup": "A+"
   },
   {
     "id": "4",
-    "name": "Sanjeevani Trust",
+    "name": "Blood Bank 4",
     "state": "KA",
     "district": "BLR",
-    "units": 0,
-    "address": "90 Link Road, Bangalore",
-    "contact": "080-3456789",
-    "bloodGroup": "AB+"
+    "units": 34,
+    "address": "Random Address 4, BLR",
+    "contact": "000-1234504",
+    "bloodGroup": "O+"
   },
   {
     "id": "5",
-    "name": "Mumbai Central Blood Bank",
+    "name": "Blood Bank 5",
+    "state": "DL",
+    "district": "NDL",
+    "units": 43,
+    "address": "Random Address 5, NDL",
+    "contact": "000-1234505",
+    "bloodGroup": "AB-"
+  },
+  {
+    "id": "6",
+    "name": "Blood Bank 6",
+    "state": "KA",
+    "district": "BLR",
+    "units": 42,
+    "address": "Random Address 6, BLR",
+    "contact": "000-1234506",
+    "bloodGroup": "AB-"
+  },
+  {
+    "id": "7",
+    "name": "Blood Bank 7",
     "state": "MH",
     "district": "MUM",
+    "units": 15,
+    "address": "Random Address 7, MUM",
+    "contact": "000-1234507",
+    "bloodGroup": "O+"
+  },
+  {
+    "id": "8",
+    "name": "Blood Bank 8",
+    "state": "MH",
+    "district": "MUM",
+    "units": 48,
+    "address": "Random Address 8, MUM",
+    "contact": "000-1234508",
+    "bloodGroup": "A-"
+  },
+  {
+    "id": "9",
+    "name": "Blood Bank 9",
+    "state": "MH",
+    "district": "PUN",
+    "units": 43,
+    "address": "Random Address 9, PUN",
+    "contact": "000-1234509",
+    "bloodGroup": "B-"
+  },
+  {
+    "id": "10",
+    "name": "Blood Bank 10",
+    "state": "DL",
+    "district": "NDL",
+    "units": 2,
+    "address": "Random Address 10, NDL",
+    "contact": "000-1234510",
+    "bloodGroup": "B+"
+  },
+  {
+    "id": "11",
+    "name": "Blood Bank 11",
+    "state": "DL",
+    "district": "NDL",
+    "units": 41,
+    "address": "Random Address 11, NDL",
+    "contact": "000-1234511",
+    "bloodGroup": "B-"
+  },
+  {
+    "id": "12",
+    "name": "Blood Bank 12",
+    "state": "DL",
+    "district": "NDL",
+    "units": 36,
+    "address": "Random Address 12, NDL",
+    "contact": "000-1234512",
+    "bloodGroup": "O+"
+  },
+  {
+    "id": "13",
+    "name": "Blood Bank 13",
+    "state": "DL",
+    "district": "NDL",
+    "units": 36,
+    "address": "Random Address 13, NDL",
+    "contact": "000-1234513",
+    "bloodGroup": "O-"
+  },
+  {
+    "id": "14",
+    "name": "Blood Bank 14",
+    "state": "MH",
+    "district": "MUM",
+    "units": 9,
+    "address": "Random Address 14, MUM",
+    "contact": "000-1234514",
+    "bloodGroup": "AB-"
+  },
+  {
+    "id": "15",
+    "name": "Blood Bank 15",
+    "state": "MH",
+    "district": "MUM",
+    "units": 42,
+    "address": "Random Address 15, MUM",
+    "contact": "000-1234515",
+    "bloodGroup": "AB+"
+  },
+  {
+    "id": "16",
+    "name": "Blood Bank 16",
+    "state": "MH",
+    "district": "MUM",
+    "units": 20,
+    "address": "Random Address 16, MUM",
+    "contact": "000-1234516",
+    "bloodGroup": "A-"
+  },
+  {
+    "id": "17",
+    "name": "Blood Bank 17",
+    "state": "DL",
+    "district": "NDL",
     "units": 45,
-    "address": "Station Road, Mumbai",
-    "contact": "022-9876543",
-    "bloodGroup": "A+"
+    "address": "Random Address 17, NDL",
+    "contact": "000-1234517",
+    "bloodGroup": "B-"
+  },
+  {
+    "id": "18",
+    "name": "Blood Bank 18",
+    "state": "DL",
+    "district": "NDL",
+    "units": 43,
+    "address": "Random Address 18, NDL",
+    "contact": "000-1234518",
+    "bloodGroup": "AB+"
+  },
+  {
+    "id": "19",
+    "name": "Blood Bank 19",
+    "state": "DL",
+    "district": "NDL",
+    "units": 12,
+    "address": "Random Address 19, NDL",
+    "contact": "000-1234519",
+    "bloodGroup": "AB+"
+  },
+  {
+    "id": "20",
+    "name": "Blood Bank 20",
+    "state": "KA",
+    "district": "BLR",
+    "units": 4,
+    "address": "Random Address 20, BLR",
+    "contact": "000-1234520",
+    "bloodGroup": "AB+"
   }
 ]
