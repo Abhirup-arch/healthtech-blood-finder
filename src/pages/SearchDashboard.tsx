@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import BloodBankCard from '../components/BloodBankCard';
 import { useBloodData, type BloodCentre } from '../hooks/useBloodData';
+import { Search, MapPin, Activity, Building2, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 const ITEMS_PER_PAGE = 20;
 const BLOOD_GROUPS = ['A+', 'A-', 'B+', 'B-', 'O+', 'O-', 'AB+', 'AB-'] as const;
@@ -163,77 +164,97 @@ export default function SearchDashboard() {
 
   if (loading) {
     return (
-      <div className="flex flex-col justify-center items-center h-screen bg-gray-50">
-        <div className="animate-spin rounded-full h-10 w-10 border-b-4 border-red-600 mb-3"></div>
-        <p className="text-gray-600 font-medium text-sm">Connecting to e-RaktKosh...</p>
+      <div className="flex flex-col justify-center items-center h-screen bg-slate-50">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-4 border-red-600 mb-4"></div>
+        <p className="text-slate-600 font-semibold">Connecting to e-RaktKosh...</p>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="flex justify-center items-center h-screen bg-gray-50">
-        <div className="text-red-700 bg-red-50 p-5 rounded-lg border border-red-200 max-w-sm text-center shadow-sm">
-          <svg className="w-10 h-10 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-          <p className="text-base font-bold">Connection Error</p>
-          <p className="text-sm mt-1">{error}</p>
+      <div className="flex justify-center items-center h-screen bg-slate-50">
+        <div className="text-red-700 bg-white p-8 rounded-2xl border border-red-100 max-w-md text-center shadow-lg">
+          <Activity className="w-12 h-12 mx-auto mb-4 text-red-500" />
+          <h2 className="text-xl font-bold mb-2">Connection Error</h2>
+          <p className="text-slate-600">{error}</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen pb-10">
-      {/* HERO SECTION */}
-      <div className="bg-white border-b border-gray-200 py-6 px-4 sm:px-6 lg:px-8 mb-6 shadow-sm">
+    <div className="bg-slate-50 min-h-screen pb-16 font-sans">
+      
+      {/* PREMIUM HERO SECTION */}
+      <div className="bg-white border-b border-slate-200 pt-10 pb-12 px-4 sm:px-6 lg:px-8 mb-8 shadow-sm">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-5">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10">
             <div>
-              <h1 className="text-2xl font-extrabold text-gray-900 tracking-tight flex items-center">
-                <span className="text-red-600 mr-2 text-xl">●</span> BloodLink India
+              <div className="inline-flex items-center space-x-2 bg-red-50 px-3 py-1 rounded-full border border-red-100 mb-4">
+                <span className="flex h-2 w-2 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                </span>
+                <span className="text-[11px] font-bold text-red-700 tracking-wide uppercase">Live Updates Active</span>
+              </div>
+              <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight flex items-center">
+                BloodLink India
               </h1>
-              <p className="text-gray-500 mt-0.5 text-sm font-medium">Real-Time Blood Availability Finder</p>
+              <p className="text-slate-500 mt-2 text-base md:text-lg max-w-2xl">
+                Real-time national blood availability network, synchronized directly with government e-RaktKosh data.
+              </p>
             </div>
-            <div className="mt-3 md:mt-0 flex items-center space-x-2 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-100">
-              <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            
+            <div className="mt-6 md:mt-0 flex items-center space-x-3 bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-200">
+              <ShieldCheck className="w-6 h-6 text-blue-600" />
               <div>
-                <p className="text-[10px] text-blue-800 font-bold uppercase tracking-wider leading-none">Govt Data Source</p>
-                <p className="text-xs text-blue-900 font-medium leading-tight">Synced with e-RaktKosh</p>
+                <p className="text-xs text-slate-500 font-semibold uppercase tracking-wider">Verified Source</p>
+                <p className="text-sm text-slate-900 font-bold">e-RaktKosh API</p>
               </div>
             </div>
           </div>
 
-          {/* Statistics Cards (Compact) */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-            <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
-              <p className="text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">Total Nationwide Units</p>
-              <p className="text-xl font-black text-red-600">{totalUnitsNationwide.toLocaleString()}</p>
+          {/* Statistics Cards */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
+            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center space-x-4">
+              <div className="p-3 bg-red-50 rounded-xl">
+                <Activity className="w-6 h-6 text-red-600" />
+              </div>
+              <div>
+                <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Total Units</p>
+                <p className="text-2xl font-black text-slate-900">{totalUnitsNationwide.toLocaleString()}</p>
+              </div>
             </div>
-            <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
-              <p className="text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">Total Facilities</p>
-              <p className="text-xl font-black text-gray-900">{totalBanks.toLocaleString()}</p>
+            
+            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center space-x-4">
+              <div className="p-3 bg-blue-50 rounded-xl">
+                <Building2 className="w-6 h-6 text-blue-600" />
+              </div>
+              <div>
+                <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Facilities</p>
+                <p className="text-2xl font-black text-slate-900">{totalBanks.toLocaleString()}</p>
+              </div>
             </div>
-            <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
-              <p className="text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">Facilities w/ Stock</p>
-              <p className="text-xl font-black text-gray-900">{banksWithStock.toLocaleString()}</p>
+
+            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center space-x-4">
+              <div className="p-3 bg-emerald-50 rounded-xl">
+                <CheckCircle2 className="w-6 h-6 text-emerald-600" />
+              </div>
+              <div>
+                <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">In Stock</p>
+                <p className="text-2xl font-black text-slate-900">{banksWithStock.toLocaleString()}</p>
+              </div>
             </div>
-            <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
-              <p className="text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">Last Updated</p>
-              <p className="text-sm font-bold text-gray-900 mt-1">{lastUpdated}</p>
-            </div>
-            <div className="bg-white p-3 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-center">
-              <button 
-                onClick={handleFindNearMe}
-                disabled={geoLoading}
-                className="w-full flex items-center justify-center py-1.5 bg-red-50 text-red-700 hover:bg-red-100 border border-red-200 font-bold text-sm rounded-md transition-colors"
-              >
-                {geoLoading ? 'Locating...' : (
-                  <>
-                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                    Find Near Me
-                  </>
-                )}
-              </button>
+
+            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center space-x-4">
+              <div className="p-3 bg-slate-50 rounded-xl">
+                <Clock className="w-6 h-6 text-slate-600" />
+              </div>
+              <div>
+                <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Last Update</p>
+                <p className="text-sm font-bold text-slate-900">{lastUpdated}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -241,72 +262,89 @@ export default function SearchDashboard() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* COMPACT STICKY SEARCH PANEL (30% Reduced Size) */}
-        <div className="sticky top-2 z-40 bg-white/90 backdrop-blur-md p-3 rounded-xl mb-6 shadow-sm border border-gray-200/60">
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 items-end">
+        {/* MODERN SEARCH TOOLBAR */}
+        <div className="sticky top-4 z-40 bg-white/95 backdrop-blur-xl p-4 rounded-2xl mb-8 shadow-sm border border-slate-200">
+          <div className="flex flex-col lg:flex-row gap-4 items-center">
             
-            <div className="col-span-1">
-              <label className="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wide">Blood Group</label>
-              <select 
-                className="w-full bg-red-50 border border-red-200 rounded-md px-2.5 py-1.5 text-sm text-red-900 font-bold focus:ring-1 focus:ring-red-500 outline-none"
-                value={bloodGroupFilter}
-                onChange={e => { setBloodGroupFilter(e.target.value as BloodGroup | ''); setCurrentPage(1); }}
-              >
-                <option value="">Any Group</option>
-                {BLOOD_GROUPS.map(grp => (
-                  <option key={grp} value={grp}>{grp}</option>
-                ))}
-              </select>
+            {/* Find Near Me Button - Highlighted */}
+            <button 
+              onClick={handleFindNearMe}
+              disabled={geoLoading}
+              className="w-full lg:w-auto flex-shrink-0 flex items-center justify-center py-2.5 px-5 bg-red-600 text-white hover:bg-red-700 font-semibold rounded-xl transition-all shadow-sm disabled:opacity-70"
+            >
+              <MapPin className="w-4 h-4 mr-2" />
+              {geoLoading ? 'Locating...' : 'Near Me'}
+            </button>
+
+            <div className="hidden lg:block w-px h-10 bg-slate-200"></div>
+
+            {/* Filters Grid */}
+            <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4 flex-grow">
+              
+              <div>
+                <select 
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm text-slate-700 font-medium focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition-all appearance-none cursor-pointer"
+                  value={bloodGroupFilter}
+                  onChange={e => { setBloodGroupFilter(e.target.value as BloodGroup | ''); setCurrentPage(1); }}
+                >
+                  <option value="">Any Blood Group</option>
+                  {BLOOD_GROUPS.map(grp => (
+                    <option key={grp} value={grp}>{grp}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <select 
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm text-slate-700 font-medium focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition-all appearance-none cursor-pointer"
+                  value={stateFilter}
+                  onChange={e => { setStateFilter(e.target.value); setCityFilter(''); setCurrentPage(1); }}
+                >
+                  <option value="">All States</option>
+                  {states.map(s => (
+                    <option key={s} value={s}>{s}</option>
+                  ))}
+                </select>
+              </div>
+              
+              <div>
+                <select 
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm text-slate-700 font-medium focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition-all appearance-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                  value={cityFilter}
+                  onChange={e => { setCityFilter(e.target.value); setCurrentPage(1); }}
+                  disabled={cities.length === 0}
+                >
+                  <option value="">All Districts</option>
+                  {cities.map(c => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <select 
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm text-slate-700 font-medium focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition-all appearance-none cursor-pointer"
+                  value={sortBy}
+                  onChange={e => { setSortBy(e.target.value); setCurrentPage(1); }}
+                >
+                  <option value="Highest Stock">Sort: Highest Stock</option>
+                  <option value="Name A-Z">Sort: Name (A-Z)</option>
+                  <option value="District">Sort: District</option>
+                </select>
+              </div>
             </div>
 
-            <div className="col-span-1">
-              <label className="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wide">State</label>
-              <select 
-                className="w-full bg-gray-50 border border-gray-200 rounded-md px-2.5 py-1.5 text-sm text-gray-800 focus:ring-1 focus:ring-gray-300 outline-none"
-                value={stateFilter}
-                onChange={e => { setStateFilter(e.target.value); setCityFilter(''); setCurrentPage(1); }}
-              >
-                <option value="">All States</option>
-                {states.map(s => (
-                  <option key={s} value={s}>{s}</option>
-                ))}
-              </select>
-            </div>
-            
-            <div className="col-span-1">
-              <label className="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wide">District</label>
-              <select 
-                className="w-full bg-gray-50 border border-gray-200 rounded-md px-2.5 py-1.5 text-sm text-gray-800 focus:ring-1 focus:ring-gray-300 outline-none disabled:bg-gray-100 disabled:text-gray-400"
-                value={cityFilter}
-                onChange={e => { setCityFilter(e.target.value); setCurrentPage(1); }}
-                disabled={cities.length === 0}
-              >
-                <option value="">All Districts</option>
-                {cities.map(c => (
-                  <option key={c} value={c}>{c}</option>
-                ))}
-              </select>
-            </div>
+            <div className="hidden lg:block w-px h-10 bg-slate-200"></div>
 
-            <div className="col-span-1">
-              <label className="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wide">Sort By</label>
-              <select 
-                className="w-full bg-gray-50 border border-gray-200 rounded-md px-2.5 py-1.5 text-sm text-gray-800 focus:ring-1 focus:ring-gray-300 outline-none"
-                value={sortBy}
-                onChange={e => { setSortBy(e.target.value); setCurrentPage(1); }}
-              >
-                <option value="Highest Stock">Highest Stock</option>
-                <option value="Name A-Z">Name (A-Z)</option>
-                <option value="District">District</option>
-              </select>
-            </div>
-
-            <div className="col-span-2 lg:col-span-1">
-              <label className="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wide">Search</label>
+            {/* Search Input */}
+            <div className="w-full lg:w-64 relative">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <Search className="h-4 w-4 text-slate-400" />
+              </div>
               <input 
                 type="text"
-                placeholder="Hospital name..."
-                className="w-full bg-gray-50 border border-gray-200 rounded-md px-2.5 py-1.5 text-sm text-gray-800 focus:ring-1 focus:ring-gray-300 outline-none"
+                placeholder="Search facility name..."
+                className="w-full bg-slate-50 border border-slate-200 rounded-xl pl-9 pr-3 py-2.5 text-sm text-slate-900 font-medium focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition-all placeholder-slate-400"
                 value={searchQuery}
                 onChange={e => { setSearchQuery(e.target.value); setCurrentPage(1); }}
               />
@@ -316,27 +354,27 @@ export default function SearchDashboard() {
         </div>
 
         {/* Results Header */}
-        <div className="flex justify-between items-end mb-4 px-1 border-b border-gray-200 pb-2">
-          <h2 className="text-lg font-bold text-gray-800">Search Results</h2>
-          <span className="text-xs text-gray-500 font-semibold bg-gray-100 px-2.5 py-0.5 rounded border border-gray-200">
-            Showing {showingStart}-{showingEnd} of {filteredData.length}
+        <div className="flex justify-between items-center mb-6 px-1">
+          <h2 className="text-xl font-bold text-slate-900">Search Results</h2>
+          <span className="text-sm text-slate-500 font-medium bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm">
+            Showing {showingStart}-{showingEnd} of <span className="font-bold text-slate-900">{filteredData.length}</span>
           </span>
         </div>
 
-        {/* Results Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8">
+        {/* Results Grid - 1 Col Mobile, 2 Col Tablet, 3 Col Desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
           {paginatedData.length > 0 ? (
             paginatedData.map(centre => (
               <BloodBankCard key={centre.id} centre={centre} />
             ))
           ) : (
-            <div className="col-span-full flex flex-col items-center justify-center py-16 bg-white rounded-xl border border-dashed border-gray-300">
-              <svg className="w-12 h-12 mb-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              <p className="text-base font-semibold text-gray-700">No facilities found</p>
-              <p className="text-sm text-gray-500 mt-0.5">Try adjusting your filters.</p>
+            <div className="col-span-full flex flex-col items-center justify-center py-20 bg-white rounded-2xl border border-dashed border-slate-300">
+              <Search className="w-12 h-12 mb-4 text-slate-300" />
+              <p className="text-lg font-bold text-slate-900">No facilities found</p>
+              <p className="text-sm text-slate-500 mt-1">Try adjusting your filters or search criteria.</p>
               <button 
                 onClick={resetFilters}
-                className="mt-3 px-4 py-1.5 bg-red-50 text-red-600 text-sm font-semibold rounded hover:bg-red-100 transition-colors"
+                className="mt-4 px-5 py-2 bg-slate-100 text-slate-700 text-sm font-semibold rounded-lg hover:bg-slate-200 transition-colors"
               >
                 Clear all filters
               </button>
@@ -344,18 +382,18 @@ export default function SearchDashboard() {
           )}
         </div>
 
-        {/* Pagination Controls */}
+        {/* Premium Pagination Controls */}
         {totalPages > 1 && (
-          <div className="flex justify-center items-center space-x-1.5 pb-8">
+          <div className="flex justify-center items-center space-x-2 pb-12">
             <button 
               onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
               disabled={currentPage === 1}
-              className="p-1.5 rounded-md bg-white border border-gray-200 text-gray-600 disabled:opacity-50 disabled:bg-gray-50 hover:bg-gray-50 transition-colors shadow-sm"
+              className="p-2 rounded-xl bg-white border border-slate-200 text-slate-600 disabled:opacity-40 hover:bg-slate-50 transition-colors shadow-sm"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
             </button>
             
-            <div className="flex space-x-1">
+            <div className="flex space-x-1.5">
               {Array.from({ length: Math.min(5, totalPages) }).map((_, i) => {
                 let pageNum = currentPage;
                 if (currentPage <= 3) pageNum = i + 1;
@@ -368,10 +406,10 @@ export default function SearchDashboard() {
                   <button
                     key={pageNum}
                     onClick={() => setCurrentPage(pageNum)}
-                    className={`w-8 h-8 rounded-md text-sm font-bold transition-all shadow-sm border ${
+                    className={`w-10 h-10 rounded-xl text-sm font-bold transition-all shadow-sm border ${
                       currentPage === pageNum 
-                        ? 'bg-red-600 text-white border-red-600' 
-                        : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
+                        ? 'bg-slate-900 text-white border-slate-900' 
+                        : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
                     }`}
                   >
                     {pageNum}
@@ -383,9 +421,9 @@ export default function SearchDashboard() {
             <button 
               onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
               disabled={currentPage === totalPages}
-              className="p-1.5 rounded-md bg-white border border-gray-200 text-gray-600 disabled:opacity-50 disabled:bg-gray-50 hover:bg-gray-50 transition-colors shadow-sm"
+              className="p-2 rounded-xl bg-white border border-slate-200 text-slate-600 disabled:opacity-40 hover:bg-slate-50 transition-colors shadow-sm"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
           </div>
         )}
