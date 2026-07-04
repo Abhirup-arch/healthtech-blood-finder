@@ -2,15 +2,27 @@ import { useState, useEffect } from 'react';
 
 export interface BloodCentre {
   id: string;
+  name: string;
+  district: string;
   state: string;
-  city: string;
-  bloodCentreName: string;
-  contactPerson: string;
-  designation: string;
-  phone: string;
-  email: string;
-  address: string;
-  source: string;
+  contact?: string;
+  address?: string;
+  'A+'?: number;
+  'A-'?: number;
+  'B+'?: number;
+  'B-'?: number;
+  'O+'?: number;
+  'O-'?: number;
+  'AB+'?: number;
+  'AB-'?: number;
+}
+
+// Helper to convert "andhra pradesh" to "Andhra Pradesh"
+function toTitleCase(str: string) {
+  return str.replace(
+    /\w\S*/g,
+    (txt) => txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase()
+  );
 }
 
 export function useBloodData() {
@@ -21,14 +33,31 @@ export function useBloodData() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/data/blood_centres.json');
+        const response = await fetch('/data/blood_availability.json');
         if (!response.ok) {
-          throw new Error('Failed to fetch blood centre data');
+          throw new Error('Failed to fetch blood availability data');
         }
-        const json = await response.json();
-        setData(json);
+        
+        const rawJson: Record<string, any[]> = await response.json();
+        
+        // Flatten the state-keyed object into a single array
+        const flattenedData: BloodCentre[] = [];
+        let idCounter = 1;
+        
+        for (const [stateKey, centres] of Object.entries(rawJson)) {
+          const formattedState = toTitleCase(stateKey);
+          for (const centre of centres) {
+            flattenedData.push({
+              id: `centre-${idCounter++}`,
+              state: formattedState,
+              ...centre
+            });
+          }
+        }
+        
+        setData(flattenedData);
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'An error occurred');
+        setError(err instanceof Error ? err.message : 'An error occurred while fetching data');
       } finally {
         setLoading(false);
       }
