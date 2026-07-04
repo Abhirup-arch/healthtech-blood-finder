@@ -27,7 +27,7 @@ export default function BloodBankCard({ centre }: Props) {
       
       {/* Header Section */}
       <div className="mb-4 flex-grow">
-        <h3 className="text-lg font-bold text-slate-900 leading-tight mb-1.5 group-hover:text-red-700 transition-colors">
+        <h3 className="text-lg font-medium text-slate-900 leading-tight mb-1.5 group-hover:text-red-700 transition-colors">
           {centre.name}
         </h3>
         
@@ -42,7 +42,7 @@ export default function BloodBankCard({ centre }: Props) {
             {availableStock.map(({ group, count }) => (
               <div 
                 key={group} 
-                className="flex items-center px-2.5 py-1 bg-red-50 text-red-700 rounded-full text-xs font-bold border border-red-100 shadow-sm"
+                className="flex items-center px-2.5 py-1 bg-red-50 text-red-700 rounded-full text-xs font-medium border border-red-100 shadow-sm"
               >
                 <span className="mr-1.5 opacity-80">{group}</span>
                 <span className="bg-white text-red-700 px-1.5 rounded-full shadow-sm text-[11px]">{count}</span>
@@ -68,7 +68,7 @@ export default function BloodBankCard({ centre }: Props) {
           {primaryContact ? (
             <a 
               href={`tel:${primaryContact.replace(/[^0-9+]/g, '')}`} 
-              className="flex-[2] flex items-center justify-center py-2 px-4 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold rounded-xl transition-all shadow-sm hover:shadow-md"
+              className="flex-[2] flex items-center justify-center py-2 px-4 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-xl transition-all shadow-sm hover:shadow-md"
             >
               <Phone className="w-4 h-4 mr-2" />
               Call Facility
@@ -81,7 +81,7 @@ export default function BloodBankCard({ centre }: Props) {
           
           <button 
             onClick={() => setShowAddress(!showAddress)}
-            className="flex-1 flex items-center justify-center py-2 px-3 bg-white hover:bg-slate-50 text-slate-700 text-sm font-semibold rounded-xl border border-slate-200 transition-colors shadow-sm"
+            className="flex-1 flex items-center justify-center py-2 px-3 bg-white hover:bg-slate-50 text-slate-700 text-sm font-medium rounded-xl border border-slate-200 transition-colors shadow-sm"
           >
             {showAddress ? (
               <>
