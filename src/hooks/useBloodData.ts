@@ -33,11 +33,25 @@ export function useBloodData() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/data/blood_availability.json');
+        const url = `/data/blood_availability.json?t=${Date.now()}`;
+        console.log(`[BloodData] Fetching from: ${url}`);
+        
+        const response = await fetch(url);
+        
+        console.log(`[BloodData] Response Status: ${response.status} ${response.statusText}`);
+        const contentType = response.headers.get('content-type');
+        console.log(`[BloodData] Content-Type: ${contentType}`);
+        
         if (!response.ok) {
-          throw new Error('Failed to fetch blood availability data');
+          throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
         }
         
+        if (contentType && contentType.includes('text/html')) {
+          const text = await response.text();
+          console.error(`[BloodData] Received HTML instead of JSON:`, text.substring(0, 100));
+          throw new Error('Server returned HTML instead of JSON. The data file might be missing or the routing is misconfigured.');
+        }
+
         const rawJson: Record<string, any[]> = await response.json();
         
         // Flatten the state-keyed object into a single array
