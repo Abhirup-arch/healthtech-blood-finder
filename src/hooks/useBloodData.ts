@@ -33,7 +33,8 @@ export function useBloodData() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const url = `/data/blood_availability.json?t=${Date.now()}`;
+        const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL;
+        const url = `${baseUrl}/data/blood_availability.json?t=${Date.now()}`;
         console.log(`[BloodData] Fetching from: ${url}`);
         
         const response = await fetch(url);
