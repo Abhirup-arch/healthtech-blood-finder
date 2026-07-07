@@ -1,13 +1,14 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import BloodBankCard from '../components/BloodBankCard';
 import { useBloodData, type BloodCentre } from '../hooks/useBloodData';
-import { Search, MapPin, Activity, Building2, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { motion, AnimatePresence, animate } from 'framer-motion';
+import type { Variants } from 'framer-motion';
+import { Search, MapPin, Activity, Building2, Clock, ShieldCheck, CheckCircle2, RotateCcw, AlertTriangle } from 'lucide-react';
 
-const ITEMS_PER_PAGE = 20;
+const ITEMS_PER_PAGE = 18;
 const BLOOD_GROUPS = ['A+', 'A-', 'B+', 'B-', 'O+', 'O-', 'AB+', 'AB-'] as const;
 type BloodGroup = typeof BLOOD_GROUPS[number];
 
-// State aliases for robust geolocation reverse-geocoding mapping
 const STATE_ALIASES: Record<string, string> = {
   'nct of delhi': 'delhi',
   'orissa': 'odisha',
@@ -16,6 +17,60 @@ const STATE_ALIASES: Record<string, string> = {
   'andaman and nicobar': 'andaman & nicobar islands',
   'daman and diu': 'dadra & nagar haveli',
 };
+
+// Simple animated counter component
+function AnimatedCounter({ from, to }: { from: number; to: number }) {
+  const [count, setCount] = useState(from);
+
+  useEffect(() => {
+    const controls = animate(from, to, {
+      duration: 1.2,
+      ease: 'easeOut',
+      onUpdate: (value) => setCount(Math.round(value))
+    });
+    return () => controls.stop();
+  }, [from, to]);
+
+  return <>{count.toLocaleString()}</>;
+}
+
+// Framer motion animation variants
+const staggerContainer: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.08 }
+  }
+};
+
+const fadeUp: Variants = {
+  hidden: { y: 25, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { type: 'spring' as const, stiffness: 100, damping: 15 }
+  }
+};
+
+// Premium loading skeleton card
+function SkeletonCard() {
+  return (
+    <div className="glass-panel p-6 flex flex-col h-full bg-slate-900/40 border border-white/5 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-[2px] bg-white/5" />
+      <div className="h-5 w-2/3 skeleton-premium rounded-lg mb-3" />
+      <div className="h-3 w-1/2 skeleton-premium rounded-lg mb-6" />
+      <div className="flex gap-2 mb-8">
+        <div className="h-7 w-12 skeleton-premium rounded-lg" />
+        <div className="h-7 w-12 skeleton-premium rounded-lg" />
+        <div className="h-7 w-12 skeleton-premium rounded-lg" />
+      </div>
+      <div className="flex gap-2 mt-auto">
+        <div className="h-10 flex-[2.2] skeleton-premium rounded-xl" />
+        <div className="h-10 flex-1 skeleton-premium rounded-xl" />
+      </div>
+    </div>
+  );
+}
 
 export default function SearchDashboard() {
   const { data, loading, error } = useBloodData();
@@ -39,7 +94,6 @@ export default function SearchDashboard() {
     return total;
   };
 
-  // Computed Stats for Hero
   const totalBanks = data.length;
   
   const banksWithStock = useMemo(() => {
@@ -50,13 +104,11 @@ export default function SearchDashboard() {
     return data.reduce((sum, centre) => sum + getTotalStock(centre), 0);
   }, [data]);
 
-  // Extract unique states
   const states = useMemo(() => {
     const unique = new Set(data.map(d => d.state).filter(Boolean));
     return Array.from(unique).sort();
   }, [data]);
 
-  // Extract unique cities based on selected state
   const cities = useMemo(() => {
     let filteredForCities = data;
     if (stateFilter) {
@@ -66,7 +118,6 @@ export default function SearchDashboard() {
     return Array.from(unique).sort();
   }, [data, stateFilter]);
 
-  // Geolocation Handler
   const handleFindNearMe = () => {
     if (!navigator.geolocation) {
       alert("Geolocation is not supported by your browser.");
@@ -84,13 +135,11 @@ export default function SearchDashboard() {
             let rawState = (geoData.address.state || '').toLowerCase();
             let rawDistrict = (geoData.address.state_district || geoData.address.city || geoData.address.county || '').toLowerCase();
             
-            // Apply aliases
             if (STATE_ALIASES[rawState]) rawState = STATE_ALIASES[rawState];
 
             const matchedState = states.find(s => rawState.includes(s.toLowerCase()) || s.toLowerCase().includes(rawState));
             if (matchedState) {
               setStateFilter(matchedState);
-              // Small delay to allow cities to compute
               setTimeout(() => {
                 setCityFilter(rawDistrict.replace(/district/i, '').trim());
               }, 100);
@@ -121,7 +170,6 @@ export default function SearchDashboard() {
     setCurrentPage(1);
   };
 
-  // Filter & Sort Data
   const filteredData = useMemo(() => {
     let filtered = data.filter(centre => {
       const matchState = stateFilter ? centre.state === stateFilter : true;
@@ -130,7 +178,7 @@ export default function SearchDashboard() {
         ? centre.name.toLowerCase().includes(searchQuery.toLowerCase())
         : true;
       const matchBloodGroup = bloodGroupFilter 
-        ? (centre[bloodGroupFilter as keyof BloodCentre] as number | undefined) || 0 > 0
+        ? ((centre[bloodGroupFilter as keyof BloodCentre] as number | undefined) || 0) > 0
         : true;
       
       return matchState && matchCity && matchQuery && matchBloodGroup;
@@ -141,7 +189,7 @@ export default function SearchDashboard() {
         return a.name.localeCompare(b.name);
       } else if (sortBy === 'District') {
         return (a.district || '').localeCompare(b.district || '');
-      } else { // Highest Stock
+      } else {
         if (bloodGroupFilter) {
           const valA = (a[bloodGroupFilter as keyof BloodCentre] as number | undefined) || 0;
           const valB = (b[bloodGroupFilter as keyof BloodCentre] as number | undefined) || 0;
@@ -155,135 +203,154 @@ export default function SearchDashboard() {
     return filtered;
   }, [data, stateFilter, cityFilter, searchQuery, bloodGroupFilter, sortBy]);
 
-  // Pagination Logic
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const paginatedData = filteredData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
   const showingStart = filteredData.length === 0 ? 0 : startIndex + 1;
   const showingEnd = Math.min(startIndex + ITEMS_PER_PAGE, filteredData.length);
 
-  if (loading) {
-    return (
-      <div className="flex flex-col justify-center items-center h-screen bg-slate-50">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-4 border-red-600 mb-4"></div>
-        <p className="text-slate-600 font-semibold">Connecting to e-RaktKosh...</p>
-      </div>
-    );
-  }
-
+  // Error State Component
   if (error) {
     return (
-      <div className="flex justify-center items-center h-screen bg-slate-50">
-        <div className="text-red-700 bg-white p-8 rounded-2xl border border-red-100 max-w-md text-center shadow-lg">
-          <Activity className="w-12 h-12 mx-auto mb-4 text-red-500" />
-          <h2 className="text-xl font-bold mb-2">Connection Error</h2>
-          <p className="text-slate-600">{error}</p>
-        </div>
+      <div className="flex justify-center items-center h-[80vh] px-4 relative z-10">
+        <motion.div 
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          className="text-red-300 glass-panel p-8 max-w-md text-center bg-red-950/20 border-red-500/20"
+        >
+          <AlertTriangle className="w-12 h-12 mx-auto mb-4 text-red-500" />
+          <h2 className="text-xl font-semibold mb-2">Connection Error</h2>
+          <p className="text-slate-400 text-sm">{error}</p>
+        </motion.div>
       </div>
     );
   }
 
   return (
-    <div className="bg-slate-50 min-h-screen pb-16 font-sans">
+    <div className="min-h-screen pb-20 relative">
+      <div className="grid-overlay" />
       
-      {/* PREMIUM HERO SECTION */}
-      <div className="bg-white border-b border-slate-200 pt-10 pb-12 px-4 sm:px-6 lg:px-8 mb-8 shadow-sm">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10">
+      {/* Dynamic Background Glow Layer */}
+      <div className="glow-bg top-[5%] left-[25%] opacity-15" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 relative z-10">
+        
+        {/* HERO HEADER */}
+        <motion.div 
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="mb-12"
+        >
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-8">
             <div>
-              <div className="inline-flex items-center space-x-2 bg-red-50 px-3 py-1 rounded-full border border-red-100 mb-4">
+              <div className="inline-flex items-center space-x-2 bg-red-500/10 px-3 py-1.5 rounded-full border border-red-500/20 mb-4">
                 <span className="flex h-2 w-2 relative">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
                 </span>
-                <span className="text-[11px] font-semibold text-red-700 tracking-wide uppercase">Live Updates Active</span>
+                <span className="text-[10px] font-semibold text-red-400 tracking-wider uppercase">Live e-RaktKosh Sync</span>
               </div>
-              <h1 className="text-3xl md:text-4xl font-semibold text-slate-900 tracking-tight flex items-center">
-                BloodLink India
+              <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-2">
+                Blood Stock Search
               </h1>
-              <p className="text-slate-500 mt-2 text-base md:text-lg max-w-2xl">
-                Real-time national blood availability network, synchronized directly with government e-RaktKosh data.
+              <p className="text-slate-400 text-sm max-w-xl font-normal leading-relaxed">
+                Find available units in clinical facilities across India. Real-time metrics verify immediate availability.
               </p>
             </div>
             
-            <div className="mt-6 md:mt-0 flex items-center space-x-3 bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-200">
-              <ShieldCheck className="w-6 h-6 text-blue-600" />
+            <div className="flex items-center space-x-3 bg-slate-900/50 px-4 py-2.5 rounded-2xl border border-white/5 backdrop-blur-md">
+              <ShieldCheck className="w-5 h-5 text-blue-400" />
               <div>
-                <p className="text-xs text-slate-500 font-medium uppercase tracking-wider">Verified Source</p>
-                <p className="text-sm text-slate-900 font-medium">e-RaktKosh API</p>
+                <p className="text-[10px] text-slate-500 font-medium uppercase tracking-wider">Verified Source</p>
+                <p className="text-xs text-white font-medium">e-RaktKosh Govt Portal</p>
               </div>
             </div>
           </div>
 
-          {/* Statistics Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
-            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center space-x-4">
-              <div className="p-3 bg-red-50 rounded-xl">
-                <Activity className="w-6 h-6 text-red-600" />
+          {/* Staggered Statistics Cards */}
+          <motion.div 
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+            className="grid grid-cols-2 md:grid-cols-4 gap-4"
+          >
+            <motion.div variants={fadeUp} className="glass-panel p-5 bg-slate-900/40 flex items-center space-x-4">
+              <div className="p-3 bg-red-500/10 rounded-2xl border border-red-500/20">
+                <Activity className="w-5 h-5 text-red-400" />
               </div>
               <div>
-                <p className="text-xs text-slate-500 font-medium uppercase tracking-wider mb-1">Total Units</p>
-                <p className="text-2xl font-semibold text-slate-900">{totalUnitsNationwide.toLocaleString()}</p>
+                <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mb-0.5">Total Units</p>
+                <p className="text-xl font-semibold text-white">
+                  {loading ? '...' : <AnimatedCounter from={0} to={totalUnitsNationwide} />}
+                </p>
               </div>
-            </div>
+            </motion.div>
             
-            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center space-x-4">
-              <div className="p-3 bg-blue-50 rounded-xl">
-                <Building2 className="w-6 h-6 text-blue-600" />
+            <motion.div variants={fadeUp} className="glass-panel p-5 bg-slate-900/40 flex items-center space-x-4">
+              <div className="p-3 bg-blue-500/10 rounded-2xl border border-blue-500/20">
+                <Building2 className="w-5 h-5 text-blue-400" />
               </div>
               <div>
-                <p className="text-xs text-slate-500 font-medium uppercase tracking-wider mb-1">Facilities</p>
-                <p className="text-2xl font-semibold text-slate-900">{totalBanks.toLocaleString()}</p>
+                <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mb-0.5">Facilities</p>
+                <p className="text-xl font-semibold text-white">
+                  {loading ? '...' : <AnimatedCounter from={0} to={totalBanks} />}
+                </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center space-x-4">
-              <div className="p-3 bg-emerald-50 rounded-xl">
-                <CheckCircle2 className="w-6 h-6 text-emerald-600" />
+            <motion.div variants={fadeUp} className="glass-panel p-5 bg-slate-900/40 flex items-center space-x-4">
+              <div className="p-3 bg-emerald-500/10 rounded-2xl border border-emerald-500/20">
+                <CheckCircle2 className="w-5 h-5 text-emerald-400" />
               </div>
               <div>
-                <p className="text-xs text-slate-500 font-medium uppercase tracking-wider mb-1">In Stock</p>
-                <p className="text-2xl font-semibold text-slate-900">{banksWithStock.toLocaleString()}</p>
+                <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mb-0.5">In Stock</p>
+                <p className="text-xl font-semibold text-white">
+                  {loading ? '...' : <AnimatedCounter from={0} to={banksWithStock} />}
+                </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center space-x-4">
-              <div className="p-3 bg-slate-50 rounded-xl">
-                <Clock className="w-6 h-6 text-slate-600" />
+            <motion.div variants={fadeUp} className="glass-panel p-5 bg-slate-900/40 flex items-center space-x-4">
+              <div className="p-3 bg-slate-500/10 rounded-2xl border border-slate-500/20">
+                <Clock className="w-5 h-5 text-slate-400" />
               </div>
               <div>
-                <p className="text-xs text-slate-500 font-medium uppercase tracking-wider mb-1">Last Update</p>
-                <p className="text-sm font-semibold text-slate-900">{lastUpdated}</p>
+                <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wider mb-0.5">Last Update</p>
+                <p className="text-xs font-semibold text-white truncate max-w-[130px]">{lastUpdated}</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* MODERN SEARCH TOOLBAR */}
-        <div className="sticky top-4 z-40 bg-white/95 backdrop-blur-xl p-4 rounded-2xl mb-8 shadow-sm border border-slate-200">
-          <div className="flex flex-col lg:flex-row gap-4 items-center">
+        {/* SEARCH & FILTERS TOOLBAR */}
+        <motion.div 
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="sticky top-4 z-40 bg-slate-950/80 backdrop-blur-xl p-4 rounded-2xl mb-10 shadow-xl border border-white/5 flex flex-col gap-4"
+        >
+          <div className="flex flex-col lg:flex-row gap-4 items-center w-full">
             
-            {/* Find Near Me Button - Highlighted */}
-            <button 
+            {/* Near Me Button */}
+            <motion.button 
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
               onClick={handleFindNearMe}
               disabled={geoLoading}
-              className="w-full lg:w-auto flex-shrink-0 flex items-center justify-center py-2.5 px-5 bg-red-600 text-white hover:bg-red-700 font-semibold rounded-xl transition-all shadow-sm disabled:opacity-70"
+              className="w-full lg:w-auto flex-shrink-0 flex items-center justify-center py-2.5 px-5 bg-gradient-to-r from-red-500 to-rose-600 text-white font-medium text-xs rounded-xl transition-all shadow-md shadow-red-950/20 border border-red-400/20 disabled:opacity-75 cursor-pointer"
             >
-              <MapPin className="w-4 h-4 mr-2" />
+              <MapPin className="w-3.5 h-3.5 mr-2" />
               {geoLoading ? 'Locating...' : 'Near Me'}
-            </button>
+            </motion.button>
 
-            <div className="hidden lg:block w-px h-10 bg-slate-200"></div>
+            <div className="hidden lg:block w-px h-6 bg-white/10"></div>
 
-            {/* Filters Grid */}
-            <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4 flex-grow">
-              
+            {/* Filters Select Grid */}
+            <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 flex-grow">
               <div>
                 <select 
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm text-slate-700 font-medium focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition-all appearance-none cursor-pointer"
+                  className="w-full bg-slate-900/60 border border-white/5 rounded-xl px-3 py-2.5 text-xs text-slate-200 font-normal focus:ring-1 focus:ring-red-500/50 outline-none transition-all cursor-pointer appearance-none"
                   value={bloodGroupFilter}
                   onChange={e => { setBloodGroupFilter(e.target.value as BloodGroup | ''); setCurrentPage(1); }}
                 >
@@ -296,7 +363,7 @@ export default function SearchDashboard() {
 
               <div>
                 <select 
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm text-slate-700 font-medium focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition-all appearance-none cursor-pointer"
+                  className="w-full bg-slate-900/60 border border-white/5 rounded-xl px-3 py-2.5 text-xs text-slate-200 font-normal focus:ring-1 focus:ring-red-500/50 outline-none transition-all cursor-pointer appearance-none"
                   value={stateFilter}
                   onChange={e => { setStateFilter(e.target.value); setCityFilter(''); setCurrentPage(1); }}
                 >
@@ -309,7 +376,7 @@ export default function SearchDashboard() {
               
               <div>
                 <select 
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm text-slate-700 font-medium focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition-all appearance-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-slate-900/60 border border-white/5 rounded-xl px-3 py-2.5 text-xs text-slate-200 font-normal focus:ring-1 focus:ring-red-500/50 outline-none transition-all cursor-pointer appearance-none disabled:opacity-50"
                   value={cityFilter}
                   onChange={e => { setCityFilter(e.target.value); setCurrentPage(1); }}
                   disabled={cities.length === 0}
@@ -323,75 +390,105 @@ export default function SearchDashboard() {
 
               <div>
                 <select 
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm text-slate-700 font-medium focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition-all appearance-none cursor-pointer"
+                  className="w-full bg-slate-900/60 border border-white/5 rounded-xl px-3 py-2.5 text-xs text-slate-200 font-normal focus:ring-1 focus:ring-red-500/50 outline-none transition-all cursor-pointer appearance-none"
                   value={sortBy}
                   onChange={e => { setSortBy(e.target.value); setCurrentPage(1); }}
                 >
-                  <option value="Highest Stock">Sort: Highest Stock</option>
-                  <option value="Name A-Z">Sort: Name (A-Z)</option>
-                  <option value="District">Sort: District</option>
+                  <option value="Highest Stock">Highest Stock First</option>
+                  <option value="Name A-Z">Name (A-Z)</option>
+                  <option value="District">District Name</option>
                 </select>
               </div>
             </div>
 
-            <div className="hidden lg:block w-px h-10 bg-slate-200"></div>
+            <div className="hidden lg:block w-px h-6 bg-white/10"></div>
 
-            {/* Search Input */}
-            <div className="w-full lg:w-64 relative">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <Search className="h-4 w-4 text-slate-400" />
+            {/* Name Search Box */}
+            <div className="w-full lg:w-60 relative">
+              <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                <Search className="h-3.5 w-3.5 text-slate-500" />
               </div>
               <input 
                 type="text"
                 placeholder="Search facility name..."
-                className="w-full bg-slate-50 border border-slate-200 rounded-xl pl-9 pr-3 py-2.5 text-sm text-slate-900 font-medium focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition-all placeholder-slate-400"
+                className="w-full bg-slate-900/60 border border-white/5 rounded-xl pl-9 pr-3 py-2.5 text-xs text-white font-normal placeholder-slate-500 focus:ring-1 focus:ring-red-500/50 outline-none transition-all"
                 value={searchQuery}
                 onChange={e => { setSearchQuery(e.target.value); setCurrentPage(1); }}
               />
             </div>
 
           </div>
-        </div>
+        </motion.div>
 
-        {/* Results Header */}
+        {/* RESULTS SUMMARY */}
         <div className="flex justify-between items-center mb-6 px-1">
-          <h2 className="text-xl font-semibold text-slate-900">Search Results</h2>
-          <span className="text-sm text-slate-500 font-medium bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm">
-            Showing {showingStart}-{showingEnd} of <span className="font-medium text-slate-900">{filteredData.length}</span>
+          <h2 className="text-lg font-medium text-white tracking-tight">Search Results</h2>
+          <span className="text-xs text-slate-400 font-normal bg-slate-900/40 px-3.5 py-1.5 rounded-full border border-white/5 shadow-sm">
+            Showing {showingStart}-{showingEnd} of <span className="text-white font-medium">{filteredData.length}</span>
           </span>
         </div>
 
-        {/* Results Grid - 1 Col Mobile, 2 Col Tablet, 3 Col Desktop */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-          {paginatedData.length > 0 ? (
-            paginatedData.map(centre => (
-              <BloodBankCard key={centre.id} centre={centre} />
-            ))
-          ) : (
-            <div className="col-span-full flex flex-col items-center justify-center py-20 bg-white rounded-2xl border border-dashed border-slate-300">
-              <Search className="w-12 h-12 mb-4 text-slate-300" />
-              <p className="text-lg font-medium text-slate-900">No facilities found</p>
-              <p className="text-sm text-slate-500 mt-1">Try adjusting your filters or search criteria.</p>
-              <button 
-                onClick={resetFilters}
-                className="mt-4 px-5 py-2 bg-slate-100 text-slate-700 text-sm font-semibold rounded-lg hover:bg-slate-200 transition-colors"
-              >
-                Clear all filters
-              </button>
-            </div>
-          )}
-        </div>
+        {/* MAIN RESULTS GRID WITH SKELETON OR CARDS */}
+        {loading ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <SkeletonCard key={i} />
+            ))}
+          </div>
+        ) : (
+          <motion.div 
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10"
+          >
+            <AnimatePresence mode="popLayout">
+              {paginatedData.length > 0 ? (
+                paginatedData.map(centre => (
+                  <motion.div
+                    key={centre.id}
+                    variants={fadeUp}
+                    layout
+                  >
+                    <BloodBankCard centre={centre} />
+                  </motion.div>
+                ))
+              ) : (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="col-span-full flex flex-col items-center justify-center py-20 bg-slate-900/20 rounded-3xl border border-dashed border-white/10"
+                >
+                  <Search className="w-10 h-10 mb-4 text-slate-500" />
+                  <p className="text-base font-medium text-white mb-1">No facilities matched your filters</p>
+                  <p className="text-xs text-slate-400 max-w-xs text-center mb-4">Try widening your search state or choosing any blood group.</p>
+                  <motion.button 
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={resetFilters}
+                    className="flex items-center gap-1.5 px-4 py-2 bg-slate-800 text-slate-200 text-xs font-medium rounded-xl border border-white/5 hover:bg-slate-700 transition-all cursor-pointer"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    Reset Search Filters
+                  </motion.button>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        )}
 
-        {/* Premium Pagination Controls */}
-        {totalPages > 1 && (
-          <div className="flex justify-center items-center space-x-2 pb-12">
-            <button 
+        {/* PAGINATION CONTROLS */}
+        {!loading && totalPages > 1 && (
+          <div className="flex justify-center items-center space-x-2 pb-16">
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
               disabled={currentPage === 1}
-              className="p-2 rounded-xl bg-white border border-slate-200 text-slate-600 disabled:opacity-40 hover:bg-slate-50 transition-colors shadow-sm"
+              className="p-2.5 rounded-xl bg-slate-900/60 border border-white/5 text-slate-400 disabled:opacity-30 disabled:cursor-not-allowed hover:text-white transition-colors cursor-pointer"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
-            </button>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
+            </motion.button>
             
             <div className="flex space-x-1.5">
               {Array.from({ length: Math.min(5, totalPages) }).map((_, i) => {
@@ -403,28 +500,32 @@ export default function SearchDashboard() {
                 if (pageNum < 1 || pageNum > totalPages) return null;
 
                 return (
-                  <button
+                  <motion.button
                     key={pageNum}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                     onClick={() => setCurrentPage(pageNum)}
-                    className={`w-10 h-10 rounded-xl text-sm font-bold transition-all shadow-sm border ${
+                    className={`w-9 h-9 rounded-xl text-xs font-semibold transition-all border ${
                       currentPage === pageNum 
-                        ? 'bg-slate-900 text-white border-slate-900' 
-                        : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
+                        ? 'bg-gradient-to-r from-red-500 to-rose-600 text-white border-red-500/30' 
+                        : 'bg-slate-900/40 text-slate-400 border-white/5 hover:text-white'
                     }`}
                   >
                     {pageNum}
-                  </button>
+                  </motion.button>
                 );
               })}
             </div>
 
-            <button 
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
               disabled={currentPage === totalPages}
-              className="p-2 rounded-xl bg-white border border-slate-200 text-slate-600 disabled:opacity-40 hover:bg-slate-50 transition-colors shadow-sm"
+              className="p-2.5 rounded-xl bg-slate-900/60 border border-white/5 text-slate-400 disabled:opacity-30 disabled:cursor-not-allowed hover:text-white transition-colors cursor-pointer"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
-            </button>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+            </motion.button>
           </div>
         )}
       </div>
