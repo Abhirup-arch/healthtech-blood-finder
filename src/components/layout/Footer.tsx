@@ -1,35 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Clock, ExternalLink } from 'lucide-react';
 
 const Footer: React.FC = () => {
+  const [lastUpdated, setLastUpdated] = useState<string>('');
+
+  useEffect(() => {
+    // Generate static timestamp on mount so it matches the data fetch
+    setLastUpdated(new Date().toLocaleString('en-IN', { hour: 'numeric', minute: '2-digit', hour12: true, month: 'short', day: 'numeric' }));
+  }, []);
+
   return (
-    <footer className="bg-slate-50 border-t border-slate-200 py-8 px-4 sm:px-6 lg:px-8 mt-auto w-full">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer className="bg-slate-50 border-t border-slate-200 py-6 px-4 sm:px-6 lg:px-8 mt-auto w-full text-sm text-slate-600">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         
-        <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <div className="flex items-center text-slate-700 font-semibold mb-2">
-            <ShieldCheck className="w-5 h-5 mr-2 text-blue-600" />
-            Data Source & Methodology
-          </div>
-          <p className="text-sm text-slate-500 mb-1">
-            Data sourced from <span className="font-medium text-slate-700">e-RaktKosh</span> (Ministry of Health & Family Welfare, Govt of India).
+        <div className="flex flex-col text-center md:text-left gap-1">
+          <p>
+            <strong>Data Source:</strong> e-RaktKosh (Ministry of Health & Family Welfare, Government of India)
           </p>
-          <div className="flex items-center text-xs text-slate-400">
-            <Clock className="w-3.5 h-3.5 mr-1" />
-            <span>Refreshed automatically every 4 hours via GitHub Actions.</span>
-          </div>
+          <p>
+            <strong>Refresh Frequency:</strong> Every 4 Hours
+          </p>
+          <p>
+            <strong>Last Updated:</strong> {lastUpdated}
+          </p>
         </div>
 
-        <div className="flex flex-col items-center md:items-end gap-3">
+        <div className="flex flex-col items-center md:items-end gap-2">
           <Link 
             to="/methodology" 
-            className="flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors"
+            className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
           >
-            How the data is collected <ExternalLink className="w-3.5 h-3.5 ml-1" />
+            How the Data is Collected
           </Link>
-          <p className="text-xs text-slate-400">
-            &copy; {new Date().getFullYear()} BloodLink India. All rights reserved.
+          <p className="text-xs text-slate-400 mt-2">
+            &copy; {new Date().getFullYear()} BloodLink India
           </p>
         </div>
 

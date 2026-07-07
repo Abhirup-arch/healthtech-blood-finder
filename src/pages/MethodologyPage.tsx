@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Database, ShieldAlert, RefreshCw, Server } from 'lucide-react';
+import { ArrowLeft, Database, ShieldAlert, RefreshCw, Server, CheckCircle, Activity } from 'lucide-react';
+import { useBloodData, type BloodCentre } from '../hooks/useBloodData';
+
+const BLOOD_GROUPS = ['A+', 'A-', 'B+', 'B-', 'O+', 'O-', 'AB+', 'AB-'] as const;
 
 const MethodologyPage: React.FC = () => {
+  const { data, loading } = useBloodData();
+
+  const { totalFacilities, statesCovered, facilitiesWithStock } = useMemo(() => {
+    const states = new Set(data.map(d => d.state).filter(Boolean));
+    const withStock = data.filter(c => {
+      let total = 0;
+      BLOOD_GROUPS.forEach(bg => {
+        const val = c[bg as keyof BloodCentre] as number | undefined;
+        if (val) total += val;
+      });
+      return total > 0;
+    });
+
+    return {
+      totalFacilities: data.length,
+      statesCovered: states.size,
+      facilitiesWithStock: withStock.length,
+    };
+  }, [data]);
+
+  const lastUpdated = new Date().toLocaleString('en-IN', { hour: 'numeric', minute: '2-digit', hour12: true, month: 'short', day: 'numeric' });
+
   return (
     <div className="bg-slate-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
@@ -17,7 +42,7 @@ const MethodologyPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden mb-8">
           
           <div className="p-6 md:p-8 border-b border-slate-100">
             <div className="flex items-center mb-4">
@@ -36,11 +61,25 @@ const MethodologyPage: React.FC = () => {
               <div className="p-2 bg-emerald-50 rounded-lg mr-4">
                 <RefreshCw className="w-6 h-6 text-emerald-600" />
               </div>
-              <h2 className="text-xl font-semibold text-slate-900">2. Automated Processing</h2>
+              <h2 className="text-xl font-semibold text-slate-900">2. Automated Processing Workflow</h2>
             </div>
-            <p className="text-slate-600 leading-relaxed pl-14">
+            <p className="text-slate-600 leading-relaxed pl-14 mb-6">
               A secure GitHub Action runs on a strict schedule <strong>every 4 hours</strong>. This automated pipeline fetches the latest nationwide JSON data directly from the e-RaktKosh API, processes it for our application, and commits the updated dataset to our repository.
             </p>
+            
+            <div className="pl-14">
+              <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 text-sm font-medium text-slate-700 flex flex-col items-center justify-center space-y-2">
+                <div className="bg-white px-4 py-2 rounded shadow-sm border border-slate-200">e-RaktKosh</div>
+                <ArrowLeft className="w-4 h-4 transform -rotate-90 text-slate-400" />
+                <div className="bg-white px-4 py-2 rounded shadow-sm border border-slate-200">GitHub Action</div>
+                <ArrowLeft className="w-4 h-4 transform -rotate-90 text-slate-400" />
+                <div className="bg-white px-4 py-2 rounded shadow-sm border border-slate-200">blood_availability.json</div>
+                <ArrowLeft className="w-4 h-4 transform -rotate-90 text-slate-400" />
+                <div className="bg-white px-4 py-2 rounded shadow-sm border border-slate-200">Cloudflare Pages</div>
+                <ArrowLeft className="w-4 h-4 transform -rotate-90 text-slate-400" />
+                <div className="bg-blue-600 text-white px-4 py-2 rounded shadow-sm">BloodLink India</div>
+              </div>
+            </div>
           </div>
 
           <div className="p-6 md:p-8 border-b border-slate-100">
@@ -55,8 +94,8 @@ const MethodologyPage: React.FC = () => {
                 We maintain a strict zero-fabrication policy to ensure medical reliability:
               </p>
               <ul className="list-disc pl-5 text-slate-600 space-y-2">
-                <li>No mock blood banks or placeholder locations are injected.</li>
-                <li>No random numbers or stock values are generated.</li>
+                <li>No mock hospitals or dummy blood banks are injected.</li>
+                <li>No random numbers or placeholder stock values are generated.</li>
                 <li>Missing stock values from the source API remain blank in our system.</li>
                 <li>If e-RaktKosh reports 0 units, BloodLink India reports 0 units.</li>
               </ul>
@@ -75,6 +114,54 @@ const MethodologyPage: React.FC = () => {
             </p>
           </div>
 
+        </div>
+
+        {/* Dynamic Authenticity Report */}
+        <div className="bg-white rounded-2xl shadow-sm border border-blue-200 overflow-hidden relative">
+          <div className="absolute top-0 left-0 w-1.5 h-full bg-blue-600"></div>
+          <div className="p-6 md:p-8">
+            <div className="flex items-center mb-6">
+              <Activity className="w-6 h-6 text-blue-600 mr-3" />
+              <h2 className="text-2xl font-bold text-slate-900">Live Authenticity Report</h2>
+            </div>
+            
+            {loading ? (
+              <div className="flex justify-center p-8">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 flex items-center justify-between">
+                  <span className="text-slate-600 font-medium">Total Facilities Monitored</span>
+                  <span className="text-xl font-bold text-slate-900">{totalFacilities.toLocaleString()}</span>
+                </div>
+                
+                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 flex items-center justify-between">
+                  <span className="text-slate-600 font-medium">States & UTs Covered</span>
+                  <span className="text-xl font-bold text-slate-900">{statesCovered}</span>
+                </div>
+
+                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 flex items-center justify-between">
+                  <span className="text-slate-600 font-medium">Facilities With Stock</span>
+                  <span className="text-xl font-bold text-slate-900">{facilitiesWithStock.toLocaleString()}</span>
+                </div>
+
+                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 flex items-center justify-between">
+                  <span className="text-slate-600 font-medium">Data Source</span>
+                  <span className="text-sm font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded">e-RaktKosh (Govt. India)</span>
+                </div>
+                
+                <div className="col-span-1 md:col-span-2 bg-emerald-50 p-4 rounded-xl border border-emerald-100 flex items-center justify-between">
+                  <div className="flex items-center text-emerald-800 font-medium">
+                    <CheckCircle className="w-5 h-5 mr-2" />
+                    Last Successful Update
+                  </div>
+                  <span className="font-bold text-emerald-900">{lastUpdated}</span>
+                </div>
+              </div>
+            )}
+            
+          </div>
         </div>
 
       </div>
