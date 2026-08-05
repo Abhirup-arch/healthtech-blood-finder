@@ -3395,6 +3395,17 @@
   ],
   "assam": [
     {
+      "name": "Blood Centre Biswanath Chariali Civil Hospital",
+      "district": "Biswanath Chariali",
+      "AB+": 1,
+      "O+": 1,
+      "A-": 2,
+      "B-": 1,
+      "B+": 2,
+      "contact": "9864114748 ",
+      "address": "Ground Floor, Biswanath Chariali C. H., Near College Road, M, , Biswanath Chariali, Bishwanath, Assam"
+    },
+    {
       "name": "Blood Centre, Apollo Excelcare Hospital",
       "district": "Guwahati",
       "contact": "8822195319 ",
@@ -3403,28 +3414,28 @@
     {
       "name": "Swagat Hospital Blood Centre",
       "district": "Bongaigaon",
-      "A+": 5,
-      "AB+": 4,
-      "O+": 3,
       "B+": 6,
+      "AB+": 4,
+      "A+": 5,
+      "O+": 3,
       "contact": "7002819201 ",
       "address": "Dr. C. M. Das Path, North Bongaigaon, P.O and Dist- Bongaiga, , Bongaigaon, Bongaigaon, Assam"
     },
     {
       "name": "R.N.B. Civil Hospital Blood Centre",
       "district": "Kokrajhar",
-      "AB+": 10,
-      "B+": 18,
       "O+": 12,
       "A+": 17,
+      "B+": 18,
+      "AB+": 10,
       "contact": "8918456578 ",
       "address": "P.O. + Dist. - Keonjhar, , Kokrajhar, Kokrajhar, Assam"
     },
     {
       "name": "Blood Centre Jorhat Medical College And Hospital",
       "district": "Jorhat",
-      "A+": 6,
       "AB+": 2,
+      "A+": 6,
       "O+": 2,
       "contact": "9954808927 ",
       "address": "JAIL ROAD, DIST. JORHAT, PO JORHAT, ASSAM, , Jorhat, Jorhat, Assam"
@@ -3432,8 +3443,8 @@
     {
       "name": "Santosh Kumar Roy Civil Hospital Blood Centre",
       "district": "HAILAKANDI",
-      "B+": 34,
       "O+": 6,
+      "B+": 34,
       "A+": 8,
       "contact": "6002278547 ",
       "address": "Lala Road, Hailakandi Town , , HAILAKANDI, Hailakandi, Assam"
@@ -3441,10 +3452,10 @@
     {
       "name": "S.K.K. C.H. Blood Centre Golaghat",
       "district": "Golaghat",
-      "AB+": 8,
-      "B+": 14,
       "A+": 14,
       "O+": 10,
+      "AB+": 8,
+      "B+": 14,
       "contact": "3774280042 ",
       "address": "Blood Centre S.K.K.Civil Hospital Golaghat, , Golaghat, Golaghat, Assam"
     },
@@ -3457,9 +3468,9 @@
     {
       "name": "Blood Centre Of Solace Hospital And Research Centre (P) Ltd.",
       "district": "Goalpara",
-      "O+": 11,
-      "B+": 22,
       "A+": 3,
+      "B+": 22,
+      "O+": 11,
       "contact": "9394867844 ",
       "address": "Baladmari, Opp. IOC Petrol Pump, , Goalpara, Goalpara, Assam"
     },
@@ -3484,33 +3495,33 @@
     {
       "name": "Vivekananda Kendra Nrl Hospital Blood Centre",
       "district": "Golaghat",
+      "AB+": 1,
+      "A+": 8,
       "O+": 6,
       "B+": 1,
-      "A+": 8,
-      "AB+": 1,
       "contact": "3776266700 ",
       "address": "NRL Township, Numaligarh, , Golaghat, Golaghat, Assam"
     },
     {
       "name": "Morigaon Civil Hospital",
       "district": "Morigaon",
-      "A+": 5,
       "AB+": 4,
       "O+": 9,
-      "O-": 1,
       "B+": 7,
+      "A+": 5,
+      "O-": 1,
       "contact": "8011352918 ",
       "address": "KK Handique Path, Ward Number 7, Rajagaon, , Morigaon, Morigaon, Assam"
     },
     {
       "name": "Dhubri Civil Hospital Blood Centre",
       "district": "Dhubri",
+      "B+": 3,
       "AB+": 3,
       "A+": 6,
+      "O+": 33,
       "O-": 1,
       "AB-": 1,
-      "O+": 33,
-      "B+": 3,
       "contact": "9957590468 ",
       "address": "DHUBRI CIVIL HOSPITAL, Vill. & P.O.- Jhagrarpar, , Dhubri, Dhubri, Assam"
     },
@@ -3523,10 +3534,10 @@
     {
       "name": "Dr. Ravi Boro Civil Hospital Blood Centre",
       "district": "Mushalpur",
-      "B+": 10,
-      "AB+": 5,
-      "A+": 12,
       "O+": 13,
+      "A+": 12,
+      "AB+": 5,
+      "B+": 10,
       "contact": "8638603182 ",
       "address": "3rd Floor,Dr. Ravi Boro Civil Hospital,Baksa, Mushalpur,Baksa, Mushalpur, Baksa, Assam"
     },
@@ -3539,8 +3550,8 @@
     {
       "name": "Kgmt Multispecialty Hospital",
       "district": "Guwahati",
-      "A+": 1,
       "B+": 1,
+      "A+": 1,
       "contact": "9435119519 ",
       "address": "mother Teresa Road, Opposite Geetanagar Police Station, Guwa, , Guwahati, Kamrup Metro, Assam"
     },
@@ -3555,37 +3566,37 @@
       "district": "TEZPUR",
       "B+": 4,
       "A-": 1,
-      "O+": 1,
       "A+": 2,
+      "O+": 1,
       "contact": "0371224134 ",
       "address": "TUMUKI, BIHAGURI , , TEZPUR, Sonitpur, Assam"
     },
     {
       "name": "Blood Centre Barpeta Medical College and Hospital",
       "district": "Barpeta",
-      "B+": 7,
-      "O+": 2,
       "A+": 1,
+      "O+": 2,
+      "B+": 7,
       "contact": "9365136355 ",
       "address": "BARPETA MEDICAL COLLEGE AND HOSPITAL, JOTIGAON , , Barpeta, Barpeta, Assam"
     },
     {
       "name": "Tinsukia Civil Hospital Blood Centre",
       "district": "Tinsukia",
-      "A+": 4,
-      "B+": 4,
-      "AB+": 2,
       "O+": 4,
+      "B+": 4,
+      "A+": 4,
+      "AB+": 2,
       "contact": "7086018339 ",
       "address": "(L.G.B.), Bordoloi Nagar, , Tinsukia, Tinsukia, Assam"
     },
     {
       "name": "Kanaklata Civil Hospital Blood Centre",
       "district": "Tezpur",
-      "AB-": 1,
       "B-": 1,
-      "O+": 7,
+      "AB-": 1,
       "A-": 1,
+      "O+": 7,
       "contact": "8133086234 ",
       "address": "Civil Hospital Road, Mahabhairab, Tezpur, , Tezpur, Sonitpur, Assam"
     },
@@ -3598,10 +3609,10 @@
     {
       "name": "Blood Centre Haji Abdul Majid Memorial Hospital And Research Centre",
       "district": "Hojai",
-      "AB+": 16,
-      "B-": 1,
       "A+": 6,
       "A-": 2,
+      "AB+": 16,
+      "B-": 1,
       "contact": "9864825777 ",
       "address": "Haji Abdul Memorial Hospital & Research Centre, Hojai, , Hojai, Hojai, Assam"
     },
@@ -3609,18 +3620,18 @@
       "name": "Sonapur District Hospital Blood Bank",
       "district": "Guwahati",
       "A+": 2,
-      "O+": 2,
       "B+": 1,
+      "O+": 2,
       "contact": "9101103716 ",
       "address": "C/o suptd.,District hospital,sonapur,ghy, assam, 782401, C/o dr R. Teron, district hospital, sonapur, pin 782401, Guwahati, Kamrup Metro, Assam"
     },
     {
       "name": "Udalguri Civil Hospital",
       "district": "Udalguri",
-      "AB+": 9,
-      "B+": 4,
-      "A+": 1,
       "O+": 18,
+      "AB+": 9,
+      "A+": 1,
+      "B+": 4,
       "contact": "8399014135 ",
       "address": "Sankar Nagar Rd, Barnagaon, Near Police Reserve, Assam, , Udalguri, Udalguri, Assam"
     },
@@ -3628,8 +3639,8 @@
       "name": "Nalbari Maternity Hospital Blood Centre",
       "district": "Nalbari",
       "A+": 1,
-      "B+": 4,
       "O+": 8,
+      "B+": 4,
       "contact": "9435194910 ",
       "address": "Nalbari,, Santipur, , Nalbari, Nalbari, Assam"
     },
@@ -3642,22 +3653,22 @@
     {
       "name": "Sivsagar Civil Hospital Blood Centre",
       "district": "Sivasagar",
+      "A+": 20,
+      "AB+": 6,
       "O-": 1,
       "O+": 2,
-      "AB+": 6,
-      "A+": 20,
-      "A-": 1,
       "B+": 20,
+      "A-": 1,
       "contact": "9957194459 ",
       "address": "Sivsagar Civil Hospital, Joysagar, Rupahi Pathar, , , Joysagar, Sivasagar , Sivasagar, Assam"
     },
     {
       "name": "-",
       "district": "Makum",
+      "B+": 1,
       "A+": 3,
       "O+": 8,
       "O-": 2,
-      "B+": 1,
       "contact": "-",
       "address": "LOHARI BANGALI GAON MAKUM , TINSUKIA TINSUKIA DISTRICT TINSUKIA STATE-ASSAM INDIA 786170, Makum, Tinsukia, Assam"
     },
@@ -3671,8 +3682,8 @@
     {
       "name": "-",
       "district": "KAWAIMARI",
-      "B+": 4,
       "O+": 3,
+      "B+": 4,
       "AB+": 1,
       "A+": 1,
       "contact": "-",
@@ -3681,19 +3692,19 @@
     {
       "name": "Sspdg District Hospital Majuli Blood Centre",
       "district": "Majuli",
-      "B+": 12,
-      "A+": 5,
-      "O+": 4,
       "AB+": 2,
+      "O+": 4,
+      "A+": 5,
+      "B+": 12,
       "contact": "9954132513 ",
       "address": "Garamur, Majuli, Majuli, Majuli, Assam"
     },
     {
       "name": "Ms Dew care Hospital  LLP Blood Centre",
       "district": "Burigaon Kharupetia Darrang",
-      "AB+": 1,
       "O+": 4,
       "B+": 1,
+      "AB+": 1,
       "contact": "8099914430 ",
       "address": "Burigaon Kharupetia Darrang Assam, , Burigaon Kharupetia Darrang, Darrang, Assam"
     },
@@ -3707,9 +3718,9 @@
       "name": "Bongaigaon Civil Hospital",
       "district": "Bongaigaon",
       "AB+": 1,
-      "A-": 1,
-      "B+": 1,
       "A+": 6,
+      "B+": 1,
+      "A-": 1,
       "O+": 2,
       "contact": "9435120689 ",
       "address": "Bongaigaon Civil Hospital, Majgaon, PO : Chakapara, Dist :Bo, , Bongaigaon, Bongaigaon, Assam"
@@ -3731,8 +3742,8 @@
       "name": "Blood Centre Smk Civil Hospital Nalbari",
       "district": "Nalbari",
       "B-": 2,
-      "A+": 2,
       "AB+": 1,
+      "A+": 2,
       "O-": 1,
       "O+": 1,
       "contact": "9864746179 ",
@@ -3741,9 +3752,9 @@
     {
       "name": "Martyr Nidhanu Ram Rajbongshi Civil Hospital Goalpara Blood Centre",
       "district": "Golpara",
-      "B-": 1,
-      "O+": 3,
       "A-": 1,
+      "O+": 3,
+      "B-": 1,
       "B+": 9,
       "contact": "8822618156 ",
       "address": "MARTYR NIDHANU RAM RAJBONGSHI Civil Hospital, Golpara, Bhalu, , Golpara, Goalpara, Assam"
@@ -3757,11 +3768,11 @@
     {
       "name": "Barak Blood Centre And Clinical Research Centre",
       "district": "Silchar",
-      "A-": 1,
       "O-": 1,
-      "A+": 2,
       "B+": 3,
+      "A+": 2,
       "O+": 3,
+      "A-": 1,
       "contact": "9435071314 ",
       "address": "N.S.Avenue, Rangirkhari, HKD Road, Silchar, Cachar, Assam, , Silchar, Cachar, Assam"
     },
@@ -3770,8 +3781,8 @@
       "district": "North Lakhimpur",
       "B-": 1,
       "B+": 1,
-      "O+": 4,
       "A+": 5,
+      "O+": 4,
       "O-": 1,
       "contact": "8638546769 ",
       "address": "Chowkham, North Lakhimpur, , North Lakhimpur, Lakhimpur, Assam"
@@ -3798,29 +3809,29 @@
     {
       "name": "MS DEW CARE HOSPITAL BLOOD CENTRE",
       "district": "Dhing Road Haibargaon",
-      "A+": 3,
       "AB+": 3,
       "B+": 3,
+      "A+": 3,
       "contact": "9678224370 ",
       "address": "Dhing Road Haibargaon Nagaon Assam, , Dhing Road Haibargaon , Nagaon, Assam"
     },
     {
       "name": "Oil India Limited Hospital Blood Bank",
       "district": "Duliajan",
+      "A+": 3,
+      "B+": 4,
       "O+": 7,
       "AB+": 4,
-      "B+": 4,
-      "A+": 3,
       "contact": "9435156062 ",
       "address": "OIL INDIA LIMITED HOSPITAL, DULIAJAN, P.O DULIAJAN, , , Duliajan, Dibrugarh, Assam"
     },
     {
       "name": "5 Air Force Hospital Blood Centre",
       "district": "Jorhat",
-      "B+": 2,
-      "AB+": 1,
-      "A+": 1,
       "O+": 2,
+      "AB+": 1,
+      "B+": 2,
+      "A+": 1,
       "contact": "9997069944 ",
       "address": "Depart of Blood Bank,  5 Air Force Hospital, Jorhat Assam, , Jorhat, Jorhat, Assam"
     },
@@ -3845,13 +3856,13 @@
     {
       "name": "G.N.R.C Hospital Blod Centre",
       "district": "Guwahati",
-      "AB-": 1,
       "O+": 20,
-      "B-": 1,
-      "B+": 20,
-      "AB+": 8,
-      "A+": 6,
       "O-": 1,
+      "B+": 20,
+      "A+": 6,
+      "AB-": 1,
+      "B-": 1,
+      "AB+": 8,
       "contact": "9954088100 ",
       "address": "Dispur, , Guwahati, Kamrup Metro, Assam"
     },
@@ -3862,23 +3873,11 @@
       "address": "B-3, Sati Joymati Rd, Athgaon, GUWAHATI, Guwahati, Kamrup Metro, Assam"
     },
     {
-      "name": "Blood Centre Biswanath Chariali Civil Hospital",
-      "district": "Biswanath Chariali",
-      "B+": 2,
-      "A-": 2,
-      "O+": 2,
-      "A+": 2,
-      "AB+": 1,
-      "B-": 1,
-      "contact": "9864114748 ",
-      "address": "Ground Floor, Biswanath Chariali C. H., Near College Road, M, , Biswanath Chariali, Bishwanath, Assam"
-    },
-    {
       "name": "Central Hospital Blood Centre, Nf Railway",
       "district": "Guwahati",
-      "B+": 2,
-      "B-": 1,
       "A+": 2,
+      "B-": 1,
+      "B+": 2,
       "contact": "7002743740 ",
       "address": "PNGB Rd, NV Area, Maligaon, , , Maligaon, Guwahati, Kamrup, Assam"
     },
@@ -3892,10 +3891,10 @@
     {
       "name": "Rahman Hospital Pvt. Ltd., Blood Centre",
       "district": "GUWAHATI METRO",
-      "A+": 3,
       "AB+": 1,
-      "O+": 5,
+      "A+": 3,
       "B+": 1,
+      "O+": 5,
       "contact": "8399801214 ",
       "address": "VIP Road, Sixmile, KHANAPARA, GUWAHATI METRO, Kamrup Metro, Assam"
     },
@@ -3927,13 +3926,13 @@
     {
       "name": "Hayat Hospital Blood Centre",
       "district": "guwahati",
-      "B+": 14,
-      "A+": 7,
-      "A-": 1,
       "B-": 1,
+      "B+": 14,
       "O+": 3,
       "O-": 1,
+      "A+": 7,
       "AB+": 2,
+      "A-": 1,
       "contact": "7637003987 ",
       "address": "Kahilipara Road, Odalbakra, Lalganesh, , guwahati, Kamrup, Assam"
     },
@@ -3941,8 +3940,8 @@
       "name": "Karimganj Civil Hospital Blood Centre",
       "district": "Karimganj",
       "B+": 10,
-      "O-": 1,
       "O+": 3,
+      "O-": 1,
       "A+": 12,
       "AB+": 6,
       "contact": "9957070131 ",
@@ -3973,10 +3972,10 @@
     {
       "name": "Haflong Civil Hospital Blood Centre",
       "district": "Haflong",
-      "O+": 11,
       "AB+": 7,
-      "A+": 17,
       "B+": 14,
+      "O+": 11,
+      "A+": 17,
       "contact": "9435166109 ",
       "address": "Surat Nagar, Haflong, Dima Hasao., Assam, India., Haflong, Dima Hasao, Assam"
     },
@@ -3998,19 +3997,19 @@
     {
       "name": "Dhemaji Civil Hospital Blood Centre",
       "district": "Khubalia",
-      "B+": 9,
       "O-": 6,
-      "A+": 2,
+      "B+": 9,
       "AB+": 4,
+      "A+": 2,
       "contact": "9954694652 ",
       "address": "Lachit Nagar, PO- Khubalia ,Ward No- 9,, , Khubalia, Dhemaji, Assam"
     },
     {
       "name": "Marwari Arogya Bhawan And Hospital Blood Centre",
       "district": "Jyoti Nagar",
-      "O+": 9,
-      "B-": 2,
       "B+": 37,
+      "B-": 2,
+      "O+": 9,
       "A+": 18,
       "contact": "6026697232 ",
       "address": "Arogya Bhawan Road, Jyoti Nagar, P.O. Jalannagar, Dist.Dibrugarh Assam, Jyoti Nagar, Dibrugarh, Assam"
@@ -4024,10 +4023,10 @@
     {
       "name": "Ms Guwahati Metro Hospital Pvt Ltd  Khanapara",
       "district": "KAMRUP",
-      "A+": 2,
-      "O+": 2,
       "B+": 5,
+      "A+": 2,
       "AB+": 1,
+      "O+": 2,
       "contact": "7002757368 ",
       "address": "KHANAPARA NH 37 GUWAHATI, , KAMRUP, Kamrup Metro, Assam"
     },
@@ -4047,8 +4046,8 @@
       "name": "Apeksha Blood Bank Center",
       "district": "Dibrugarh",
       "O+": 50,
-      "AB+": 2,
       "A+": 5,
+      "AB+": 2,
       "B+": 40,
       "contact": "6003927339 ",
       "address": "Apeksha Healthcare LLP, Basement floor, Jalan Nagar, AMC Roa, , Dibrugarh, Dibrugarh, Assam"
@@ -4056,9 +4055,9 @@
     {
       "name": "Catholic Hospital Blood Centre",
       "district": "Borgang",
+      "O+": 3,
       "AB+": 1,
       "A+": 5,
-      "O+": 3,
       "B+": 1,
       "contact": "7005095071 ",
       "address": "Catholic Hospital Blood Bank, Borgang, , Borgang, Sonitpur, Assam"
@@ -4072,9 +4071,9 @@
     {
       "name": "Referral Hospital Research Centre Chabua",
       "district": "Chabua",
-      "A+": 1,
       "B+": 5,
       "O+": 1,
+      "A+": 1,
       "contact": "8473817151 ",
       "address": "Chabua, , Chabua, Dibrugarh, Assam"
     },
@@ -4116,16 +4115,34 @@
       "name": "-",
       "district": "Korba",
       "A+": 38,
-      "B-": 1,
       "AB+": 12,
+      "B-": 1,
       "contact": "-",
       "address": "Indira Gandhi Distt.Hospital kosabadi, Rajgamar Road, Korba, Korba, Chhattisgarh"
     },
     {
+      "name": "Tej Blood Centre",
+      "district": "Ambikapur",
+      "AB+": 3,
+      "B+": 13,
+      "O+": 6,
+      "A+": 2,
+      "contact": "9826183780 ",
+      "address": "Main Road, , Ambikapur, Surguja, Chhattisgarh"
+    },
+    {
+      "name": "Shikha Blood Centre",
+      "district": "Baikunthpur",
+      "B+": 2,
+      "A+": 4,
+      "contact": "7909545555 ",
+      "address": "1ST FLOOR JEET HIEGHTS BYSAGARPARA BAIKUNTHPUR , , Baikunthpur, Koriya, Chhattisgarh"
+    },
+    {
       "name": "Vandana Blood Centre",
       "district": "Pakhanjur",
-      "A+": 2,
       "B+": 1,
+      "A+": 2,
       "O+": 1,
       "contact": "7587151596 ",
       "address": "Vandana Blood centre ,Vandana Hospital, basement area, Pakha, , Pakhanjur , Kanker, Chhattisgarh"
@@ -4182,11 +4199,11 @@
     {
       "name": "-",
       "district": "Basantpur",
+      "AB+": 6,
+      "O-": 3,
+      "A+": 13,
       "B+": 29,
       "O+": 30,
-      "A+": 13,
-      "O-": 3,
-      "AB+": 6,
       "contact": "-",
       "address": "Basantpur. Rajnandgaon, , Basantpur, Rajnandgaon, Chhattisgarh"
     },
@@ -4218,9 +4235,9 @@
     {
       "name": "Lifeline Blood Centre",
       "district": "Rajnandgaon",
-      "O+": 1,
-      "B+": 2,
       "A+": 2,
+      "B+": 2,
+      "O+": 1,
       "contact": "9685047557 ",
       "address": "1st,2nd Floor,Hare Krishna Tower,Near Kamla College , Rajnan, , Rajnandgaon, Rajnandgaon, Chhattisgarh"
     },
@@ -4234,29 +4251,29 @@
       "name": "Raigarh Blood Centre",
       "district": "Raigarh",
       "O+": 2,
-      "B+": 1,
       "A+": 1,
+      "B+": 1,
       "contact": "9826139366 ",
       "address": "PLOT NO- 274/2, STREET NO- 44, SECOND FLOOR, SAWADIA CAMPUS, SANJIVANI NURSING HOME IN FRONT OF KGH HOSPITAL, DIST-RAIGARH CHHATTISGARH, , Raigarh, Raigarh, Chhattisgarh"
     },
     {
       "name": "Blood Centre Govt Medical College Dimrapal",
       "district": "Jagdalpur",
+      "O+": 3,
       "AB+": 9,
       "B+": 5,
-      "O+": 3,
       "contact": "7782292879 ",
       "address": "Late BRKM Medical College, , Jagdalpur, Bastar, Chhattisgarh"
     },
     {
       "name": "District Hospital Blood Centre Ambikapur Distt. Surguja",
       "district": "Ambikapur",
-      "A+": 1,
-      "O+": 59,
-      "AB+": 10,
-      "A-": 1,
       "B+": 8,
+      "O+": 59,
       "B-": 1,
+      "A-": 1,
+      "AB+": 10,
+      "A+": 1,
       "contact": "9131934620 ",
       "address": "Civil Surgeon cum Suptt., District Hospital in medical colle, , Ambikapur, Surguja, Chhattisgarh"
     },
@@ -4306,33 +4323,33 @@
     {
       "name": "-",
       "district": "Dhamtari",
-      "A+": 8,
-      "O-": 2,
+      "B-": 2,
+      "AB+": 4,
       "A-": 2,
       "B+": 4,
-      "B-": 2,
       "O+": 23,
-      "AB+": 4,
+      "A+": 8,
+      "O-": 2,
       "contact": "-",
       "address": "District Hospital, Ratnabandha, Dhamtari, C.G., , Dhamtari, Dhamtari, Chhattisgarh"
     },
     {
       "name": "Katghora Blood Center",
       "district": "Katghora",
-      "A+": 8,
-      "AB+": 5,
-      "B-": 1,
       "B+": 4,
       "O+": 16,
+      "B-": 1,
+      "A+": 8,
       "A-": 2,
+      "AB+": 5,
       "contact": "7489312255 ",
       "address": "KORAM COMPLEX NEAR CIVIL COURT KATGHORA,KORBA ROAD, hunkra mod katghora, Katghora, Korba, Chhattisgarh"
     },
     {
       "name": "Blood Center District Hospital Baloda Bazar",
       "district": "baloda bazar",
-      "B+": 34,
       "AB+": 7,
+      "B+": 34,
       "A+": 26,
       "O+": 47,
       "contact": "9977375711 ",
@@ -4355,9 +4372,9 @@
     {
       "name": "-",
       "district": "Raigarh",
-      "O+": 9,
       "B+": 12,
       "A+": 3,
+      "O+": 9,
       "contact": "-",
       "address": "K.G.HOSPITAL BLOOD BANK, , Raigarh, Raigarh, Chhattisgarh"
     },
@@ -4370,8 +4387,8 @@
     {
       "name": "Maharani Hospital Blood Bank Jagdalpur",
       "district": "Jagdalpur",
-      "AB+": 1,
       "A+": 8,
+      "AB+": 1,
       "B+": 13,
       "O+": 25,
       "contact": "9424281947 ",
@@ -4390,21 +4407,21 @@
     {
       "name": "-",
       "district": "Bilaspur",
-      "B+": 4,
-      "A+": 14,
       "O+": 10,
       "AB-": 5,
+      "A+": 14,
+      "B+": 4,
       "contact": "-",
       "address": "OPP. RAJIV PLAZA NEAR OLD BUS STAND Bilaspur C.G, , Bilaspur, Bilaspur, Chhattisgarh"
     },
     {
       "name": "-",
       "district": "Balod",
-      "O-": 1,
       "B+": 16,
-      "AB+": 7,
       "O+": 10,
+      "AB+": 7,
       "A+": 11,
+      "O-": 1,
       "contact": "-",
       "address": "near govt. college dallirajhara road balod, , Balod, Balod, Chhattisgarh"
     },
@@ -4417,12 +4434,12 @@
     {
       "name": "-",
       "district": "Bilaspur",
-      "O+": 24,
       "A+": 16,
-      "O-": 4,
-      "B+": 32,
       "B-": 4,
+      "B+": 32,
+      "O-": 4,
       "AB+": 7,
+      "O+": 24,
       "contact": "-",
       "address": "Blood Bank CIMS, , Bilaspur, Bilaspur, Chhattisgarh"
     },
@@ -4442,12 +4459,12 @@
     {
       "name": "-",
       "district": "Dantewada",
-      "O+": 27,
-      "B-": 1,
-      "O-": 1,
       "AB+": 2,
-      "A+": 25,
       "B+": 25,
+      "O+": 27,
+      "O-": 1,
+      "A+": 25,
+      "B-": 1,
       "contact": "-",
       "address": "Govt Blood Bank, , Dantewada, Dantewada, Chhattisgarh"
     },
@@ -4467,19 +4484,19 @@
       "name": "Holy Cross Hospital",
       "district": "Ambikapur",
       "O+": 40,
-      "A+": 27,
-      "AB+": 6,
       "B+": 21,
+      "AB+": 6,
+      "A+": 27,
       "contact": "8718072978 ",
       "address": "Holy Cross Hospital, Ambikapur, , Ambikapur, Surguja, Chhattisgarh"
     },
     {
       "name": "Mittal Blood Centre",
       "district": "Durg",
-      "O+": 3,
-      "B+": 1,
-      "A+": 1,
       "AB+": 1,
+      "O+": 3,
+      "A+": 1,
+      "B+": 1,
       "contact": "7222910417 ",
       "address": "junwani road smriti nagar near surya treasure island mall bh, , Durg, Durg, Chhattisgarh"
     },
@@ -4487,9 +4504,9 @@
       "name": "Central Hospital Blood Center Manendragarh",
       "district": "Manendragarh",
       "O+": 6,
-      "A+": 2,
       "AB-": 1,
       "B+": 2,
+      "A+": 2,
       "contact": "7587390236 ",
       "address": "Ward no 22, amakherwa, , Manendragarh, Koriya, Chhattisgarh"
     },
@@ -4555,9 +4572,9 @@
     {
       "name": "-",
       "district": "",
-      "A+": 5,
-      "B+": 4,
       "AB+": 4,
+      "B+": 4,
+      "A+": 5,
       "O+": 8,
       "contact": "-",
       "address": "Khasra no. 48/3, 48/7, word no. 22, Near Main post office, Rajendra nagar , , Bilaspur, Chhattisgarh"
@@ -4577,11 +4594,11 @@
     {
       "name": "-",
       "district": "Janjgir - Champa",
+      "AB+": 6,
       "O+": 65,
-      "B+": 19,
       "A-": 2,
       "A+": 21,
-      "AB+": 6,
+      "B+": 19,
       "contact": "-",
       "address": "Next to Jila Panchayat, Ward No 19 Neem Path, Janjgir - Champa, Janjgir - Champa, Chhattisgarh"
     },
@@ -4594,19 +4611,19 @@
     {
       "name": "Ekta Blood Centre",
       "district": "Bilaspur",
-      "A+": 2,
       "O+": 7,
       "AB+": 1,
+      "A+": 2,
       "contact": "9644108882 ",
       "address": "near Abhiyanta Bhawan, Magarpara, , Bilaspur, Bilaspur, Chhattisgarh"
     },
     {
       "name": "-",
       "district": "Kawardha",
+      "O+": 3,
       "AB+": 2,
       "B-": 2,
       "B+": 2,
-      "O+": 3,
       "A+": 3,
       "contact": "-",
       "address": "Civil Surgeon District Hospital, Kawardha, , Kawardha, Kabirdham, Chhattisgarh"
@@ -4622,9 +4639,9 @@
     {
       "name": "Abhishek I Mishra Memorial Medical College And Hospital Blood Center",
       "district": "Bhilai",
-      "O+": 3,
-      "B+": 2,
       "A+": 2,
+      "B+": 2,
+      "O+": 3,
       "contact": "9325170507 ",
       "address": "First floor, hospital building, block IV, Aadhya bhawan, Abh, , Bhilai, Durg, Chhattisgarh"
     },
@@ -4637,10 +4654,10 @@
     {
       "name": "Bilasa Blood Centre",
       "district": "Rajnandgaon",
-      "AB+": 1,
-      "O+": 2,
       "B+": 3,
       "A+": 2,
+      "AB+": 1,
+      "O+": 2,
       "contact": "8839307941 ",
       "address": "old District Hospital Campus, Jamat Para Ward No-24,Rajnandgaon., Rajnandgaon, Rajnandgaon, Chhattisgarh"
     },
@@ -4659,9 +4676,9 @@
     {
       "name": "Bilasa Blood Centre Korba",
       "district": "Korba",
-      "A+": 1,
       "AB+": 1,
       "O+": 3,
+      "A+": 1,
       "B+": 3,
       "contact": "9977289767 ",
       "address": "BILASA BLOOD BANK - KORBA, HIG -21 EXTENSION,GHATAGHAR CHOWK, Korba, Korba, Chhattisgarh"
@@ -4687,9 +4704,9 @@
     {
       "name": "Chandulal Chandrakar Memorial Hospital Blood Centre",
       "district": "Bhilai",
+      "O+": 5,
       "B-": 1,
       "B+": 5,
-      "O+": 5,
       "contact": "9301866151 ",
       "address": "Chandulal Chandrakar Memorial Hospital Blood Bank, Nehru Nag, , Bhilai, Durg, Chhattisgarh"
     },
@@ -4703,31 +4720,12 @@
     {
       "name": "-",
       "district": "Sarangarh",
-      "O+": 8,
       "B+": 1,
       "A+": 2,
       "AB+": 1,
+      "O+": 8,
       "contact": "-",
       "address": "09,1st Floor, Ward NO -03, Bilaspur Road, Pratap ganj,, Near Garh chowk, Sarangarh C.G. 496445, Sarangarh, Bilaigarh, Chhattisgarh"
-    },
-    {
-      "name": "Tej Blood Centre",
-      "district": "Ambikapur",
-      "AB+": 4,
-      "A+": 3,
-      "O-": 1,
-      "B+": 13,
-      "O+": 9,
-      "contact": "9826183780 ",
-      "address": "Main Road, , Ambikapur, Surguja, Chhattisgarh"
-    },
-    {
-      "name": "Shikha Blood Centre",
-      "district": "Baikunthpur",
-      "A+": 4,
-      "B+": 2,
-      "contact": "7909545555 ",
-      "address": "1ST FLOOR JEET HIEGHTS BYSAGARPARA BAIKUNTHPUR , , Baikunthpur, Koriya, Chhattisgarh"
     },
     {
       "name": "-",
@@ -4763,8 +4761,8 @@
     {
       "name": "Hanshwhini Blood Centre",
       "district": "Bilaspur",
-      "AB+": 1,
       "B+": 4,
+      "AB+": 1,
       "O+": 6,
       "contact": "9993982998 ",
       "address": "Infront of RK Petrol pump, RQ Square Buliding seepat road , , Bilaspur, Bilaspur, Chhattisgarh"
@@ -4772,11 +4770,11 @@
     {
       "name": "-",
       "district": "Surajpur",
-      "B-": 1,
-      "O+": 8,
-      "A+": 9,
       "B+": 9,
+      "O+": 8,
       "AB+": 4,
+      "A+": 9,
+      "B-": 1,
       "contact": "-",
       "address": "DISTRICT HOSPITAL BLOOD CENTRE  SURAJPUR, 1st floor near c.s. office D.H.SURAJPUR, Surajpur, Surajpur, Chhattisgarh"
     },
@@ -4785,8 +4783,8 @@
       "district": "Koriya",
       "AB+": 1,
       "O+": 6,
-      "B+": 10,
       "A+": 4,
+      "B+": 10,
       "contact": "9131808696 ",
       "address": "District Hospital Baikunthpur, Korea, Chattisgarh, Koriya, Koriya, Chhattisgarh"
     },
@@ -4809,20 +4807,20 @@
     {
       "name": "Nandgaon Blood Centre",
       "district": "Rajnandgaon",
-      "B+": 3,
       "A+": 1,
       "O+": 1,
+      "B+": 3,
       "contact": "8770089901 ",
       "address": "First Floor,Old Mundra Dal Mill,Near Shivnath Vatika,Lakholi Naka Power House Road Rajnandgaon CG, , Rajnandgaon, Rajnandgaon, Chhattisgarh"
     },
     {
       "name": "Balaji Charitable Blood Centre Bilaspur",
       "district": "Bilaspur",
+      "B+": 2,
+      "B-": 1,
+      "A+": 1,
       "AB+": 1,
       "O-": 2,
-      "B+": 2,
-      "A+": 1,
-      "B-": 1,
       "contact": "7049709470, 8435599972 ",
       "address": "Narmada Nagar vikas nagar behind vandana hospital mangla cho, , Bilaspur, Bilaspur, Chhattisgarh"
     },
@@ -4837,17 +4835,17 @@
       "name": "-",
       "district": "Pathalgaon",
       "O+": 18,
-      "A+": 13,
       "AB+": 5,
       "B+": 7,
+      "A+": 13,
       "contact": "-",
       "address": "Ward No 03 PH No.09 Khasra No 107/1KH Shri A G Hospital , Campus Village Palidih Pathalgaon Tah Pathalgaon, Pathalgaon, Jashpur, Chhattisgarh"
     },
     {
       "name": "City Blood Centre",
       "district": "Raipur",
-      "O+": 1,
       "B+": 3,
+      "O+": 1,
       "contact": "9827122374 ",
       "address": "ASHTVINAYAK BHAVAN, AZAD CHUOK, , TATYAPARA G.E. ROAD RAIPUR C.G., Raipur, Raipur, Chhattisgarh"
     },
@@ -4872,8 +4870,8 @@
     {
       "name": "Hasdeo Blood Centre , Champa",
       "district": "Champa",
-      "O-": 2,
       "B+": 1,
+      "O-": 2,
       "contact": "9770174022 ",
       "address": "PLOT NO.81 , 1ST FLOOR STATION ROAD MANJHALI TALAB MAIN ROAD, , Champa, Janjgir - Champa, Chhattisgarh"
     },
@@ -4907,9 +4905,9 @@
     {
       "name": "District Hospital Blood Center Gaurela Pendra Marwahi",
       "district": "Gaurella",
-      "A+": 4,
       "O+": 10,
       "B+": 4,
+      "A+": 4,
       "contact": "9424153011 ",
       "address": "District Hospital- Gaurela Pendra Marwahi GPM, , Gaurella, Gaurella Pendra Marwahi, Chhattisgarh"
     },
@@ -4917,9 +4915,9 @@
       "name": "Shri Shankracharya Blood Centre",
       "district": "Bhilai",
       "B+": 2,
+      "A-": 1,
       "A+": 9,
       "O-": 1,
-      "A-": 1,
       "contact": "9589792024 ",
       "address": "Junwani, Bhilai, , Bhilai, Durg, Chhattisgarh"
     },
@@ -4932,13 +4930,13 @@
     {
       "name": "SAHYOG BLOOD CENTRE SARANGARH",
       "district": "Sarangarh",
-      "AB-": 1,
-      "B+": 14,
-      "B-": 2,
-      "O+": 7,
-      "AB+": 2,
-      "A-": 2,
       "A+": 3,
+      "O+": 7,
+      "AB-": 1,
+      "A-": 2,
+      "AB+": 2,
+      "B-": 2,
+      "B+": 14,
       "contact": "9685716787 ",
       "address": "PH NO-25, KH NO- 26/7/12,27/7/12,28/7/12, SHREE RADHA KRISHNA HOSPITAL CAMPUS, BILASPUR ROAD, SARANGARH, DISTRICT- SARANGARH-BILAIGARH, CHHATTISGARH, , Sarangarh, Bilaigarh, Chhattisgarh"
     },
@@ -4978,8 +4976,8 @@
     {
       "name": "Manas Sewa Blood Centre",
       "district": "Dhamtari",
-      "O+": 9,
       "AB+": 2,
+      "O+": 9,
       "contact": "626020371 ",
       "address": "Address: Durg Road, Neharu Garden ke Samane, Opposite Rathod, , Dhamtari, Dhamtari, Chhattisgarh"
     },
@@ -5009,9 +5007,9 @@
     {
       "name": "Nmdc Project Hospital Blood Centre",
       "district": "Kirandul",
-      "B+": 3,
       "O+": 2,
       "A+": 2,
+      "B+": 3,
       "contact": "8984399258 ",
       "address": "NMDC Project Hospital Blood Centre, Bailadila Iron Ore Mine,, , Kirandul, Dantewada, Chhattisgarh"
     },
@@ -5043,11 +5041,11 @@
     {
       "name": "-",
       "district": "Gariyaband",
-      "AB+": 1,
+      "A+": 6,
       "B+": 29,
       "O+": 16,
       "B-": 1,
-      "A+": 6,
+      "AB+": 1,
       "contact": "-",
       "address": "jail road, behind petrol pump, ,  Gariyaband, Gariyaband, Chhattisgarh"
     },
@@ -5085,18 +5083,18 @@
     {
       "name": "-",
       "district": "Kharsia",
-      "A+": 4,
-      "B+": 6,
       "O+": 12,
       "AB+": 3,
+      "A+": 4,
+      "B+": 6,
       "contact": "-",
       "address": "Civil Line, Civil Hospital Kharsia, Distt. Raigarh (C.G.), , Kharsia, Raigarh, Chhattisgarh"
     },
     {
       "name": "Samarpit Blood Centre Mungeli",
       "district": "Mungeli",
-      "O+": 5,
       "AB+": 3,
+      "O+": 5,
       "A+": 2,
       "B+": 2,
       "contact": "7000501523 ",
@@ -5111,10 +5109,10 @@
     {
       "name": "Shaheed Blood Center",
       "district": "Dallirajhara",
-      "B+": 10,
-      "A+": 7,
       "AB+": 2,
+      "A+": 7,
       "O+": 4,
+      "B+": 10,
       "contact": "9893023592 ",
       "address": "SHAHEED HOSPITAL CUMPUS DALLIRAJHARA, , Dallirajhara, Balod, Chhattisgarh"
     },
@@ -5127,10 +5125,10 @@
     {
       "name": "District Hospital Blood Centre Mungeli",
       "district": "Mungeli",
-      "A+": 1,
-      "B+": 1,
       "A-": 1,
       "O-": 1,
+      "B+": 1,
+      "A+": 1,
       "O+": 3,
       "contact": "7987669987 ",
       "address": "Mungeli, Chattisgarh, , Mungeli, Mungeli, Chhattisgarh"
@@ -5139,9 +5137,9 @@
       "name": "-",
       "district": "Bijapur",
       "A+": 2,
-      "B+": 2,
       "O+": 1,
       "AB+": 1,
+      "B+": 2,
       "contact": "-",
       "address": "Blood Bank, District Hospital, , Bijapur, Bijapur, Chhattisgarh"
     },
@@ -5166,10 +5164,10 @@
     {
       "name": "Nehru Centenary Hospital Blood Centre Korba",
       "district": "Korba",
-      "O+": 3,
-      "A+": 1,
-      "AB+": 2,
       "B+": 3,
+      "A+": 1,
+      "O+": 3,
+      "AB+": 2,
       "contact": "8825344117 ",
       "address": "NEHEU CENTENARY HOSPITAL SECL GEVRA AREA, , Korba, Korba, Chhattisgarh"
     },
@@ -5182,11 +5180,11 @@
     {
       "name": "M/S. Samarth Blood Centre",
       "district": "Mahasamund",
-      "O+": 42,
       "AB+": 4,
       "A+": 1,
-      "O-": 1,
       "B+": 10,
+      "O-": 1,
+      "O+": 42,
       "contact": "6264248807 ",
       "address": "Premises situated at Bharti Hospital,  Campus, Saraipali, Di, , Mahasamund, Mahasamund, Chhattisgarh"
     },
@@ -5205,11 +5203,11 @@
     {
       "name": "Govt. District Hospital Blood Centre, Rajnandgaon",
       "district": "Basantpur",
-      "O+": 26,
-      "AB+": 2,
-      "O-": 1,
-      "A+": 2,
       "B+": 23,
+      "AB+": 2,
+      "O+": 26,
+      "A+": 2,
+      "O-": 1,
       "contact": "9993683474 ",
       "address": "Civil Surgeon cum Suptt.  Dist. Hospital, Basantpur, , Basantpur, Rajnandgaon, Chhattisgarh"
     },
@@ -5830,10 +5828,82 @@
       "district": "himmatnagar",
       "B+": 2,
       "A+": 2,
-      "O+": 3,
       "AB+": 1,
+      "O+": 3,
       "contact": "0277-2290129/ 9099069454 ",
       "address": "Blood Centre, , GMERS Medical college, himmatnagar, Sabar Kantha, Gujarat"
+    },
+    {
+      "name": "Blood Center, Gmers Medical College Attached General Hospital, Rajpipla",
+      "district": "Rajpipla",
+      "Oh+VE": 1,
+      "B-": 44,
+      "AB-": 12,
+      "B+": 2,
+      "A+": 1,
+      "Oh-VE": 3,
+      "AB+": 3,
+      "A-": 10,
+      "contact": "8799689466 ",
+      "address": "4TH FLOOR, GMERS MEDICAL COLLEGE ATTACHED GENERAL HOSPITAL, , , Rajpipla, Narmada, Gujarat"
+    },
+    {
+      "name": "Divya Jivan Blood Centre, Sanand",
+      "district": "Ahmedabad",
+      "contact": "7096974546 ",
+      "address": "Divya Jivan Blood Centre managed by Vedanta Foundation, 3rd , , Ahmedabad, Ahmedabad, Gujarat"
+    },
+    {
+      "name": "Blood Centre Narayana Multispeciality Hospital",
+      "district": "Ahmedabad",
+      "contact": "8980017737 ",
+      "address": "Ground floor, ex monogram mill compound, opp-rakhial police , Rakhial, Ahmedabad, Ahmedabad, Gujarat"
+    },
+    {
+      "name": "Navkar Charitable Trust, Mahuva",
+      "district": "Mahuva",
+      "contact": "9824393509 ",
+      "address": "Blood Bank Navkar Charitable Trust,  Opp.Nagrik Bank, Vasi T, , Mahuva, Bhavnagar, Gujarat"
+    },
+    {
+      "name": "Indian Red Cross Society Blood Centre , Gir Somnath District Branch",
+      "district": "Veraval",
+      "A+": 4,
+      "B+": 3,
+      "O+": 4,
+      "contact": "8141350913 ",
+      "address": "Indian Red Cross Society,Gir Somnath District branch,Veraval, Near Aawas Yojna, Geetanagar - 1, Junagadh Road, Inside Bapa, Veraval, Gir Somnath, Gujarat"
+    },
+    {
+      "name": "Kumarpal Gandhi Blood Centre",
+      "district": "Ankleshwar",
+      "contact": "9081102102 ",
+      "address": "Kumarpal Gandhi Blood Centre, Omkar-1, Building-2,, 1st floor, GIDC Ankleshwar, Bharuch., Ankleshwar, Bharuch, Gujarat"
+    },
+    {
+      "name": "Shree Ram Blood Centre, Porbandar",
+      "district": "Porbandar",
+      "A+": 15,
+      "A-": 2,
+      "B-": 2,
+      "O-": 2,
+      "O+": 8,
+      "B+": 1,
+      "AB+": 4,
+      "contact": "9427426099 ",
+      "address": "Shree Ram Blood Bank,  Star Compound,  M.G. Road,, M.G.Road, Porbandar , Porbandar, Gujarat"
+    },
+    {
+      "name": "Blood Centre, Gmers Medical College And Hospital, Junagadh",
+      "district": "JUNAGADH",
+      "O+": 26,
+      "B-": 1,
+      "A-": 2,
+      "A+": 15,
+      "AB+": 10,
+      "B+": 20,
+      "contact": "2852960124 ",
+      "address": "BLOOD CENTER,GMERS MEDICAL COLLEGE & HOSPITAL, NEAR MAJEVADI GATE,  JUNAGADH, JUNAGADH, Junagadh, Gujarat"
     },
     {
       "name": "Apollo Hospital International Ltd., Bhat",
@@ -5844,14 +5914,14 @@
     {
       "name": "Sir T. Hospital, Bhavnagar",
       "district": "Bhavnagar",
-      "B-": 3,
-      "AB-": 1,
-      "B+": 5,
-      "AB+": 4,
-      "A-": 2,
-      "O+": 3,
       "O-": 5,
+      "AB-": 1,
+      "B-": 3,
       "A+": 3,
+      "B+": 5,
+      "O+": 3,
+      "A-": 2,
+      "AB+": 4,
       "contact": "9428106604 ",
       "address": "Blood Bank, Sir T. General Hospital,  Dr. H.L.Vaidhya Marg, , , Bhavnagar, Bhavnagar, Gujarat"
     },
@@ -5870,13 +5940,13 @@
     {
       "name": "Jivanjyot Blood Centre,  Bhuj",
       "district": "Bhuj",
-      "B+": 20,
       "AB+": 2,
-      "O+": 2,
+      "A+": 4,
+      "B+": 20,
+      "O-": 1,
       "AB-": 2,
       "B-": 1,
-      "O-": 1,
-      "A+": 4,
+      "O+": 2,
       "contact": "9825258612, 02832-222812 ",
       "address": "Jivanjyot Blood Bank,  63, A/B, Vijyanagar,  New Hospital Ro, , Bhuj, Kachchh, Gujarat"
     },
@@ -5901,11 +5971,11 @@
     {
       "name": "Indian Red Cross Society Blood Centre, Kapadwanj",
       "district": "Kapadwanj",
-      "AB+": 2,
-      "B+": 8,
-      "A+": 12,
       "O-": 1,
+      "A+": 12,
+      "AB+": 2,
       "O+": 23,
+      "B+": 8,
       "B-": 2,
       "contact": "9426364725 ",
       "address": "Indian Red Cross Society C.R. Parikh Blood Centre, Kapadwanj, , Ircs Building, Railway Station Road, Kapadwanj., Kapadwanj, Kheda, Gujarat"
@@ -5919,12 +5989,12 @@
     {
       "name": "Indian Red Cross Soceity, Amreli",
       "district": "Amreli",
-      "AB+": 2,
-      "B+": 7,
-      "A-": 4,
-      "A+": 4,
-      "O-": 3,
       "O+": 7,
+      "O-": 3,
+      "A+": 4,
+      "AB+": 2,
+      "A-": 4,
+      "B+": 7,
       "contact": "9426914677 ",
       "address": "Mahatma Muldas Red Cross Bhavan, Civil Hospital Campus, Amre, , Amreli, Amreli, Gujarat"
     },
@@ -5949,12 +6019,12 @@
     {
       "name": "Shree Ghanshyam Pathology Laboratory And Blood Centre",
       "district": "Anand",
-      "B-": 2,
-      "AB+": 22,
-      "B+": 17,
-      "A+": 28,
-      "O-": 1,
       "O+": 37,
+      "B-": 2,
+      "O-": 1,
+      "AB+": 22,
+      "A+": 28,
+      "B+": 17,
       "contact": "9825025746 ",
       "address": "Ghanshyam Pathlology Laboratory & Blood Bank, Krishna Road, , , Anand, Anand, Gujarat"
     },
@@ -6007,8 +6077,8 @@
       "name": "Bhoomi Voluntary Blood Centre, Palanpur",
       "district": "Palanpur",
       "O+": 2,
-      "AB+": 1,
       "A+": 1,
+      "AB+": 1,
       "B+": 2,
       "contact": "9016143919 ",
       "address": "Bhoomi Voluntary Blood Centre, Paulomi House, Near Railway Over bridge, Doctor House Area, Palanpur Dist Banaskantha, ., Palanpur, Banas Kantha, Gujarat"
@@ -6016,8 +6086,8 @@
     {
       "name": "Divyajyoti Charitable Voulantary Blood Centre, Una",
       "district": "Una",
-      "B-": 3,
       "A-": 2,
+      "B-": 3,
       "contact": "9426713855 ",
       "address": "Divyajyoti Charitable Voulantary Blood Bank.  Varsing pur ro, , Una, Gir Somnath, Gujarat"
     },
@@ -6103,13 +6173,13 @@
       "name": "-",
       "district": "Vadnagar",
       "A+": 20,
-      "B+": 29,
-      "AB-": 1,
+      "B-": 1,
       "O+": 48,
       "AB+": 4,
-      "A-": 1,
-      "B-": 1,
       "O-": 2,
+      "AB-": 1,
+      "A-": 1,
+      "B+": 29,
       "contact": "-",
       "address": "1st floor hospital building gmers , general hospital sipor road vadnagar , Vadnagar, Mahesana, Gujarat"
     },
@@ -6129,14 +6199,14 @@
     {
       "name": "General Hospitalbharuch Managed By Dr.Kiran.C.Patel Medical College And Research Institute Bharuch",
       "district": "Bharuch",
-      "AB-": 1,
-      "A+": 2,
-      "A-": 1,
-      "B-": 1,
-      "O+": 36,
-      "B+": 17,
-      "AB+": 1,
       "O-": 6,
+      "AB+": 1,
+      "A+": 2,
+      "O+": 36,
+      "B-": 1,
+      "B+": 17,
+      "AB-": 1,
+      "A-": 1,
       "contact": "8600722488 ",
       "address": "Blood Bank, General Hospital,Managed by dr.kiran c patel med, , Bharuch, Bharuch, Gujarat"
     },
@@ -6155,9 +6225,9 @@
     {
       "name": "Mehsana Jaycees, Mehsana",
       "district": "Mehsana",
-      "A+": 5,
-      "O+": 4,
       "B+": 3,
+      "O+": 4,
+      "A+": 5,
       "contact": "9426233805 ",
       "address": "Mehsana Jaycees Charitable Trust Sanchalit  Sarvodaya Commer, , Mehsana, Mahesana, Gujarat"
     },
@@ -6189,10 +6259,10 @@
       "name": "Indian Red Cross Society, Narmada District Branch",
       "district": "Narmada",
       "B-": 1,
-      "B+": 4,
-      "AB+": 1,
-      "O+": 5,
       "A+": 1,
+      "B+": 4,
+      "O+": 5,
+      "AB+": 1,
       "contact": "9913735551 ",
       "address": "Red Cross Blood Bank, Old Jilla Panchayat Building, Near Ambadekar chawk, Contact on 8980066879 during emergency hours., Narmada, Narmada, Gujarat"
     },
@@ -6229,13 +6299,13 @@
     {
       "name": "General Hospital, Jamkhambalia",
       "district": "Jamkhambhalia",
-      "A+": 51,
+      "O-": 4,
       "B-": 6,
+      "A-": 1,
+      "O+": 77,
+      "A+": 51,
       "B+": 25,
       "AB+": 5,
-      "O+": 77,
-      "O-": 4,
-      "A-": 1,
       "contact": "9724849231 ",
       "address": "Blood Bank, General Hospital,  Jamkhambhalia Dist. Devbhoomi, , Jamkhambhalia, Devbhoomi Dwarka, Gujarat"
     },
@@ -6256,9 +6326,9 @@
     {
       "name": "Gujarat Cancer Medical College",
       "district": "Ahmedabad",
+      "B+": 1,
       "AB+": 1,
       "A+": 1,
-      "B+": 1,
       "O+": 1,
       "contact": "0796648139 ",
       "address": "Blood Bank, Gujarat Cancer Society Medical College Hospital , , Ahmedabad, Ahmedabad, Gujarat"
@@ -6272,10 +6342,10 @@
     {
       "name": "Life Blood Centre (Formerly Known As Rajkot Voluntary Blood Centre)",
       "district": "Rajkot",
-      "AB-": 1,
-      "B-": 1,
       "B+": 3,
       "AB+": 3,
+      "AB-": 1,
+      "B-": 1,
       "contact": "8511221122 ",
       "address": "Life Blood Centre, 24- Vijay plot, Malaviya Road, Rajkot, Rajkot, Rajkot, Gujarat"
     },
@@ -6339,19 +6409,19 @@
       "name": "Indian Red Cross Society Blood Centre, Dahod",
       "district": "Dahod",
       "O+": 15,
-      "B+": 13,
       "A+": 2,
       "AB+": 3,
+      "B+": 13,
       "contact": "9825216752, 02673-22442 ",
       "address": "Dr. Harilal C.Sheth Red Cross Bhavan, Police Line road,, , Dahod, Dahod, Gujarat"
     },
     {
       "name": "Ima Mansa Charitable Trust Sanchalit Cmk And Pnn Voluntary Blood Centre",
       "district": "Gandhinagar",
-      "A+": 3,
       "O+": 1,
       "B+": 3,
       "A-": 1,
+      "A+": 3,
       "contact": "9408467991 ",
       "address": "C.M.K. & P.N.N. Voluntary Blood Bank,  1st floor, Vijay Complex Mansa -Gandhinagar highway, At Mansa Dist Gandhinagar, Gandhinagar, Gandhinagar, Gujarat"
     },
@@ -6368,13 +6438,13 @@
     {
       "name": "Sardar Seva Trust, Unjha Nagrik Sahkari Voluntary Blood Centre, Unja",
       "district": "UNJHA",
-      "A+": 1,
-      "O-": 3,
-      "B+": 2,
-      "B-": 3,
       "A-": 1,
+      "B-": 3,
+      "B+": 2,
       "O+": 8,
       "AB+": 3,
+      "A+": 1,
+      "O-": 3,
       "contact": "9408540234 ",
       "address": "BLOOD BANK UNJHA, poonam complex blood bank ,First floor,unjha, UNJHA, Mahesana, Gujarat"
     },
@@ -6387,23 +6457,23 @@
     {
       "name": "-",
       "district": "Rajkot",
+      "B+": 9,
       "A-": 1,
-      "AB+": 1,
       "AB-": 1,
+      "AB+": 1,
       "O+": 14,
       "B-": 4,
-      "B+": 9,
       "contact": "-",
       "address": "PDU GOVT. HOSPITAL, HOSPITAL CHOWK, Rajkot, Rajkot, Gujarat"
     },
     {
       "name": "Gayatri Voluntary Blood Centre, Deesa",
       "district": "Deesa",
+      "AB+": 6,
       "O+": 12,
+      "B+": 9,
       "O-": 3,
       "A-": 14,
-      "AB+": 6,
-      "B+": 9,
       "contact": "9824264464, 9825493210, 02744-225605 ",
       "address": "Gayatri Voluntary Blood Bank, ., Deesa, Banas Kantha, Gujarat"
     },
@@ -6434,34 +6504,34 @@
     {
       "name": "-",
       "district": "Morbi",
-      "O+": 64,
-      "AB-": 4,
-      "O-": 3,
       "B+": 92,
+      "B-": 3,
       "A+": 20,
       "AB+": 13,
-      "B-": 3,
+      "O-": 3,
+      "O+": 64,
+      "AB-": 4,
       "contact": "-",
       "address": "general hospital morbi laboratory dept, gandhi chowk opp nagarpalika morbi, Morbi, Morbi, Gujarat"
     },
     {
       "name": "-",
       "district": "Gandhinagar",
-      "A-": 1,
-      "A+": 4,
-      "B+": 1,
       "AB+": 2,
+      "B+": 1,
+      "A+": 4,
+      "A-": 1,
       "contact": "-",
       "address": "H-1 BLOCK, OPP. PATHIK ASHRAM, , CIVIL HOSPITAL CAMPUS, SECTOR-12, Gandhinagar, Gandhinagar, Gujarat"
     },
     {
       "name": "G.K. General Hospital, Bhuj",
       "district": "Bhuj",
+      "O+": 2,
+      "AB+": 3,
       "B-": 4,
       "B+": 2,
-      "AB+": 3,
       "O-": 2,
-      "O+": 2,
       "contact": "9033744663 ",
       "address": "Blood Bank, G.K. General Hospital,, , Bhuj, Kachchh, Gujarat"
     },
@@ -6498,9 +6568,9 @@
     {
       "name": "Indian Red Cross Society Blood Centre, Kalol",
       "district": "Kalol",
-      "O+": 1,
-      "A-": 1,
       "AB+": 5,
+      "A-": 1,
+      "O+": 1,
       "contact": "7203057787 ",
       "address": "Khuni Bunglow, Char Rasta,kalol,, , Kalol, Gandhinagar, Gujarat"
     },
@@ -6583,12 +6653,6 @@
       "address": "Bhagwan Mahavir Seva Samiti Sanchalit  Mafatben Uttamlal Pet, Opp Mahajan Hospital  Dilhi Gate, Banas Kantha, Banas Kantha, Gujarat"
     },
     {
-      "name": "Navkar Charitable Trust, Mahuva",
-      "district": "Mahuva",
-      "contact": "9824393509 ",
-      "address": "Blood Bank Navkar Charitable Trust,  Opp.Nagrik Bank, Vasi T, , Mahuva, Bhavnagar, Gujarat"
-    },
-    {
       "name": "U.N. Mehta Institute Of Cardiology, Ahmedabad",
       "district": "Ahmedabad",
       "contact": "9316732524 ",
@@ -6597,10 +6661,10 @@
     {
       "name": "Nukem Blood Centre, Vapi",
       "district": "Vapi",
-      "O+": 9,
       "A+": 1,
-      "AB+": 1,
       "B+": 4,
+      "O+": 9,
+      "AB+": 1,
       "contact": "7069956050, 9819641652, 0260- 2430654 ",
       "address": "Nukem Blood Bank & Haria Rotary Hospital,  Plot no. 363A-364, , Vapi, Valsad, Gujarat"
     },
@@ -6620,9 +6684,9 @@
       "name": "Lions Medical Trust, Chikhali",
       "district": "Chikhli",
       "O+": 4,
+      "B+": 11,
       "A+": 5,
       "AB+": 5,
-      "B+": 11,
       "contact": "9825106158, 02634234311 ",
       "address": "Blood Bank, Lions Medical Research and Educational Charitabl, , Chikhli, Navsari , Gujarat"
     },
@@ -6670,15 +6734,6 @@
       "address": "Kiran Blood centre Satkar shopping centre , Opp. R& L pandya High school station road dahod, Dahod, Dahod, Gujarat"
     },
     {
-      "name": "Indian Red Cross Society Blood Centre , Gir Somnath District Branch",
-      "district": "Veraval",
-      "O+": 4,
-      "B+": 3,
-      "A+": 4,
-      "contact": "8141350913 ",
-      "address": "Indian Red Cross Society,Gir Somnath District branch,Veraval, Near Aawas Yojna, Geetanagar - 1, Junagadh Road, Inside Bapa, Veraval, Gir Somnath, Gujarat"
-    },
-    {
       "name": "-",
       "district": "Dharpur",
       "A+": 1,
@@ -6700,26 +6755,26 @@
     {
       "name": "-",
       "district": "Jamnagar",
-      "AB+": 5,
       "B-": 3,
-      "AB-": 1,
-      "A-": 3,
       "B+": 19,
+      "AB-": 1,
+      "AB+": 5,
+      "A-": 3,
+      "O-": 2,
       "A+": 12,
       "O+": 26,
-      "O-": 2,
       "contact": "-",
       "address": "guru gobindsing hospital, , Jamnagar, Jamnagar, Gujarat"
     },
     {
       "name": "Smt. Shardaben Hospital, Ahmedabad",
       "district": "Ahmedabad",
+      "B-": 1,
+      "O+": 30,
+      "A+": 12,
+      "B+": 10,
       "AB+": 6,
       "O-": 4,
-      "A+": 12,
-      "O+": 30,
-      "B-": 1,
-      "B+": 10,
       "contact": "9662359429-BTO, 267084, 079-22164261 ",
       "address": "Smt. Laxmiben Chimanlal Lalbhai Blood Bank,   C/o. The Super, , Ahmedabad, Ahmedabad, Gujarat"
     },
@@ -6732,21 +6787,21 @@
     {
       "name": "Cancer Institute, Ahmedabad",
       "district": "Ahmedabad",
-      "B+": 10,
-      "O+": 15,
       "A+": 6,
+      "O+": 15,
       "AB+": 2,
+      "B+": 10,
       "contact": "8154049459 ",
       "address": "Blood Bank, The Gujarat Cancer Research Institute,   M.P. Sh, , Ahmedabad, Ahmedabad, Gujarat"
     },
     {
       "name": "Bhansali Trust Raktdan Kendra, Radhanpur",
       "district": "Radhanpur",
-      "O-": 2,
-      "O+": 20,
       "B-": 7,
-      "AB+": 17,
       "A+": 7,
+      "O+": 20,
+      "AB+": 17,
+      "O-": 2,
       "contact": "9924290574 ",
       "address": "Bhansali Trust Raktdan Kendra,  Bhansali Trust Hospital,  Radhanpur dist.Patan -385340, , Radhanpur, Patan, Gujarat"
     },
@@ -6771,11 +6826,11 @@
     {
       "name": "Indian Red Cross Society Blood Centre Petlad",
       "district": "Petlad",
-      "AB+": 3,
-      "A+": 16,
-      "B+": 20,
-      "O+": 22,
       "O-": 1,
+      "AB+": 3,
+      "B+": 20,
+      "A+": 16,
+      "O+": 22,
       "contact": "6353244791 ",
       "address": "Blood Bank,Indian Red Cross Society,Nr. Ranchhodji Temple At Petlad, Petlad, Petlad, Anand, Gujarat"
     },
@@ -6806,13 +6861,13 @@
     {
       "name": "General Hospital, Porbandar",
       "district": "Porbandar",
-      "B+": 24,
-      "AB-": 1,
-      "O+": 24,
       "B-": 7,
-      "AB+": 18,
-      "A-": 3,
+      "O+": 24,
+      "AB-": 1,
       "A+": 10,
+      "A-": 3,
+      "AB+": 18,
+      "B+": 24,
       "O-": 6,
       "contact": "9099079107 ",
       "address": "Blood Bank, General Hospital,porbandar, , Porbandar, Porbandar, Gujarat"
@@ -6828,12 +6883,6 @@
       "district": "Ahmedabad",
       "contact": "9822995977 ",
       "address": "Sardar Vallabhbhai Patel Blood centre 6th floor sparsh Arcad, , Ahmedabad, Ahmedabad, Gujarat"
-    },
-    {
-      "name": "Divya Jivan Blood Centre, Sanand",
-      "district": "Ahmedabad",
-      "contact": "7096974546 ",
-      "address": "Divya Jivan Blood Centre managed by Vedanta Foundation, 3rd , , Ahmedabad, Ahmedabad, Gujarat"
     },
     {
       "name": "Shalby Hospital",
@@ -6874,34 +6923,14 @@
     {
       "name": "-",
       "district": "Palanpur",
-      "A-": 2,
-      "AB-": 2,
       "B-": 2,
       "O+": 12,
-      "O-": 2,
       "B+": 15,
+      "O-": 2,
+      "A-": 2,
+      "AB-": 2,
       "contact": "-",
       "address": "5th floor, F-block, Banas Medical College & Research Institute, General  Hospital Campus, Simla gate, Palanpur, Palanpur, District-Banaskantha, State-Gujarat, India - 385001, , Palanpur, Banas Kantha, Gujarat"
-    },
-    {
-      "name": "Blood Centre, Gmers Medical College And Hospital, Junagadh",
-      "district": "JUNAGADH",
-      "contact": "2852960124 ",
-      "address": "BLOOD CENTER,GMERS MEDICAL COLLEGE & HOSPITAL, NEAR MAJEVADI GATE,  JUNAGADH, JUNAGADH, Junagadh, Gujarat"
-    },
-    {
-      "name": "Blood Center, Gmers Medical College Attached General Hospital, Rajpipla",
-      "district": "Rajpipla",
-      "A+": 10,
-      "A-": 1,
-      "B+": 47,
-      "AB-": 1,
-      "O+": 17,
-      "O-": 3,
-      "AB+": 4,
-      "B-": 2,
-      "contact": "8799689466 ",
-      "address": "4TH FLOOR, GMERS MEDICAL COLLEGE ATTACHED GENERAL HOSPITAL, , , Rajpipla, Narmada, Gujarat"
     },
     {
       "name": "Adarsh Voluntary Blood Centre Managed By Devam Charitable Trust",
@@ -6949,9 +6978,9 @@
       "name": "-",
       "district": "Patan",
       "B+": 5,
-      "O+": 3,
       "AB-": 1,
       "AB+": 2,
+      "O+": 3,
       "contact": "-",
       "address": "NEAR PADMANATH CROSS ROAD, CHANASMA HIGHWAY, PATAN, Patan, Patan, Gujarat"
     },
@@ -7007,12 +7036,6 @@
       "address": "Lok Samarpan Raktadan Kendra Blood Bank,  15, Miranagar, Opp, , Surat, Surat, Gujarat"
     },
     {
-      "name": "Kumarpal Gandhi Blood Centre",
-      "district": "Ankleshwar",
-      "contact": "9081102102 ",
-      "address": "Kumarpal Gandhi Blood Centre, Omkar-1, Building-2,, 1st floor, GIDC Ankleshwar, Bharuch., Ankleshwar, Bharuch, Gujarat"
-    },
-    {
       "name": "White Cross Blood Centre (Vol.),  Ahmedabad",
       "district": "Ahmedabad",
       "contact": "9825453617 ",
@@ -7049,12 +7072,6 @@
       "address": "Lifeline Blood Centre managed by trustees of Helping Hand Fo, , Ahmedabad, Ahmedabad, Gujarat"
     },
     {
-      "name": "Blood Centre Narayana Multispeciality Hospital",
-      "district": "Ahmedabad",
-      "contact": "8980017737 ",
-      "address": "Ground floor, ex monogram mill compound, opp-rakhial police , Rakhial, Ahmedabad, Ahmedabad, Gujarat"
-    },
-    {
       "name": "-",
       "district": "Surat",
       "contact": "-",
@@ -7079,19 +7096,6 @@
       "address": ", , Ahmedabad, Ahmedabad, Gujarat"
     },
     {
-      "name": "Shree Ram Blood Centre, Porbandar",
-      "district": "Porbandar",
-      "O+": 12,
-      "B+": 7,
-      "A+": 18,
-      "O-": 2,
-      "B-": 2,
-      "A-": 2,
-      "AB+": 4,
-      "contact": "9427426099 ",
-      "address": "Shree Ram Blood Bank,  Star Compound,  M.G. Road,, M.G.Road, Porbandar , Porbandar, Gujarat"
-    },
-    {
       "name": "Nathani Voluntary Blood Centre,  Rajkot",
       "district": "Rajkot",
       "contact": "9227600111, 9825912518, (0281) 2480659 ",
@@ -7100,9 +7104,9 @@
     {
       "name": "Aasha Blood Centre, Porbandar",
       "district": "Porbandar",
-      "AB+": 3,
       "A+": 2,
       "B+": 5,
+      "AB+": 3,
       "O+": 5,
       "contact": "9313607597 ",
       "address": "Shree Ashwin Bharaniya Charity Foundation, Near New Fountain, , Porbandar, Porbandar, Gujarat"
@@ -7134,13 +7138,13 @@
     {
       "name": "Blood Centre, K.K. Maheta Government Hospital",
       "district": "SAVARKUNDLA",
-      "A+": 17,
-      "AB+": 8,
-      "A-": 1,
-      "O-": 3,
       "O+": 44,
-      "B-": 1,
       "B+": 21,
+      "O-": 3,
+      "A-": 1,
+      "AB+": 8,
+      "A+": 17,
+      "B-": 1,
       "contact": "9429894269 ",
       "address": "110, 1st Floor, OPD Building, K.K. Maheta Government Hospital, Near Old Bus Station, Station Road, Savarkundla, SAVARKUNDLA, Amreli, Gujarat"
     },
@@ -7161,8 +7165,8 @@
       "district": "Godhra",
       "A+": 1,
       "O+": 3,
-      "O-": 1,
       "B+": 3,
+      "O-": 1,
       "contact": "9428120260 ",
       "address": "Civil Lines, Godhara , , Godhra, Panch Mahals, Gujarat"
     },
@@ -7193,8 +7197,8 @@
     {
       "name": "Dev Life Blood Centre",
       "district": "Jetpur",
-      "B+": 4,
       "O+": 1,
+      "B+": 4,
       "A+": 7,
       "contact": "8320441494 ",
       "address": "Shivam Complex, 3rd Floor, Opp. Shreenathji Tower, Junagadh Road, Jetpur, Jetpur, Rajkot, Gujarat"
@@ -7202,22 +7206,22 @@
     {
       "name": "Mayur Blood Centre (Vol.),  Mandvi",
       "district": "Mandvi",
-      "B-": 2,
-      "A-": 1,
-      "AB+": 3,
-      "A+": 6,
-      "O-": 1,
-      "B+": 19,
       "O+": 20,
+      "B+": 19,
+      "A-": 1,
+      "O-": 1,
+      "A+": 6,
+      "AB+": 3,
+      "B-": 2,
       "contact": "9825422524 ",
       "address": "Mayur Blood Bank (Vol.) Pathology Laboratory,  Azad Chowk, , , Mandvi, Kachchh, Gujarat"
     },
     {
       "name": "Visnagar Voluntary Blood Centre, Visnagar",
       "district": "Mahesana",
-      "O+": 4,
       "B+": 4,
       "AB+": 4,
+      "O+": 4,
       "contact": "9825220708 ",
       "address": "Jivanjyot Charitable Trust Sanchalit visnagar voluntary blood centre , MUNICIPAL MARKET , M.N COLLEGE ROAD,VISNAGAR, Mahesana, Mahesana, Gujarat"
     },
@@ -7242,14 +7246,14 @@
     {
       "name": "Jamnagar Voluntary Blood Centre, Jamnagar",
       "district": "Jamnagar",
-      "A-": 7,
-      "O-": 10,
-      "AB-": 5,
       "B+": 62,
-      "O+": 56,
-      "A+": 32,
+      "AB-": 5,
       "B-": 12,
+      "O+": 56,
       "AB+": 27,
+      "A-": 7,
+      "A+": 32,
+      "O-": 10,
       "contact": "9825515701 ",
       "address": "Jamnagar Voluntary Blood Bank,  Manoj Chamber, Above Bank of Baroda, Summair Club Road , Jamnagar, Jamnagar, Gujarat"
     },
@@ -7331,9 +7335,9 @@
     {
       "name": "Navdeep Blood Centre,  Junagadh",
       "district": "Junagadh",
-      "O+": 4,
-      "B+": 4,
       "A+": 2,
+      "B+": 4,
+      "O+": 4,
       "contact": "9825366141 ",
       "address": "Navdeep Blood Bank,  Sankalp Complex, First Floor,  S.T. Roa, , Junagadh, Junagadh, Gujarat"
     }
@@ -8494,6 +8498,28 @@
       "address": "Ground floor, Medical and Surgical Super Speciality Block, Govt. Wenlock Hospital Hampanakatta Mangaluru, Mangalore, Dakshina Kannada, Karnataka"
     },
     {
+      "name": "Rotary Bangalore Ttk Blood Centre  Bangalore Medical Service Trust",
+      "district": "Bangalore",
+      "contact": "9900153000 ",
+      "address": "New Thippasandra Main Road, HAL III Stage, , Bangalore, Bangalore Urban, Karnataka"
+    },
+    {
+      "name": "Shripad Hegde Kadave Institute Of Medical Sciences, T.S.S. Hospital",
+      "district": "SIRSI",
+      "O+": 3,
+      "B+": 1,
+      "O-": 2,
+      "A+": 2,
+      "contact": "8088037458 ",
+      "address": "Mes college  Road, Uttara Kannada, Sirsi,, , SIRSI, Uttara Kannada, Karnataka"
+    },
+    {
+      "name": "Gopi Blood Centre",
+      "district": "Gangavathi",
+      "contact": "9741597565 ",
+      "address": "D. No. 3-2-252/3/2/165,Opp. Jss School, W. No. 13,Julayi Nag, , Gangavathi , Koppal, Karnataka"
+    },
+    {
       "name": "-",
       "district": "BANGALORE",
       "contact": "-",
@@ -8581,9 +8607,9 @@
     {
       "name": "General Hospital Blood Centre, Robertsonpet",
       "district": "Robertsonpet K.G.F",
+      "A+": 1,
       "B+": 4,
       "O+": 6,
-      "A+": 1,
       "contact": "9449261605, 08152-260379 ",
       "address": "Robertsonpet K.G.F,, , Robertsonpet K.G.F, Kolar, Karnataka"
     },
@@ -8627,8 +8653,8 @@
     {
       "name": "District Hospital Blood Centre (Brims), Bidar",
       "district": "BIDAR",
-      "A+": 8,
       "O+": 4,
+      "A+": 8,
       "AB+": 1,
       "contact": "9448584999 ",
       "address": "BRIMS Blood Bank BRIMS Teaching Hospital Udgir Road Bidar, BRIMS Blood Bank BRIMS Teaching Hospital Udgir Road Bidar, BIDAR, Bidar, Karnataka"
@@ -8710,10 +8736,10 @@
     {
       "name": "Jeevadhara Matoshree Blood Bank",
       "district": "Kalaburagi",
-      "O+": 1,
       "A+": 2,
-      "AB+": 1,
+      "O+": 1,
       "B+": 1,
+      "AB+": 1,
       "contact": "9341005584 ",
       "address": "Building No2/907/20/1, 1st Floor, Kosagi Mansion, Sedam Road, , Kalaburagi, Kalaburagi, Karnataka"
     },
@@ -8783,9 +8809,9 @@
       "name": "Swamy Vivekananda Charitable Blood Centre Ballari",
       "district": "Bellary",
       "AB+": 1,
-      "B+": 2,
       "B-": 1,
       "O+": 1,
+      "B+": 2,
       "contact": "9448068318 ",
       "address": "D.No.130, Near TVS Show Room, Parvathi nagar Main Road Balla, , Bellary, Ballari, Karnataka"
     },
@@ -8804,9 +8830,9 @@
     {
       "name": "Mallegowda District Hospital Blood Centre, Chikkamagaluru",
       "district": "CHIKKAMAGALURU",
-      "O+": 1,
       "A+": 1,
       "AB+": 2,
+      "O+": 1,
       "contact": "9448961599 ",
       "address": "MO BLOOD BANK, MALLEGOWDA GENERAL HOSPITAL, NEAR AZAD PARK, , DISTRICT SURGEON, DISTRICT HSOPITAL, CHIKKAMAGALURU, CHIKKAMAGALURU, Chikmagalur, Karnataka"
     },
@@ -8820,10 +8846,10 @@
       "name": "Smt. Valbai N. Dharamsey Blood Centre",
       "district": "Hubli",
       "A-": 2,
-      "A+": 1,
-      "O-": 1,
-      "AB-": 1,
       "O+": 11,
+      "AB-": 1,
+      "O-": 1,
+      "A+": 1,
       "B+": 17,
       "contact": "7019823205 ",
       "address": "Nava Nagar, Hubballi,, , Hubli, Dharwad, Karnataka"
@@ -8868,8 +8894,8 @@
       "name": "-",
       "district": "Chikkamagaluru",
       "B-": 2,
-      "B+": 3,
       "A-": 1,
+      "B+": 3,
       "contact": "-",
       "address": "Cellar Floor, Main Road, Basavanahalli, Chikkamagaluru, Karnataka 577101, , Chikkamagaluru, Chikmagalur, Karnataka"
     },
@@ -8933,8 +8959,8 @@
       "name": "-",
       "district": "Shimoga",
       "O+": 2,
-      "AB+": 1,
       "B+": 3,
+      "AB+": 1,
       "contact": "-",
       "address": "kshiti complex cellor floor  , J P N Road, 1st Cross, SHIMOGA, Shimoga, Shimoga, Karnataka"
     },
@@ -8977,11 +9003,11 @@
     {
       "name": "CHITRADURGA MEDICAL COLLEGE  AND RESEARCG CENTER",
       "district": "Chitradurga",
-      "B+": 13,
-      "O-": 1,
-      "B-": 2,
       "A+": 4,
       "O+": 7,
+      "B-": 2,
+      "O-": 1,
+      "B+": 13,
       "contact": "9538948942 ",
       "address": "Chitradurga Medical College Premises, , Beside District Health Office (DHO), Chitradurga, Chitradurga, Chitradurga, Karnataka"
     },
@@ -9042,8 +9068,8 @@
     {
       "name": "Sri Chamarajendra District Hospital Blood Centre, Hassan",
       "district": "Hassan",
-      "B+": 1,
       "O-": 1,
+      "B+": 1,
       "contact": "9845612720 ",
       "address": "Hassan  Institute of medical sciences, Hospital Road, , Hassan, Hassan, Karnataka"
     },
@@ -9062,9 +9088,9 @@
     {
       "name": "Bims Blood Centre District Hospital Belagavi",
       "district": "Belagavi",
-      "B+": 2,
       "AB+": 3,
       "A+": 1,
+      "B+": 2,
       "O+": 8,
       "contact": "9886757796 ",
       "address": "Dr. B R Ambedkar road, BIMS HOSPITAL BLOOD CENTRE SSH BELAGAVI, Belagavi, Belagavi, Karnataka"
@@ -9127,8 +9153,8 @@
       "name": "Pandit General Hospital Blood Centre",
       "district": "Sirsi",
       "O+": 2,
-      "AB+": 1,
       "A+": 2,
+      "AB+": 1,
       "B+": 1,
       "contact": "8762528366 ",
       "address": "Pandit General Hospital Blood Centre Church Road Sirsi, Pandit General Hospital Blood Center Church Road Sirsi, Sirsi, Uttara Kannada, Karnataka"
@@ -9178,8 +9204,8 @@
     {
       "name": "-",
       "district": "Raichur",
-      "AB+": 1,
       "B+": 2,
+      "AB+": 1,
       "contact": "-",
       "address": "3rd floor Amareshwara hospital Raichur, , Raichur, Raichur, Karnataka"
     },
@@ -9322,8 +9348,8 @@
     {
       "name": "S R Patil Blood Centre",
       "district": "Bilagi",
-      "B+": 3,
       "AB+": 1,
+      "B+": 3,
       "A+": 1,
       "contact": "7760160961 ",
       "address": "M/s S R Patil Blood centre,  Unit of S R Patil Hospital and ,  Hubli- Vijayapur Road, At/Po:  Badagandi, Bilagi, Bagalkot, Karnataka"
@@ -9411,8 +9437,8 @@
     {
       "name": "Hal Hospital Blood Centre",
       "district": "Bangalore",
-      "B+": 1,
       "A+": 1,
+      "B+": 1,
       "O+": 1,
       "contact": "9972399007 ",
       "address": "HAL Hospital, Vimanapura, , , Bangalore, Bangalore Urban, Karnataka"
@@ -9495,8 +9521,8 @@
     {
       "name": "Mvj Medical College And Research Hospital",
       "district": "Bangalore",
-      "O+": 1,
       "A+": 1,
+      "O+": 1,
       "contact": "9740146525 ",
       "address": "Dandupalya, Kolathur Post, NH-75, Hoskote, , Bangalore, Bangalore Rural, Karnataka"
     },
@@ -9541,9 +9567,9 @@
     {
       "name": "Shree Siddeshwar Blood Bank",
       "district": "Bijapur",
-      "A+": 1,
       "B+": 2,
       "O+": 1,
+      "A+": 1,
       "contact": "0352278333 ",
       "address": "Adarsh Children Hospital B/11. ground & First Floor, vivek N, , Bijapur, Vijayapura, Karnataka"
     },
@@ -9599,8 +9625,8 @@
     {
       "name": "Ranebennuru Blood Centre",
       "district": "Ranebennur",
-      "O+": 1,
       "O-": 1,
+      "O+": 1,
       "contact": "9886115762 ",
       "address": "Khata No.: 1071/3, Plot # 29&30, Basement Floor, Sri Sai Speciality Hospital Mruthyunjayanagar, Ranebennur, Ranebennur, Haveri, Karnataka"
     },
@@ -9711,9 +9737,9 @@
     {
       "name": "-",
       "district": "Mandya",
-      "B+": 1,
       "A+": 1,
       "O+": 1,
+      "B+": 1,
       "contact": "-",
       "address": "District Hospital MIMS Blood Bank , D M Road, Mandya, Mandya, Karnataka"
     },
@@ -9877,12 +9903,6 @@
       "address": "ground Floor No. 8 ideal homes,HBCS Layout,Rajarajeshwari Na, , , Bangalore Urban, Karnataka"
     },
     {
-      "name": "Gopi Blood Centre",
-      "district": "Gangavathi",
-      "contact": "9741597565 ",
-      "address": "D. No. 3-2-252/3/2/165,Opp. Jss School, W. No. 13,Julayi Nag, , Gangavathi , Koppal, Karnataka"
-    },
-    {
       "name": "Vydehi Superspeciality Hospital Blood Centre",
       "district": "Bengaluru",
       "contact": "9845019771 ",
@@ -9927,9 +9947,9 @@
     {
       "name": "The Uttara Kannada Blood Centre And Health Services Society",
       "district": "Kumta",
-      "B+": 1,
-      "O+": 1,
       "AB+": 1,
+      "O+": 1,
+      "B+": 1,
       "contact": "9901369298 ",
       "address": "Baggon road kumta, Baggon road kumta, Kumta, Uttara Kannada, Karnataka"
     },
@@ -10001,12 +10021,6 @@
       "address": "Kadugondanahalli, Bengaluru, shampura main road,, Bangalore, Bangalore Urban, Karnataka"
     },
     {
-      "name": "Rotary Bangalore Ttk Blood Centre  Bangalore Medical Service Trust",
-      "district": "Bangalore",
-      "contact": "9900153000 ",
-      "address": "New Thippasandra Main Road, HAL III Stage, , Bangalore, Bangalore Urban, Karnataka"
-    },
-    {
       "name": "ANNADANESHWARA VOLUNTARY BLOOD CENTRE SINDHANUR",
       "district": "Sindhanur",
       "contact": "8660109258 ",
@@ -10023,16 +10037,6 @@
       "district": "Bangalore",
       "contact": "9972111552 ",
       "address": "No.1082/9, Sreenivasa Prasanna Complex, , Thriveni main road, yeshwanthpur, Bengaluru , Bangalore, Bangalore Urban, Karnataka"
-    },
-    {
-      "name": "Shripad Hegde Kadave Institute Of Medical Sciences, T.S.S. Hospital",
-      "district": "SIRSI",
-      "O-": 2,
-      "B+": 2,
-      "O+": 4,
-      "A+": 3,
-      "contact": "8088037458 ",
-      "address": "Mes college  Road, Uttara Kannada, Sirsi,, , SIRSI, Uttara Kannada, Karnataka"
     },
     {
       "name": "Khaja Banda Nawaz Teaching And General Hospital Blood Centre",
@@ -10098,9 +10102,9 @@
     {
       "name": "Shrimaan Harnamdas Kapoor Blood Centre Bangalore",
       "district": "Bangalore",
-      "A+": 2,
-      "B+": 4,
       "O+": 3,
+      "B+": 4,
+      "A+": 2,
       "contact": "9448032867 ",
       "address": "Indira Gandhi Institute of Child Health, South Hospital comp, Byrasandra bangalore, Bangalore, Bangalore Urban, Karnataka"
     },
@@ -10167,9 +10171,9 @@
     {
       "name": "Pks General Hospital Blood Storage Centre  Bsu",
       "district": "Birur",
+      "B+": 1,
       "A+": 2,
       "O+": 3,
-      "B+": 1,
       "contact": "9686344900 ",
       "address": "CHC Birur ,Kadur Taluk,Chikmagalur , , Birur, Chikmagalur, Karnataka"
     },
@@ -10200,12 +10204,12 @@
     {
       "name": "Command Hospital Blood Centre,Bangalore South",
       "district": "Bangalore",
-      "O-": 1,
-      "AB+": 3,
       "B+": 2,
-      "B-": 1,
       "O+": 18,
       "A+": 3,
+      "B-": 1,
+      "AB+": 3,
+      "O-": 1,
       "contact": "9663865587,8025369030 ",
       "address": "Air Force, Old Air Force Road, , Bangalore, Bangalore Urban, Karnataka"
     },
@@ -10284,8 +10288,8 @@
     {
       "name": "Dr. Rajkumar (Appaji) Blood Centre",
       "district": "Bangalore",
-      "B-": 1,
       "B+": 2,
+      "B-": 1,
       "contact": "9141334726,8022108108 ",
       "address": "No.18, Krishi Bhavan, 2nd floor, Hudson Circle, , Bangalore, Bangalore Urban, Karnataka"
     },
@@ -10310,10 +10314,10 @@
     {
       "name": "Hosmat Blood Centre",
       "district": "Bengaluru",
-      "A+": 3,
       "AB-": 1,
       "O+": 23,
       "A-": 2,
+      "A+": 3,
       "contact": "8050780930, 8867629803, 8025593796 ",
       "address": "No 45 ,Magrath road ,of Richmond Road, Ashok Nagar ,, , Bengaluru, Bangalore Urban, Karnataka"
     },
@@ -10368,14 +10372,14 @@
     {
       "name": "Veerayoga Institute Of Medical Sciences Speciality Hospitals",
       "district": "Bangalore",
-      "O+": 53,
       "O-": 6,
-      "A+": 19,
       "AB-": 1,
-      "A-": 1,
-      "B+": 35,
       "B-": 5,
+      "O+": 53,
       "AB+": 4,
+      "A+": 19,
+      "B+": 35,
+      "A-": 1,
       "contact": "9845453875,8042698000 ",
       "address": "No. 88, Marathhalli, Outer Ring Road, , Bangalore, Bangalore Urban, Karnataka"
     },
@@ -13085,6 +13089,16 @@
   ],
   "maharashtra": [
     {
+      "name": "Sainik Aspatal Military Hospital Blood Centre",
+      "district": "Deolali",
+      "AB+": 1,
+      "O+": 1,
+      "B+": 2,
+      "A+": 2,
+      "contact": "9148708222 ",
+      "address": "Sainik Aspatal, Military Hospital, Devlali Nashik , , Deolali, Nashik, Maharashtra"
+    },
+    {
       "name": "Dr. P.D.M.H.C. Hospital And Research Centre, Blood Centre",
       "district": "Amravati",
       "B-": 2,
@@ -13095,8 +13109,8 @@
     {
       "name": "-",
       "district": "Nandurbar",
-      "B+": 60,
       "A+": 1,
+      "B+": 60,
       "contact": "-",
       "address": "First Floor, Vivekanand Hospital,Desaipura,, , Nandurbar, Nandurbar, Maharashtra"
     },
@@ -13107,12 +13121,20 @@
       "address": "Near Civil Hospital, Athwadi Bazar, Opp.B.J.Market,, TPSII PLOT NO 167A Near B J Market Near Civil Hospital RD Ja, Jalgaon, Jalgaon, Maharashtra"
     },
     {
+      "name": "Mauli Blood Centre, Latur",
+      "district": "Latur",
+      "A+": 2,
+      "O+": 2,
+      "contact": "7058899995 ",
+      "address": "Kailas Plaza, Barshi Road,, , Latur, Latur, Maharashtra"
+    },
+    {
       "name": "Arpan Blood Centre,Blood Component Lab. And Aphersis Centre",
       "district": "Sangamner",
       "A+": 2,
-      "B+": 1,
-      "O+": 2,
       "AB+": 2,
+      "O+": 2,
+      "B+": 1,
       "contact": "9822324340(Tated),02425-226036 / 220457 ",
       "address": "First Floor, H.No.1542/43, above Bank of Badoda, Swatantrya , , Sangamner, Ahmadnagar, Maharashtra"
     },
@@ -13124,28 +13146,20 @@
       "address": "plot no179/12 Property no52.52/1 to 3 1st floor, hedge Bld, , , , Bhandara, Maharashtra"
     },
     {
-      "name": "Mauli Blood Centre, Latur",
-      "district": "Latur",
-      "O+": 2,
-      "A+": 2,
-      "contact": "7058899995 ",
-      "address": "Kailas Plaza, Barshi Road,, , Latur, Latur, Maharashtra"
-    },
-    {
-      "name": "Jeevandhara Blood Centre",
-      "district": "KOLHAPUR",
-      "O+": 3,
-      "B+": 6,
-      "contact": "9822322223 ",
-      "address": "1648 E- ward saidarshan hights , opp sarada Medical,chandrak, Rajarampuri 7th Lane, KOLHAPUR, Kolhapur, Maharashtra"
-    },
-    {
       "name": "Aurangabad Thalassemia Society Shri Satya Sai Blood Centre",
       "district": "",
       "B+": 1,
       "O+": 1,
       "contact": "9168104104 ",
       "address": "Plot No.1 Satvahana Housing Society, Opposite Sant Tukaram N, , , Aurangabad, Maharashtra"
+    },
+    {
+      "name": "Jeevandhara Blood Centre",
+      "district": "KOLHAPUR",
+      "B+": 6,
+      "O+": 3,
+      "contact": "9822322223 ",
+      "address": "1648 E- ward saidarshan hights , opp sarada Medical,chandrak, Rajarampuri 7th Lane, KOLHAPUR, Kolhapur, Maharashtra"
     },
     {
       "name": "M/S Balasaheb Thackerey Blood Centre",
@@ -13210,9 +13224,9 @@
     {
       "name": "Civil Hospital Blood Centre Nashik",
       "district": "Nashik",
-      "O-": 1,
-      "O+": 18,
       "A-": 3,
+      "O+": 18,
+      "O-": 1,
       "contact": "7821024199 ",
       "address": "Near Thakkar Bazaar, Trimbak Naka, , Nashik, Nashik, Maharashtra"
     },
@@ -13233,10 +13247,10 @@
     {
       "name": "-",
       "district": "Latur",
-      "A+": 6,
-      "A-": 1,
-      "B+": 7,
       "AB+": 1,
+      "B+": 7,
+      "A-": 1,
+      "A+": 6,
       "O+": 8,
       "contact": "-",
       "address": "Blood Bank, Govt.Medical College & Hospital Old Railway Station,  Gandhi Chowk, , Latur, Latur, Maharashtra"
@@ -13358,14 +13372,14 @@
     {
       "name": "-",
       "district": "Gondia",
-      "AB-": 2,
-      "A+": 32,
+      "O-": 4,
       "B+": 72,
-      "AB+": 10,
       "A-": 1,
       "B-": 1,
+      "AB-": 2,
+      "AB+": 10,
+      "A+": 32,
       "O+": 58,
-      "O-": 4,
       "contact": "-",
       "address": "Bai Gangabai Ladies Hospital Blood Bank,Civil Lines, , Gondia, Gondiya, Maharashtra"
     },
@@ -13391,8 +13405,8 @@
       "name": "District - Civil Surgeon,  General Hospital Blood Centre Wardha",
       "district": "wardha",
       "B+": 1,
-      "O+": 1,
       "A+": 1,
+      "O+": 1,
       "contact": "9923228026,8380026088 ",
       "address": "New Bldg. OPD 1st Floor, General Hosp.,Dr.Ambedkar Road, Nea, , wardha, Wardha, Maharashtra"
     },
@@ -13437,8 +13451,8 @@
       "district": "Mumbai",
       "B+": 4,
       "AB+": 1,
-      "O+": 3,
       "A+": 3,
+      "O+": 3,
       "contact": "-",
       "address": "Blood Bank Department, Main Building, Gr.floor near Apaghath Vibhagh, Sir J.J.Hospital Byculla, , Mumbai, Mumbai, Maharashtra"
     },
@@ -13477,9 +13491,9 @@
     {
       "name": "Blood Center Government Medical College And Hospital, Osmanabad",
       "district": "Osmanabad",
+      "A+": 4,
       "B+": 1,
       "O+": 5,
-      "A+": 4,
       "contact": "7021448926 ",
       "address": "Dean Government medical college, marwadi galli osmanabad& Di, , Osmanabad, Osmanabad, Maharashtra"
     },
@@ -13595,18 +13609,18 @@
     {
       "name": "Dean, Swami Ramanand Tirtha Rural Medical College. And Hospital, Blood Centre",
       "district": "Ambajogai",
-      "O+": 1,
       "A+": 1,
-      "B+": 1,
       "O-": 1,
+      "B+": 1,
+      "O+": 1,
       "contact": "9422467018,02446 244472  ",
       "address": "SRTR., MCH Ambajogai TQ.Ambajogai, , Ambajogai, Bid, Maharashtra"
     },
     {
       "name": "Dr. Murlidhar Kharche Memorial Jeevan Jyoti Blood Centre",
       "district": "Malkapur",
-      "A+": 4,
       "B+": 3,
+      "A+": 4,
       "O+": 5,
       "contact": "9423144276 ",
       "address": "Bharat Kala Rd., Malkapur,, , Malkapur, Buldana, Maharashtra"
@@ -13633,8 +13647,8 @@
     {
       "name": "Sant Gadgebaba Blood Centre And Component Centre, Badnera",
       "district": "Amravati",
-      "A+": 2,
       "B+": 1,
+      "A+": 2,
       "O+": 2,
       "contact": "9422157239 ",
       "address": "Opp.Shrihari hospital, Juni vasti(Old Town), Badnera,, , Amravati, Amravati, Maharashtra"
@@ -13642,10 +13656,10 @@
     {
       "name": "Cristanand Education Society Blood Centre",
       "district": "Brahmapuri",
-      "A+": 5,
-      "O+": 16,
       "B+": 11,
       "AB+": 3,
+      "O+": 16,
+      "A+": 5,
       "contact": "9880804284 ",
       "address": "Christanand Education Society Blood Bank,  Christanand Hospi, , Brahmapuri, Chandrapur, Maharashtra"
     },
@@ -13727,9 +13741,9 @@
       "district": "Aheri",
       "O+": 28,
       "A+": 26,
+      "O-": 1,
       "B+": 35,
       "AB+": 1,
-      "O-": 1,
       "contact": "-",
       "address": "Sub-District (Rural) Hospital Blood Bank, Aheri, At Post & Tal. Aheri, Dist. Gadchiroli, , Aheri, Gadchiroli, Maharashtra"
     },
@@ -13754,8 +13768,8 @@
     {
       "name": "Jawaharlal Nehru Medical College Blood Centre",
       "district": "wardha",
-      "O+": 10,
       "B+": 18,
+      "O+": 10,
       "A+": 6,
       "contact": "8600560824 ",
       "address": "Acharya Vinoba Bhave Rural Hospital Building, Ground Floor, , , wardha, Wardha, Maharashtra"
@@ -13831,9 +13845,9 @@
       "name": "Godavari Foundation'S Dr.Ulhas Patil Medical College And Hospital Blood Centre",
       "district": "Jalgaon",
       "B+": 4,
-      "AB+": 3,
       "O+": 6,
       "A+": 1,
+      "AB+": 3,
       "O-": 1,
       "contact": "9823100333, 0257-2366739 ",
       "address": "Godavari FoundationS Dr.Ulhas Patil Medical College And Hospital Blood Centre, Jalgaon- Kh, Jalgaon, Jalgaon, Jalgaon, Maharashtra"
@@ -13883,12 +13897,12 @@
     {
       "name": "Kasturba Health Society'S, Blood Centre, Sevagram(Mgims)",
       "district": "Wardha",
-      "B+": 5,
       "O-": 3,
       "O+": 5,
-      "A-": 2,
       "B-": 2,
+      "B+": 5,
       "A+": 4,
+      "A-": 2,
       "contact": "9422144855 ",
       "address": "Kasturba Health SocietyS, Blood Centre, Sevagram(Mgims), Department of Pathology, MGIMS and Kasturba Hospital  Sevagr, Wardha, Wardha, Maharashtra"
     },
@@ -13908,9 +13922,9 @@
       "name": "Indian Red Cross Society Sanchalit Askaran Tarachand Jain Blood Centre",
       "district": "Chopda",
       "O+": 15,
-      "A+": 4,
-      "AB+": 4,
       "B+": 15,
+      "AB+": 4,
+      "A+": 4,
       "contact": "7020718245 ",
       "address": "First floor ,Jawahar Market, Near Old Tehasil Office,, , Chopda, Jalgaon, Maharashtra"
     },
@@ -13923,11 +13937,11 @@
     {
       "name": "-",
       "district": "Nagpur",
+      "B-": 1,
+      "A+": 5,
       "O+": 2,
       "AB+": 1,
-      "B-": 1,
       "B+": 6,
-      "A+": 5,
       "contact": "-",
       "address": "Model Blood Bank, 2nd Floor, Hospital Building, Govt. Medical College & Hospital, , Nagpur, Nagpur, Maharashtra"
     },
@@ -13946,10 +13960,10 @@
     {
       "name": "-",
       "district": "Nashik",
-      "O+": 5,
       "B+": 1,
       "AB-": 1,
       "A+": 1,
+      "O+": 5,
       "contact": "-",
       "address": "NASHIK MUNICIPAL CORPORATION NMC BYTCO HOSPITAL , BUILDING IN SERVE NO 240 P & 241 P AT VILLAGE DEOLALI NASHIK, Nashik, Nashik, Maharashtra"
     },
@@ -13987,8 +14001,8 @@
       "name": "Navi Mumbai Muncipal Corporation, Blood Centre",
       "district": "Thane",
       "O+": 2,
-      "AB+": 1,
       "A+": 2,
+      "AB+": 1,
       "B+": 2,
       "contact": "9324292615 / 9920644868,022-27888750 ",
       "address": "General Hospital Vashi, Near St.Mery Church Sector-10, Vashi, , Thane, Thane, Maharashtra"
@@ -14193,10 +14207,10 @@
     {
       "name": "Civil Surgeon, District General Hospital Blood Centre",
       "district": "Buldana",
-      "B+": 1,
       "A+": 7,
       "O+": 3,
       "AB+": 2,
+      "B+": 1,
       "contact": "9423452824(Dr.Pardge), 9422184152(Tech) ",
       "address": "General Hospital Blood Bank Buldhana , Near Prabadhan School, , Buldana, Buldana, Maharashtra"
     },
@@ -14240,12 +14254,12 @@
     {
       "name": "Medicare Blood Centre",
       "district": "PUSAD",
-      "O+": 20,
+      "A+": 11,
       "B+": 26,
       "B-": 1,
       "AB-": 1,
-      "A+": 11,
       "A-": 2,
+      "O+": 20,
       "AB+": 6,
       "contact": "9422166035 ",
       "address": "BEHIND RAMDEOBABA PETROL PUMP, MEDICARE CAMPUS, , PUSAD, Yavatmal, Maharashtra"
@@ -14266,8 +14280,8 @@
     {
       "name": "Dr Mankar Memorial Trust, Late. Dr. B.P. Thakre Memorial Component Blood Centre",
       "district": "Akola",
-      "A+": 1,
       "B+": 1,
+      "A+": 1,
       "contact": "9823243771 ",
       "address": "2ND Floor, Abhinandan Building, Near Janata Homeopathic Coll, , Akola, Akola, Maharashtra"
     },
@@ -14304,11 +14318,11 @@
     {
       "name": "Leelavati Blood Centre",
       "district": "Buldhana",
-      "AB-": 1,
+      "O+": 5,
+      "B+": 2,
       "A-": 1,
       "O-": 1,
-      "B+": 2,
-      "O+": 5,
+      "AB-": 1,
       "A+": 1,
       "contact": "9834374310 ",
       "address": "John Lay Out, Jamrnn Road, Near Bus stand,, , Buldhana, Buldana, Maharashtra"
@@ -14316,11 +14330,11 @@
     {
       "name": "Superitendent Gokuldas Tejpal Hospital",
       "district": "Mumbai",
-      "A+": 5,
       "B-": 1,
       "O+": 1,
-      "B+": 6,
       "AB+": 4,
+      "A+": 5,
+      "B+": 6,
       "contact": "8669168538 ",
       "address": "2nd floor, G. T. Hospital, L.T. Marg, , Mumbai, Mumbai, Maharashtra"
     },
@@ -14381,9 +14395,9 @@
     {
       "name": "K.B.Bhabha Muncipal General Hospital, Blood Centre",
       "district": "Mumbai",
-      "AB+": 1,
-      "O+": 2,
       "O-": 1,
+      "O+": 2,
+      "AB+": 1,
       "B+": 1,
       "contact": "9321152854 ",
       "address": "1st floor, N.38, R.K.Patkar Marg, Bandra (W), , Mumbai, Mumbai, Maharashtra"
@@ -14403,12 +14417,12 @@
     {
       "name": "Padma Bhushan Vasantdada Patil (Civil Surgeon), Govt. General Hospital Blood Centre, Sangli",
       "district": "Sangli",
-      "A+": 23,
       "B+": 3,
+      "A-": 1,
       "AB-": 1,
       "AB+": 3,
-      "A-": 1,
       "O+": 33,
+      "A+": 23,
       "contact": "9011654102 ,   9890935611,0233- 2374651 ",
       "address": "Padma bhushan Vasantdada Patil (Civil Surgeon), Govt. Genera, , Sangli, Sangli, Maharashtra"
     },
@@ -14421,19 +14435,19 @@
     {
       "name": "Padmashri Dr. Vitthalrao Vikhe Patil Foundation Ahmednagar Medical College Hospital, Blood Bank",
       "district": "Ahmednagar",
-      "B+": 2,
       "O+": 4,
+      "B+": 2,
       "contact": "9881573633 ",
       "address": "Opp.Govt.Milk Dairy Vadgaon Gupta  M.I.D.C.,, , Ahmednagar, Ahmadnagar, Maharashtra"
     },
     {
       "name": "Jeevanshri Raktapedi",
       "district": "Jalgaon",
+      "B+": 18,
+      "O-": 1,
+      "O+": 18,
       "AB+": 2,
       "A+": 14,
-      "B+": 18,
-      "O+": 18,
-      "O-": 1,
       "contact": "9226894187 ",
       "address": "I st Floor, Rasmanju complex, Bhagwat Road, Amalner,, , Jalgaon, Jalgaon, Maharashtra"
     },
@@ -14446,11 +14460,11 @@
     {
       "name": "Jeevan Surabhi Blood Centre",
       "district": "Chalisgaon",
+      "A+": 33,
+      "B+": 28,
       "O+": 35,
       "AB+": 5,
       "B-": 2,
-      "B+": 28,
-      "A+": 33,
       "contact": "9422383322 ",
       "address": "Laxmi Nagar, Kargaon Road,, , Chalisgaon, Jalgaon, Maharashtra"
     },
@@ -14487,10 +14501,10 @@
     {
       "name": "V.N. Desai Municipal General Hospital Blood Centre",
       "district": "mumbai",
-      "AB+": 1,
-      "O+": 10,
-      "B+": 2,
       "A+": 3,
+      "B+": 2,
+      "O+": 10,
+      "AB+": 1,
       "contact": "7021670036 ",
       "address": "Plot No.34,  opp. Santacruz Gymkhana, T.P.S II, 11th Road, S, santacruz east, mumbai, Mumbai, Maharashtra"
     },
@@ -14515,11 +14529,11 @@
     {
       "name": "Dean Government Medical College And Super Speciality Hospital Blood Centre",
       "district": "Nagpur",
-      "B+": 17,
-      "O-": 1,
       "O+": 5,
-      "A+": 9,
+      "O-": 1,
+      "B+": 17,
       "AB+": 5,
+      "A+": 9,
       "contact": "9595219178 ",
       "address": "Government Medical College Campus Near Tukloji Putla and  RS, , Nagpur, Nagpur, Maharashtra"
     },
@@ -14538,13 +14552,13 @@
     {
       "name": "-",
       "district": "Satara",
-      "O+": 35,
-      "O-": 2,
       "B-": 2,
-      "AB+": 16,
-      "A-": 1,
+      "O+": 35,
       "A+": 34,
+      "AB+": 16,
       "B+": 37,
+      "O-": 2,
+      "A-": 1,
       "contact": "-",
       "address": "District General Hospital Camps, Sadar Bazar Satara, Satara, Satara, Maharashtra"
     },
@@ -14570,8 +14584,8 @@
     {
       "name": "Civil Surgeon, General Hospital, Blood Centre",
       "district": "Ahmednagar",
-      "B+": 1,
       "O+": 1,
+      "B+": 1,
       "contact": "8788120409 ",
       "address": "District General / Civil Hospital  Savedi Road,, , Ahmednagar, Ahmadnagar, Maharashtra"
     },
@@ -14620,12 +14634,12 @@
     {
       "name": "-",
       "district": "Amravati",
+      "B+": 10,
       "A+": 2,
       "AB+": 1,
-      "B+": 10,
+      "O+": 7,
       "B-": 3,
       "O-": 1,
-      "O+": 7,
       "contact": "-",
       "address": "Dr. Babasaheb Ambedkar Chowk Dist - General Hospital Blood Bank, , Amravati, Amravati, Maharashtra"
     },
@@ -14711,9 +14725,9 @@
     {
       "name": "Lions Blood Centre",
       "district": "Auranagabad",
-      "A+": 1,
-      "O+": 2,
       "AB+": 1,
+      "O+": 2,
+      "A+": 1,
       "contact": "8275092594 ",
       "address": "1st floor, Above Lions Balsadan, near Guru Teg Bahadur Engli, , Auranagabad, Aurangabad, Maharashtra"
     },
@@ -14739,11 +14753,11 @@
       "name": "-",
       "district": "Akola",
       "B-": 1,
-      "B+": 2,
-      "O-": 1,
-      "A+": 8,
-      "AB-": 1,
       "A-": 1,
+      "AB-": 1,
+      "A+": 8,
+      "O-": 1,
+      "B+": 2,
       "O+": 5,
       "AB+": 11,
       "contact": "-",
@@ -14830,11 +14844,11 @@
     {
       "name": "-",
       "district": "jawhar palghar",
-      "O+": 17,
-      "B+": 1,
       "A+": 9,
       "B-": 1,
+      "O+": 17,
       "AB+": 3,
+      "B+": 1,
       "contact": "-",
       "address": "cottage hospital, , jawhar palghar, Palghar, Maharashtra"
     },
@@ -14944,12 +14958,12 @@
     {
       "name": "Cama And Albles Hosp., Abdul Fazalbhoy Blood Centre",
       "district": "Mumbai",
-      "AB+": 2,
       "B-": 1,
       "A+": 8,
+      "AB+": 2,
       "A-": 2,
-      "B+": 3,
       "O+": 27,
+      "B+": 3,
       "contact": "2222710319 ",
       "address": "Mahapalika Marg, Mumbai CST,, , Mumbai, Mumbai, Maharashtra"
     },
@@ -14970,13 +14984,13 @@
     {
       "name": "-",
       "district": "Nagpur",
-      "O-": 2,
-      "A-": 1,
-      "B-": 1,
+      "O+": 6,
       "B+": 19,
       "AB+": 15,
-      "O+": 6,
+      "A-": 1,
       "A+": 17,
+      "B-": 1,
+      "O-": 2,
       "contact": "-",
       "address": "Gandhibag, , Nagpur, Nagpur, Maharashtra"
     },
@@ -14991,11 +15005,11 @@
     {
       "name": "Chhatrapati Shivaji Maharaj Hospital Blood Centre Csm",
       "district": "Thane",
-      "AB+": 6,
-      "B-": 1,
       "B+": 7,
-      "O+": 14,
       "A+": 3,
+      "B-": 1,
+      "O+": 14,
+      "AB+": 6,
       "contact": "9757223723,022-25347784 Ext: 1437 ",
       "address": "Thane Belapur Road, Kalwa,, , Thane, Thane, Maharashtra"
     },
@@ -15099,12 +15113,12 @@
       "name": "-",
       "district": "Sawantwadi",
       "O+": 11,
-      "O-": 1,
       "B-": 1,
-      "A+": 14,
-      "A-": 2,
-      "B+": 21,
       "AB+": 1,
+      "A+": 14,
+      "O-": 1,
+      "B+": 21,
+      "A-": 2,
       "contact": "-",
       "address": "Sub -Dist Cottage Hospital, Blood Bank, , Sawantwadi, Sindhudurg, Maharashtra"
     },
@@ -15123,13 +15137,13 @@
     {
       "name": "-",
       "district": "Bhandara",
+      "O+": 12,
       "B+": 10,
       "O-": 1,
-      "O+": 12,
+      "AB+": 3,
+      "B-": 1,
       "A+": 14,
       "A-": 1,
-      "B-": 1,
-      "AB+": 3,
       "contact": "-",
       "address": "General Hospital Blood Bank, , Bhandara, Bhandara, Maharashtra"
     },
@@ -15178,9 +15192,9 @@
     {
       "name": "General Hospital Blood Centre",
       "district": "Chandrapur",
-      "B+": 22,
       "O+": 18,
       "AB+": 4,
+      "B+": 22,
       "A-": 2,
       "A+": 18,
       "contact": "8879902477 ",
@@ -15189,13 +15203,13 @@
     {
       "name": "-",
       "district": "Alibag",
-      "A+": 25,
-      "O+": 7,
       "B-": 2,
+      "AB+": 1,
+      "O+": 7,
+      "O-": 2,
       "A-": 2,
       "B+": 9,
-      "AB+": 1,
-      "O-": 2,
+      "A+": 25,
       "contact": "-",
       "address": "Civil Hospital, Alibagh, , Alibag, Raigarh, Maharashtra"
     },
@@ -15208,11 +15222,11 @@
     {
       "name": "Blood Centre And Component Separation Unit, Sub-District Hospital, Dharni, District Amravati",
       "district": "Dharni",
+      "B+": 3,
       "O+": 4,
       "A+": 1,
       "A-": 1,
       "AB+": 2,
-      "B+": 3,
       "contact": "70385 3492 ",
       "address": "Sub-District Hospital, Plot no.104, Sheet no 3, Dharni, Dist, , Dharni, Amravati, Maharashtra"
     },
@@ -15225,11 +15239,11 @@
     {
       "name": "-",
       "district": "Kudal",
-      "B-": 1,
-      "A+": 5,
-      "O+": 4,
       "B+": 3,
       "AB+": 1,
+      "A+": 5,
+      "B-": 1,
+      "O+": 4,
       "contact": "-",
       "address": "At post - Oros, Tal - Kudal, , Kudal, Sindhudurg, Maharashtra"
     },
@@ -15273,13 +15287,13 @@
     {
       "name": "Civil Surgeon, General Hospital Blood Centre, Gadchiroli",
       "district": "Gadchiroli",
+      "B+": 61,
       "A-": 1,
       "O-": 1,
-      "O+": 84,
-      "B+": 61,
-      "B-": 1,
-      "A+": 43,
       "AB+": 23,
+      "O+": 84,
+      "A+": 43,
+      "B-": 1,
       "contact": "7972110876 ",
       "address": "Blood Bank,  General Hospital, Medical Complex, Chandrapur r, , Gadchiroli, Gadchiroli, Maharashtra"
     },
@@ -15329,16 +15343,6 @@
       "address": "Aditya Birla Memorial Hospital Blood Centre, Aditya Birla Hospital Marg, Thergaon, Chinchwad, Pune, PUNE, Pune, Maharashtra"
     },
     {
-      "name": "Sainik Aspatal Military Hospital Blood Centre",
-      "district": "Deolali",
-      "A+": 2,
-      "O+": 1,
-      "B+": 2,
-      "AB+": 1,
-      "contact": "9148708222 ",
-      "address": "Sainik Aspatal, Military Hospital, Devlali Nashik , , Deolali, Nashik, Maharashtra"
-    },
-    {
       "name": "Arpan Blood Centre Nanded",
       "district": "Nanded",
       "contact": "9561400605 ",
@@ -15359,18 +15363,18 @@
     {
       "name": "-",
       "district": "ulhasnagar",
-      "B+": 1,
       "A+": 1,
+      "B+": 1,
       "contact": "-",
       "address": "Central Hospital Ulhasnagar No.3,Near Sewa Sadan College, Ulhasnagar, , ulhasnagar , Thane, Maharashtra"
     },
     {
       "name": "Medical Supritendant District-Hospital For Women, Blood Centre(C.S)",
       "district": "Akola",
-      "B+": 3,
-      "AB+": 2,
-      "A+": 8,
       "O+": 10,
+      "B+": 3,
+      "A+": 8,
+      "AB+": 2,
       "contact": "9730907515 ",
       "address": "Wing B Fist Floor Dist. Hospital for Women Near Durga chowk Akola, , Akola, Akola, Maharashtra"
     },
@@ -15431,12 +15435,12 @@
       "name": "Shri. Brahman Swrankar Samaj Trust, Blood Centre",
       "district": "Buldana",
       "A+": 3,
-      "AB-": 1,
+      "B+": 3,
+      "B-": 1,
       "AB+": 1,
+      "AB-": 1,
       "O+": 3,
       "O-": 1,
-      "B-": 1,
-      "B+": 3,
       "contact": "9422883786,07263-255577 ",
       "address": "Farshi, Main Road, Khamgaon,, , Buldana, Buldana, Maharashtra"
     },
@@ -15503,9 +15507,9 @@
     {
       "name": "Padmashree Dr.D.Y Patil (Vishweshwar) Blood Centre",
       "district": "Pune",
-      "A+": 23,
       "O+": 24,
       "B+": 18,
+      "A+": 23,
       "contact": "9561792412 ",
       "address": "Padmashree, Dr. D.Y. Patil Medical College Hospital , Sant , , Pune, Pune, Maharashtra"
     },
@@ -15518,11 +15522,11 @@
     {
       "name": "-",
       "district": "Chandrapur",
-      "B+": 6,
-      "AB+": 4,
-      "O+": 14,
-      "O-": 2,
       "A+": 5,
+      "O+": 14,
+      "B+": 6,
+      "O-": 2,
+      "AB+": 4,
       "contact": "-",
       "address": "Govt. General Hospital Blood Bank, near chota bazar, main road, Mahatma gandhi marg,, , Chandrapur, Chandrapur, Maharashtra"
     },
@@ -15793,11 +15797,11 @@
     {
       "name": "St. Rock�S Hospital Cluny",
       "district": "Karaikal",
+      "O-": 1,
       "B+": 2,
+      "A+": 3,
       "B-": 1,
       "O+": 3,
-      "O-": 1,
-      "A+": 3,
       "contact": "8300437247 ",
       "address": "st.rock�s hospiatal(cluny), Puduthurai,karaikal, puducherry, , Karaikal, Karaikal, Puducherry"
     },
@@ -15818,8 +15822,8 @@
       "name": "Indhira Gandhi Government General Hospital Blood Centre",
       "district": "Puducherry",
       "AB+": 1,
-      "O+": 1,
       "A+": 1,
+      "O+": 1,
       "contact": "9751033451 ",
       "address": "Victor Simonal Street, White Town, , Puducherry, Puducherry, Puducherry"
     },
@@ -15841,10 +15845,10 @@
       "district": "Mahe",
       "AB+": 1,
       "O-": 1,
-      "B+": 1,
       "A+": 1,
-      "B-": 1,
+      "B+": 1,
       "O+": 1,
+      "B-": 1,
       "contact": "04902337140 ",
       "address": "Government General Hospital, Mahe, II Floor, Hospital Block, , Mahe, Mahe, Puducherry"
     },
@@ -15863,10 +15867,10 @@
     {
       "name": "Aarupadai Veedu Medical College",
       "district": "Puducherry",
-      "O+": 11,
-      "B+": 4,
-      "A+": 5,
       "A-": 1,
+      "O+": 11,
+      "A+": 5,
+      "B+": 4,
       "contact": "4132611072 ",
       "address": "Kirumampakkam, Cuddalore main road, Puducherry, Puducherry, Puducherry"
     },
@@ -15903,13 +15907,13 @@
     {
       "name": "Govt General Hospital Blood Centre, Karaikal",
       "district": "Karaikal",
-      "A-": 1,
-      "O+": 24,
-      "B-": 2,
-      "B+": 21,
-      "AB+": 6,
       "A+": 15,
       "O-": 3,
+      "O+": 24,
+      "AB+": 6,
+      "B+": 21,
+      "B-": 2,
+      "A-": 1,
       "contact": "9952888467 ",
       "address": "Kamarajar Salai, Karaikal, Karaikal, Karaikal, Puducherry"
     }
@@ -18054,20 +18058,20 @@
     {
       "name": "District Hospital Gayzing Blood Centre",
       "district": "geyzing",
-      "A+": 9,
-      "B+": 7,
-      "AB+": 2,
       "O+": 14,
+      "B+": 7,
+      "A+": 9,
+      "AB+": 2,
       "contact": "9564093529 ",
       "address": "district hospital geyzing, west sikkim, , geyzing, Gyalshing, Sikkim"
     },
     {
       "name": "Central Blood Centre, Stnm Hospital",
       "district": "Gangtok",
-      "B+": 24,
       "AB+": 13,
       "O-": 2,
       "O+": 32,
+      "B+": 24,
       "A+": 29,
       "B-": 3,
       "contact": "9593556962 ",
@@ -18076,10 +18080,10 @@
     {
       "name": "Namchi District Blood Centre",
       "district": "Namchi",
-      "AB+": 13,
-      "B+": 26,
-      "A+": 23,
       "O+": 38,
+      "A+": 23,
+      "B+": 26,
+      "AB+": 13,
       "contact": "9609017594 ",
       "address": "Government General Hospital, Namchi, , Namchi, Namchi, Sikkim"
     },
@@ -18093,9 +18097,9 @@
       "name": "District Hospital Singtam Blood Centre",
       "district": "Singtam",
       "AB+": 5,
-      "A+": 8,
       "B+": 11,
       "O+": 12,
+      "A+": 8,
       "contact": "7001059528 ",
       "address": "Blood Centre District Hospital Singtam, , Singtam, Gangtok, Sikkim"
     }
@@ -22928,18 +22932,18 @@
       "name": "Blood Centre, Teliamura Sd Hospital",
       "district": "TELIAMURA",
       "O+": 1,
-      "B+": 1,
       "A+": 1,
+      "B+": 1,
       "contact": "8974507084 ",
       "address": "Bandar Chowmuhani, Teliamura, Khowai Tripura, , TELIAMURA , Khowai, Tripura"
     },
     {
       "name": "Blood Centre Cente, Unakoti District Hospital",
       "district": "Kailashahar",
-      "AB+": 1,
-      "O+": 12,
       "B-": 2,
       "A+": 3,
+      "O+": 12,
+      "AB+": 1,
       "B+": 18,
       "contact": "9862209081 ",
       "address": "Bhagabannagar, kailashahar, Unakoti Tripura, , Kailashahar, Unakoti, Tripura"
@@ -22958,42 +22962,42 @@
     {
       "name": "Bsm Sub-Div. Hospital, Blood Centre",
       "district": "Kamalpur",
-      "A+": 1,
       "O+": 6,
       "AB+": 1,
       "B+": 5,
+      "A+": 1,
       "contact": "8729941401 ",
       "address": "Kamalpur,, , Kamalpur, Dhalai, Tripura"
     },
     {
       "name": "BLOOD CENTRE AGMC AND GBP HOSPITAL",
       "district": "Agartala",
+      "A+": 38,
+      "O+": 50,
       "AB+": 16,
       "B+": 57,
-      "O-": 2,
       "A-": 2,
-      "O+": 50,
-      "A+": 38,
+      "O-": 2,
       "contact": "7005419052 ",
       "address": "AGMC & GBP Hospital, GB Bazar, P.O Kunjavan, , Agartala, West Tripura, Tripura"
     },
     {
       "name": "District Hospital North, Blood Centre",
       "district": "Dharmanagar",
+      "B+": 10,
+      "AB+": 3,
       "O+": 4,
       "A+": 7,
-      "AB+": 3,
-      "B+": 10,
       "contact": "7005695292 ",
       "address": "Sub-Divisional Hospital, Dharmanagar, , Dharmanagar, North Tripura, Tripura"
     },
     {
       "name": "Indira Gandhi Memorial (Igm) Hospital",
       "district": "Agartala",
-      "AB+": 8,
-      "A+": 10,
-      "O-": 1,
       "B+": 5,
+      "A+": 10,
+      "AB+": 8,
+      "O-": 1,
       "O+": 30,
       "contact": "7005448827 ",
       "address": "Akhaura Road, , Opposite of TB hall, Agartala, West Tripura, Tripura"
@@ -23002,19 +23006,19 @@
       "name": "Bishalgarh Sub-Div. Hospital, Blood Centre",
       "district": "Bishalgarh",
       "O+": 12,
-      "B+": 12,
       "A+": 5,
       "AB+": 5,
+      "B+": 12,
       "contact": "8131856185 ",
       "address": "Office Tilla, Bishalgarh , Sepahijala Tripura, Bishalgarh, Sepahijala, Tripura"
     },
     {
       "name": "Belonia Sub-Div. Hospital, Blood Centre",
       "district": "Belonia",
-      "A+": 22,
       "O+": 26,
       "B+": 28,
       "AB+": 6,
+      "A+": 22,
       "B-": 2,
       "contact": "9612852673 ",
       "address": "O/o the SDMO, Belonia, , , Belonia, South Tripura, Tripura"
@@ -23547,6 +23551,23 @@
   ],
   "west bengal": [
     {
+      "name": "-",
+      "district": "Howrah",
+      "contact": "-",
+      "address": "2nd Floor of New Building Howrah District Hospital, 10 Biplabi Haren Ghosh Sarani, Howrah, Howrah, West Bengal"
+    },
+    {
+      "name": "Jangipur S.D. Hospital Blood Centre",
+      "district": "Jangipur",
+      "A+": 7,
+      "B+": 14,
+      "O+": 2,
+      "O-": 2,
+      "AB+": 4,
+      "contact": "937316022,9800244688 ",
+      "address": "P.O. Jangipur, Jangipur S.D. Hospital, P.O. : Jangipur, Dist - Murshidabad, Jangipur, Murshidabad , West Bengal"
+    },
+    {
       "name": "Ruby General Hospital Pvt Ltd Blood Centre",
       "district": "KOLKATA",
       "contact": "9073999727 ",
@@ -23554,9 +23575,19 @@
     },
     {
       "name": "-",
-      "district": "Howrah",
+      "district": "Dakshin Dinajpur",
+      "B+": 11,
+      "A+": 4,
+      "O+": 3,
       "contact": "-",
-      "address": "2nd Floor of New Building Howrah District Hospital, 10 Biplabi Haren Ghosh Sarani, Howrah, Howrah, West Bengal"
+      "address": "BALURGHAT DISTRICT HOSPITAL BLOOD BANK, RAGHUNATH , Dakshin Dinajpur, Dakshin Dinajpur, West Bengal"
+    },
+    {
+      "name": "Sarat Chandra Chattopadhyay Govt Medical College and Hospital Blood Centre",
+      "district": "Howrah",
+      "O+": 1,
+      "contact": "9830619139 ",
+      "address": "Gr Floor, Sarat Chandra Chattopadhyay Government Medical College and Hospital, Bazarpara,Uluberia, District - Howrah, Pin - 711316, West Bengal, , Howrah, Howrah, West Bengal"
     },
     {
       "name": "Canning Subdivisional Hospital Blood Centre",
@@ -23565,17 +23596,11 @@
       "address": "South 24 Pgs., Baruipur, Canning Road, Canning, West Bengal, canning town, South Twenty Four Parganas, West Bengal"
     },
     {
-      "name": "-",
-      "district": "Kolkata",
-      "contact": "-",
-      "address": "1, Khudiram Bose Sarani, Kolkata -700004, , Kolkata, Kolkata, West Bengal"
-    },
-    {
-      "name": "Sarat Chandra Chattopadhyay Govt Medical College and Hospital Blood Centre",
-      "district": "Howrah",
-      "O+": 1,
-      "contact": "9830619139 ",
-      "address": "Gr Floor, Sarat Chandra Chattopadhyay Government Medical College and Hospital, Bazarpara,Uluberia, District - Howrah, Pin - 711316, West Bengal, , Howrah, Howrah, West Bengal"
+      "name": "Haldia Sub Divisional Hospital Blood Centre",
+      "district": "Basudebpur",
+      "AB+": 1,
+      "contact": "8145362609 ",
+      "address": "Basudevpur, P.O.-Khanganchak , Haldia S.D. Hospital, P.O. : Haldia, Dist - Medinipur (East), Basudebpur, Purba Medinipur, West Bengal"
     },
     {
       "name": "M.R. Bangur District Hospital",
@@ -23588,19 +23613,26 @@
     },
     {
       "name": "-",
-      "district": "Dakshin Dinajpur",
-      "O+": 3,
-      "B+": 11,
-      "A+": 4,
+      "district": "Kolkata",
       "contact": "-",
-      "address": "BALURGHAT DISTRICT HOSPITAL BLOOD BANK, RAGHUNATH , Dakshin Dinajpur, Dakshin Dinajpur, West Bengal"
+      "address": "1, Khudiram Bose Sarani, Kolkata -700004, , Kolkata, Kolkata, West Bengal"
     },
     {
-      "name": "Haldia Sub Divisional Hospital Blood Centre",
-      "district": "Basudebpur",
-      "AB+": 1,
-      "contact": "8145362609 ",
-      "address": "Basudevpur, P.O.-Khanganchak , Haldia S.D. Hospital, P.O. : Haldia, Dist - Medinipur (East), Basudebpur, Purba Medinipur, West Bengal"
+      "name": "Lalbagh S.D. Hospital Blood Centre",
+      "district": "Murshidabad",
+      "O+": 1,
+      "AB+": 2,
+      "O-": 1,
+      "A+": 2,
+      "B+": 3,
+      "contact": "9433992954 ",
+      "address": "Lalbag ,Murshidabad, Lalbagh S.D. Hospital, P.O. : Lalbagh, Dist - Murshidabad, Murshidabad , Murshidabad , West Bengal"
+    },
+    {
+      "name": "-",
+      "district": "RAIGANJ",
+      "contact": "-",
+      "address": "9TH FLOOR SSH BUILDING, RAIGANJ GOVERNMENT MEDICAL COLLEGE AND HOSPITAL, DR. B.C. ROY SARANI, RAIGANJ, NORTH DINAJPUR,WEST BENGAL, RAIGANJ, Uttar Dinajpur, West Bengal"
     },
     {
       "name": "Esi Blood Centre",
@@ -23609,42 +23641,27 @@
       "address": "Maniktala, 55, Bagmari Road, ESI Hospital, Maniktala Blood Bank, 55, Bagmari Road, Kolkat, Kolkata, Kolkata, West Bengal"
     },
     {
-      "name": "Domkal Super Speciality Hospital Blood Centre",
-      "district": "DOMKAL",
-      "O+": 2,
-      "AB+": 5,
-      "A+": 4,
-      "B+": 3,
-      "O-": 4,
-      "contact": "7278200259 ",
-      "address": "DOMKAL, PO- DOMKAL, PS-DOMKAL , DIST-MURSHIDABAD, DOMKAL, MURSHIDABAD, WEST BENGAL, DOMKAL, Murshidabad , West Bengal"
-    },
-    {
-      "name": "Lalbagh S.D. Hospital Blood Centre",
-      "district": "Murshidabad",
-      "O-": 1,
-      "B+": 3,
-      "AB+": 2,
-      "A+": 2,
-      "O+": 1,
-      "contact": "9433992954 ",
-      "address": "Lalbag ,Murshidabad, Lalbagh S.D. Hospital, P.O. : Lalbagh, Dist - Murshidabad, Murshidabad , Murshidabad , West Bengal"
-    },
-    {
-      "name": "Kalna S.D. Hospital Blood Centre",
-      "district": "Kalna",
-      "O+": 4,
-      "A+": 1,
-      "B+": 6,
-      "AB+": 8,
-      "contact": "9126442648 ",
-      "address": "P.O. Kalna, Burdwan, Kalna S.D. Hospital, P.O. : Kalna, Dist - Burdwan, Kalna, Purba Bardhaman, West Bengal"
-    },
-    {
       "name": "Malda District Hospital",
       "district": "Malda",
       "contact": "9434016599,09434191441, 09474519458 ",
       "address": "Malda Medical College & Hospital, , Malda, Maldah, West Bengal"
+    },
+    {
+      "name": "Gangarampur Sd Hospital",
+      "district": "Gangarampur",
+      "contact": "9474896980,9153320600, 9083295139 ",
+      "address": "Kaldighi Hospital Para, Kaldighi, Near B.Ed College,Gangaram, , Gangarampur, Dakshin Dinajpur, West Bengal"
+    },
+    {
+      "name": "Domkal Super Speciality Hospital Blood Centre",
+      "district": "DOMKAL",
+      "O-": 4,
+      "AB+": 5,
+      "O+": 2,
+      "B+": 3,
+      "A+": 4,
+      "contact": "7278200259 ",
+      "address": "DOMKAL, PO- DOMKAL, PS-DOMKAL , DIST-MURSHIDABAD, DOMKAL, MURSHIDABAD, WEST BENGAL, DOMKAL, Murshidabad , West Bengal"
     },
     {
       "name": "Dr. B.C. Roy PGIPS BLOOD CENTRE",
@@ -23660,74 +23677,29 @@
       "address": "Baruipur, Kulpi Road, Baruipur, S. 24 Pgs, Near SBI, South Twenty Four Parganas, South Twenty Four Parganas, West Bengal"
     },
     {
+      "name": "Kalna S.D. Hospital Blood Centre",
+      "district": "Kalna",
+      "B+": 6,
+      "A+": 1,
+      "AB+": 8,
+      "O+": 4,
+      "contact": "9126442648 ",
+      "address": "P.O. Kalna, Burdwan, Kalna S.D. Hospital, P.O. : Kalna, Dist - Burdwan, Kalna, Purba Bardhaman, West Bengal"
+    },
+    {
       "name": "Sagardighi Ssh Blood Centre",
       "district": "SAGARDIGHI",
-      "A-": 1,
-      "B+": 6,
       "O+": 3,
+      "B+": 6,
+      "A-": 1,
       "contact": "3483230040 ",
       "address": "SAGARDIGHI SUPER SPECIALITY HOSPITAL, SAGARDIGHI,MURSHIDABAD, SAGARDIGHI, Murshidabad , West Bengal"
-    },
-    {
-      "name": "Gangarampur Sd Hospital",
-      "district": "Gangarampur",
-      "contact": "9474896980,9153320600, 9083295139 ",
-      "address": "Kaldighi Hospital Para, Kaldighi, Near B.Ed College,Gangaram, , Gangarampur, Dakshin Dinajpur, West Bengal"
-    },
-    {
-      "name": "-",
-      "district": "RAIGANJ",
-      "contact": "-",
-      "address": "9TH FLOOR SSH BUILDING, RAIGANJ GOVERNMENT MEDICAL COLLEGE AND HOSPITAL, DR. B.C. ROY SARANI, RAIGANJ, NORTH DINAJPUR,WEST BENGAL, RAIGANJ, Uttar Dinajpur, West Bengal"
-    },
-    {
-      "name": "Kandi S.D. Hospital Blood Centre",
-      "district": "KANDI",
-      "A-": 1,
-      "contact": "9433329361 ",
-      "address": "KANDI SD HOSPITAL ROAD, KANDI, Kandi S.D. Hospital, P.O. : Kandi, Dist - Murshidabad, KANDI, Murshidabad , West Bengal"
     },
     {
       "name": "S.D. Hospital,Kharagpur",
       "district": "Paschim Medinipur",
       "contact": "9434005862, 9433428496 ",
       "address": "P.O. Kharagpur, Kharagpur S.D. Hospital, P.O. : Kharagpur, Dist - Medinipur , Paschim Medinipur, Paschim Medinipur, West Bengal"
-    },
-    {
-      "name": "Jhargramdh",
-      "district": "JHARGRAM",
-      "contact": "9434177966 ",
-      "address": "P.O. Jhargram, JHARGRAM GOVT. MEDICALE COLLEGE HOSPITAL, JHARGRAM, Jhargram, West Bengal"
-    },
-    {
-      "name": "Hemraj Blood Centre, Katwa S.D. Hospital",
-      "district": "KATWA",
-      "AB-": 1,
-      "AB+": 2,
-      "B+": 24,
-      "B-": 1,
-      "O+": 23,
-      "A+": 5,
-      "contact": "9434387842,9933304056 ",
-      "address": "P.O. Katwa, Burdwan, Katwa  (Hemraj) S.D. Hospital, P.O. : Katwa, Dist - Burdwan, KATWA, Purba Bardhaman, West Bengal"
-    },
-    {
-      "name": "Jangipur S.D. Hospital Blood Centre",
-      "district": "Jangipur",
-      "AB+": 3,
-      "B+": 12,
-      "A+": 5,
-      "O+": 3,
-      "O-": 2,
-      "contact": "937316022,9800244688 ",
-      "address": "P.O. Jangipur, Jangipur S.D. Hospital, P.O. : Jangipur, Dist - Murshidabad, Jangipur, Murshidabad , West Bengal"
-    },
-    {
-      "name": "Nayagram  Blood Centre",
-      "district": "KHARIKAMATHANI",
-      "A+": 1,
-      "contact": "9434134690 ",
-      "address": "NAYAGRAM MSSH BLOOD CENTRE, P.O- KHARIKAMATHANI, P.S- NAYAGRAM, DIST- JHARGRAM, WB, KHARIKAMATHANI, Jhargram, West Bengal"
     },
     {
       "name": "-",
@@ -23742,32 +23714,42 @@
       "address": "RAMKANAI GOSWAMI LANE PO- SANTIPUR, PS- SANTIPUR,Nadia, West Bengal, India, Santipur, Nadia, West Bengal"
     },
     {
+      "name": "Hemraj Blood Centre, Katwa S.D. Hospital",
+      "district": "KATWA",
+      "O+": 23,
+      "B+": 24,
+      "AB+": 2,
+      "AB-": 1,
+      "B-": 1,
+      "A+": 5,
+      "contact": "9434387842,9933304056 ",
+      "address": "P.O. Katwa, Burdwan, Katwa  (Hemraj) S.D. Hospital, P.O. : Katwa, Dist - Burdwan, KATWA, Purba Bardhaman, West Bengal"
+    },
+    {
+      "name": "Nayagram  Blood Centre",
+      "district": "KHARIKAMATHANI",
+      "A+": 1,
+      "contact": "9434134690 ",
+      "address": "NAYAGRAM MSSH BLOOD CENTRE, P.O- KHARIKAMATHANI, P.S- NAYAGRAM, DIST- JHARGRAM, WB, KHARIKAMATHANI, Jhargram, West Bengal"
+    },
+    {
       "name": "Salboni Blood Centre",
       "district": "Salboni",
       "contact": "9830166097 ",
       "address": "1St Floor,Salboni SSH,Chaktarini,Salboni, , Salboni, Paschim Medinipur, West Bengal"
     },
     {
-      "name": "Falakata Ssh Blood Centre",
-      "district": "Falakata",
-      "AB+": 6,
-      "A+": 1,
-      "O+": 1,
-      "contact": "9679183633 ",
-      "address": "Falakata, Alipurduar, Falakata, Alipurduar, West Bengal"
+      "name": "Kandi S.D. Hospital Blood Centre",
+      "district": "KANDI",
+      "A-": 1,
+      "contact": "9433329361 ",
+      "address": "KANDI SD HOSPITAL ROAD, KANDI, Kandi S.D. Hospital, P.O. : Kandi, Dist - Murshidabad, KANDI, Murshidabad , West Bengal"
     },
     {
-      "name": "Birpara State General Hospital Blood Center",
-      "district": "Birpara",
-      "contact": "9083653621 ",
-      "address": "BIRPARA, LANKAROAD, , Birpara, Alipurduar, West Bengal"
-    },
-    {
-      "name": "Nabadwip State General Hospital Blood Centre",
-      "district": "Nabadwip",
-      "O+": 1,
-      "contact": "9733022688,,9749885448, ",
-      "address": "Nadia, , Nabadwip, Nadia, West Bengal"
+      "name": "Jhargramdh",
+      "district": "JHARGRAM",
+      "contact": "9434177966 ",
+      "address": "P.O. Jhargram, JHARGRAM GOVT. MEDICALE COLLEGE HOSPITAL, JHARGRAM, Jhargram, West Bengal"
     },
     {
       "name": "Egra Ssh Blood Centre",
@@ -23783,23 +23765,34 @@
       "address": "P.O. Contai, Contai S.D. Hospital, P.O. : Contai, Dist - Medinipur (East), Contai, Purba Medinipur, West Bengal"
     },
     {
-      "name": "-",
-      "district": "SILIGURI",
-      "B+": 1,
-      "O+": 2,
-      "contact": "-",
-      "address": "NORTH BENGAL MEDICAL COLLEHE AND HOSPITAL BLOOD CENTRE,PO-SUSHRUTANAGAR,DIST-DARJEELING,PS-MATIGARA,PIN-734012,WEST BENGAL, , SILIGURI, Darjeeling, West Bengal"
+      "name": "Falakata Ssh Blood Centre",
+      "district": "Falakata",
+      "AB+": 6,
+      "O+": 1,
+      "A+": 1,
+      "contact": "9679183633 ",
+      "address": "Falakata, Alipurduar, Falakata, Alipurduar, West Bengal"
     },
     {
-      "name": "Dinhata Sdh Blood Centre",
-      "district": "DINHATA",
-      "A+": 8,
-      "B+": 12,
-      "AB-": 1,
-      "O+": 24,
-      "AB+": 2,
-      "contact": "7719356600 ",
-      "address": "DINHATA ,PO-DINHATA, PS-DINHATA,DIST- COOCHBEHAR, PIN-736135, DINHATA ,PO-DINHATA, PS-DINHATA,DIST- COOCHBEHAR, PIN-736135, DINHATA, Cooch Behar, West Bengal"
+      "name": "Nabadwip State General Hospital Blood Centre",
+      "district": "Nabadwip",
+      "O+": 1,
+      "contact": "9733022688,,9749885448, ",
+      "address": "Nadia, , Nabadwip, Nadia, West Bengal"
+    },
+    {
+      "name": "Birpara State General Hospital Blood Center",
+      "district": "Birpara",
+      "contact": "9083653621 ",
+      "address": "BIRPARA, LANKAROAD, , Birpara, Alipurduar, West Bengal"
+    },
+    {
+      "name": "-",
+      "district": "SILIGURI",
+      "O+": 2,
+      "B+": 1,
+      "contact": "-",
+      "address": "NORTH BENGAL MEDICAL COLLEHE AND HOSPITAL BLOOD CENTRE,PO-SUSHRUTANAGAR,DIST-DARJEELING,PS-MATIGARA,PIN-734012,WEST BENGAL, , SILIGURI, Darjeeling, West Bengal"
     },
     {
       "name": "Asansol District  Hospital Blood Centre",
@@ -23812,6 +23805,23 @@
       "district": "Cooch Behar",
       "contact": "-",
       "address": "BLOOD BANK, MJN HOSPITAL, SILVER JUBILEE ROAD, Cooch Behar, Cooch Behar, West Bengal"
+    },
+    {
+      "name": "-",
+      "district": "Tamluk",
+      "contact": "-",
+      "address": "P.O. + P.S. � Tamluk, , Dist.:- Purba Medinipur, West Bengal, , Tamluk, Purba Medinipur, West Bengal"
+    },
+    {
+      "name": "Dinhata Sdh Blood Centre",
+      "district": "DINHATA",
+      "A+": 8,
+      "O+": 24,
+      "AB-": 1,
+      "AB+": 2,
+      "B+": 12,
+      "contact": "7719356600 ",
+      "address": "DINHATA ,PO-DINHATA, PS-DINHATA,DIST- COOCHBEHAR, PIN-736135, DINHATA ,PO-DINHATA, PS-DINHATA,DIST- COOCHBEHAR, PIN-736135, DINHATA, Cooch Behar, West Bengal"
     },
     {
       "name": "District Hospital Alipurduar",
@@ -23827,20 +23837,62 @@
     },
     {
       "name": "-",
-      "district": "Tamluk",
+      "district": "BANKURA",
       "contact": "-",
-      "address": "P.O. + P.S. � Tamluk, , Dist.:- Purba Medinipur, West Bengal, , Tamluk, Purba Medinipur, West Bengal"
+      "address": "BLOOD BANK, BANKURA SAMMILANI MEDICAL COLLEGE & HOSPITAL, GOBINDA NAGAR, P.O. � KEDUADIHI., BANKURA, Bankura, West Bengal"
+    },
+    {
+      "name": "Salt Lake Sd Hospital Blood Bank",
+      "district": "Kolkata",
+      "contact": "033 233780 ",
+      "address": "DD-36, SECTOR-I, SALT LAKE CITY, KOLKATA, , Kolkata, North Twenty Four Parganas, West Bengal"
+    },
+    {
+      "name": "Chanchal S.S.H Blood Centre",
+      "district": "Chanchal",
+      "O-": 1,
+      "A+": 1,
+      "O+": 3,
+      "AB+": 1,
+      "B+": 2,
+      "A-": 1,
+      "contact": "9434154741 ",
+      "address": "1st Floor, Chanchal Super Speciality Hospital, CHANCHAL,MALDA, , Chanchal, Maldah, West Bengal"
+    },
+    {
+      "name": "Mathabhanga Sub Divisional Hospital Blood Bank",
+      "district": "Mathabhanga",
+      "A+": 12,
+      "B+": 4,
+      "B-": 1,
+      "AB-": 2,
+      "O+": 19,
+      "AB+": 4,
+      "contact": "8101785479 ",
+      "address": "0, , Mathabhanga, Cooch Behar, West Bengal"
+    },
+    {
+      "name": "Bishnupur District Hospital Blood Centre",
+      "district": "Bishnupur",
+      "contact": "9474618947 ",
+      "address": "P.O. Bishnupur, Bishnupur District Hospital Blood Bank, P.O. - Bishnupur, Di, Bishnupur, Bankura, West Bengal"
     },
     {
       "name": "Raghunathpur Blood Centre",
       "district": "RAGHUNATHPUR",
       "A+": 18,
-      "AB+": 17,
-      "B+": 39,
-      "A-": 1,
       "O+": 9,
+      "B+": 39,
+      "AB+": 17,
+      "A-": 1,
       "contact": "7797487244 ",
       "address": "1 ST FLOOR, RAGHUNATHPUR SUPER SPECIALITY HOSPITAL, PO & PS- RAGHUNATHPUR, DIST- PURULIA, RAGHUNATHPUR, Purulia, West Bengal"
+    },
+    {
+      "name": "Suri Sadar District  Hospital Blood Centre",
+      "district": "Suri",
+      "contact": "9830388785,9474778520 ",
+      "address": "P.O. Suri, Suri Dist. Hospital, P.O. : Suri, Dist - Birbhum , Suri, Birbhum, West Bengal"
     },
     {
       "name": "Kakdwip Sdh Blood Centre",
@@ -23851,114 +23903,36 @@
     },
     {
       "name": "-",
-      "district": "BANKURA",
-      "contact": "-",
-      "address": "BLOOD BANK, BANKURA SAMMILANI MEDICAL COLLEGE & HOSPITAL, GOBINDA NAGAR, P.O. � KEDUADIHI., BANKURA, Bankura, West Bengal"
-    },
-    {
-      "name": "Chanchal S.S.H Blood Centre",
-      "district": "Chanchal",
-      "A-": 1,
-      "O-": 1,
-      "B+": 2,
-      "AB+": 1,
-      "A+": 1,
-      "O+": 3,
-      "contact": "9434154741 ",
-      "address": "1st Floor, Chanchal Super Speciality Hospital, CHANCHAL,MALDA, , Chanchal, Maldah, West Bengal"
-    },
-    {
-      "name": "-",
       "district": "Jalpaiguri",
       "contact": "-",
       "address": "1 no Ward PO jalpaiguri, , Jalpaiguri, Jalpaiguri, West Bengal"
-    },
-    {
-      "name": "Salt Lake Sd Hospital Blood Bank",
-      "district": "Kolkata",
-      "contact": "033 233780 ",
-      "address": "DD-36, SECTOR-I, SALT LAKE CITY, KOLKATA, , Kolkata, North Twenty Four Parganas, West Bengal"
-    },
-    {
-      "name": "Suri Sadar District  Hospital Blood Centre",
-      "district": "Suri",
-      "contact": "9830388785,9474778520 ",
-      "address": "P.O. Suri, Suri Dist. Hospital, P.O. : Suri, Dist - Birbhum , Suri, Birbhum, West Bengal"
     },
     {
       "name": "S.D Hospital , Bolpur",
       "district": "Bolpur",
       "AB+": 2,
       "O-": 1,
-      "A+": 10,
       "O+": 12,
       "B+": 11,
+      "A+": 10,
       "contact": "9232362053,9831187021 ",
       "address": "P.O. Bolpur, Bolpur S.D. Hospital, P.O. : Bolpur, Dist - Birbhum, Bolpur, Birbhum, West Bengal"
     },
     {
-      "name": "Mathabhanga Sub Divisional Hospital Blood Bank",
-      "district": "Mathabhanga",
-      "B-": 1,
-      "A+": 12,
-      "O+": 19,
-      "B+": 4,
-      "AB-": 2,
-      "AB+": 4,
-      "contact": "8101785479 ",
-      "address": "0, , Mathabhanga, Cooch Behar, West Bengal"
-    },
-    {
       "name": "S.D. Hospital, Islampur",
       "district": "Islampur",
+      "A+": 2,
       "O-": 1,
       "B+": 3,
       "O+": 3,
-      "A+": 2,
       "contact": "9434960848,9830385878 ",
       "address": "P.O. Islampur, Islampur S.D. Hospital, P.O. : Islampur, Dist - Uttar Dinajp, Islampur, Uttar Dinajpur, West Bengal"
-    },
-    {
-      "name": "Bishnupur District Hospital Blood Centre",
-      "district": "Bishnupur",
-      "contact": "9474618947 ",
-      "address": "P.O. Bishnupur, Bishnupur District Hospital Blood Bank, P.O. - Bishnupur, Di, Bishnupur, Bankura, West Bengal"
-    },
-    {
-      "name": "Metiaburuz Super Speciality Hospital Blood Bank",
-      "district": "Kolkata",
-      "contact": "9734284254 ",
-      "address": "Z-3/103,DR.A.K ROAD, P.O-BADARTALA, P.S-NADIAL KOLKATA-700044, Kolkata, South Twenty Four Parganas, West Bengal"
-    },
-    {
-      "name": "-",
-      "district": "Barasat",
-      "contact": "-",
-      "address": "Jessore Road Banamalipur Barasat, Kolkata 700124, Barasat, North Twenty Four Parganas, West Bengal"
-    },
-    {
-      "name": "Debra Super Speciality Hospital Blood Bank",
-      "district": "Debra",
-      "contact": "9434480537 ",
-      "address": "Vill- Baragarh, P.O.& P.S. Debra Dist- Paschim Medinipur , , Debra, Paschim Medinipur, West Bengal"
-    },
-    {
-      "name": "Gopiballavpur Ssh Blood Centre",
-      "district": "Gopiballavpur",
-      "contact": "0 ",
-      "address": "0, , Gopiballavpur, Paschim Medinipur, West Bengal"
     },
     {
       "name": "-",
       "district": "Kolkata",
       "contact": "-",
       "address": "578, B. T. Road, Kamarhati, Kolkata, North Twenty Four Parganas, West Bengal"
-    },
-    {
-      "name": "-",
-      "district": "Kolkata",
-      "contact": "-",
-      "address": "CALCUTTA NATIONAL MEDICAL COLLEGE &HOSPITAL, 24, GORACHAND ROAD, KOLKATA-700014, Kolkata, Kolkata, West Bengal"
     },
     {
       "name": "Onda Ssh Blood Centre",
@@ -23973,6 +23947,30 @@
       "address": "244 AJC Bose Road, , Kolkata, Kolkata, West Bengal"
     },
     {
+      "name": "Debra Super Speciality Hospital Blood Bank",
+      "district": "Debra",
+      "contact": "9434480537 ",
+      "address": "Vill- Baragarh, P.O.& P.S. Debra Dist- Paschim Medinipur , , Debra, Paschim Medinipur, West Bengal"
+    },
+    {
+      "name": "Metiaburuz Super Speciality Hospital Blood Bank",
+      "district": "Kolkata",
+      "contact": "9734284254 ",
+      "address": "Z-3/103,DR.A.K ROAD, P.O-BADARTALA, P.S-NADIAL KOLKATA-700044, Kolkata, South Twenty Four Parganas, West Bengal"
+    },
+    {
+      "name": "-",
+      "district": "Barasat",
+      "contact": "-",
+      "address": "Jessore Road Banamalipur Barasat, Kolkata 700124, Barasat, North Twenty Four Parganas, West Bengal"
+    },
+    {
+      "name": "-",
+      "district": "Kolkata",
+      "contact": "-",
+      "address": "205 vivekananda road , maniktala, Kolkata, Kolkata, West Bengal"
+    },
+    {
       "name": "Chhatna Ssh Blood Centre",
       "district": "Chhatna",
       "contact": "0 ",
@@ -23982,7 +23980,13 @@
       "name": "-",
       "district": "Kolkata",
       "contact": "-",
-      "address": "205 vivekananda road , maniktala, Kolkata, Kolkata, West Bengal"
+      "address": "CALCUTTA NATIONAL MEDICAL COLLEGE &HOSPITAL, 24, GORACHAND ROAD, KOLKATA-700014, Kolkata, Kolkata, West Bengal"
+    },
+    {
+      "name": "Gopiballavpur Ssh Blood Centre",
+      "district": "Gopiballavpur",
+      "contact": "0 ",
+      "address": "0, , Gopiballavpur, Paschim Medinipur, West Bengal"
     },
     {
       "name": "Khatra Sdh",
@@ -23991,44 +23995,10 @@
       "address": "P.O. - Khatra, , Khatra, Bankura, West Bengal"
     },
     {
-      "name": "Barjora Super Speciality Hospital Blood Centre",
-      "district": "Bankura",
-      "contact": "9474458897 ",
-      "address": "BARJORA SUPER SPECIALITY HOSPITAL BLOOD CENTRE, BARJORA, , , Bankura, Bankura, West Bengal"
-    },
-    {
-      "name": "Nandigram Super Speciality Hospital Blood Centre",
-      "district": "NANDIGRAM",
-      "contact": "9733677383 ",
-      "address": "NANDIGRAM SUPER SPECIALITY HOSPITAL, FIRST FLOOR,  , VILL,P.O& P.S: NANDIGRAM, DIST- PURBA MEDINIPUR, WEST BENGAL, NANDIGRAM, Purba Medinipur, West Bengal"
-    },
-    {
-      "name": "S.D. Hospital  Kalimpong",
-      "district": "Kalimpong",
-      "contact": "9733162153,9232380181 ",
-      "address": "Kalimpong Hospital Chotta Bhalukhop Kalimpong, West Bengal 7, Kalimpong S.D. Hospital, P.O. : Kalimpong, Dist - Darjeeling, Kalimpong, Kalimpong, West Bengal"
-    },
-    {
-      "name": "S.D. Hospital, Kurseong",
-      "district": "Darjeeling",
-      "AB+": 1,
-      "O+": 4,
-      "A+": 4,
-      "B+": 5,
-      "contact": "9434176999,9474896980 ",
-      "address": "P.O. Kurseong, Kurseong S.D. Hospital, P.O. : Kurseong, Dist - Darjeeling, Darjeeling, Darjeeling, West Bengal"
-    },
-    {
       "name": "-",
-      "district": "Paschim Medinipur",
+      "district": "Berhampore",
       "contact": "-",
-      "address": "Blood Bank Ghatal SD Hospital, , Paschim Medinipur, Paschim Medinipur, West Bengal"
-    },
-    {
-      "name": "-",
-      "district": "Darjeeling",
-      "contact": "-",
-      "address": "Silliguri District Hospital Blood Bank , , Darjeeling, Darjeeling, West Bengal"
+      "address": "p.o Beshanpore ps beshanpore, , Berhampore, Murshidabad , West Bengal"
     },
     {
       "name": "Bongaon S.D. Hospital (Dr. J.R. Dhar)",
@@ -24043,13 +24013,53 @@
       "name": "-",
       "district": "Darjeeling",
       "contact": "-",
-      "address": "Darjeeling District Hospital Blood bank, eden compound , Darjeeling, Darjeeling, West Bengal"
+      "address": "Silliguri District Hospital Blood Bank , , Darjeeling, Darjeeling, West Bengal"
     },
     {
       "name": "-",
-      "district": "Berhampore",
+      "district": "Darjeeling",
       "contact": "-",
-      "address": "p.o Beshanpore ps beshanpore, , Berhampore, Murshidabad , West Bengal"
+      "address": "Darjeeling District Hospital Blood bank, eden compound , Darjeeling, Darjeeling, West Bengal"
+    },
+    {
+      "name": "S.D. Hospital, Kurseong",
+      "district": "Darjeeling",
+      "B+": 5,
+      "AB+": 1,
+      "A+": 4,
+      "O+": 4,
+      "contact": "9434176999,9474896980 ",
+      "address": "P.O. Kurseong, Kurseong S.D. Hospital, P.O. : Kurseong, Dist - Darjeeling, Darjeeling, Darjeeling, West Bengal"
+    },
+    {
+      "name": "S.D. Hospital  Kalimpong",
+      "district": "Kalimpong",
+      "contact": "9733162153,9232380181 ",
+      "address": "Kalimpong Hospital Chotta Bhalukhop Kalimpong, West Bengal 7, Kalimpong S.D. Hospital, P.O. : Kalimpong, Dist - Darjeeling, Kalimpong, Kalimpong, West Bengal"
+    },
+    {
+      "name": "Nandigram Super Speciality Hospital Blood Centre",
+      "district": "NANDIGRAM",
+      "contact": "9733677383 ",
+      "address": "NANDIGRAM SUPER SPECIALITY HOSPITAL, FIRST FLOOR,  , VILL,P.O& P.S: NANDIGRAM, DIST- PURBA MEDINIPUR, WEST BENGAL, NANDIGRAM, Purba Medinipur, West Bengal"
+    },
+    {
+      "name": "Barjora Super Speciality Hospital Blood Centre",
+      "district": "Bankura",
+      "contact": "9474458897 ",
+      "address": "BARJORA SUPER SPECIALITY HOSPITAL BLOOD CENTRE, BARJORA, , , Bankura, Bankura, West Bengal"
+    },
+    {
+      "name": "-",
+      "district": "Paschim Medinipur",
+      "contact": "-",
+      "address": "Blood Bank Ghatal SD Hospital, , Paschim Medinipur, Paschim Medinipur, West Bengal"
+    },
+    {
+      "name": "Rampurhat Govt. Mch Blood Centre",
+      "district": "Birbhum",
+      "contact": "6290795740 ",
+      "address": "P.O. Rampurhat, Rampurhat District Hospital, P.O. : Rampurhat, Dist - Birbhu, Birbhum, Birbhum, West Bengal"
     },
     {
       "name": "-",
@@ -24058,21 +24068,10 @@
       "address": "ISH, , CHINSURAH, Hooghly, West Bengal"
     },
     {
-      "name": "Durgapurs.D. Hospital",
-      "district": "DURGAPUR",
-      "O+": 130,
-      "AB+": 14,
-      "A+": 31,
-      "B+": 66,
-      "B-": 2,
-      "contact": "9433609994 ",
-      "address": "P.O. Durgapur, Durgapur S.D. Hospital, P.O. : Durgapur, Dist - Burdwan, DURGAPUR, Purba Bardhaman, West Bengal"
-    },
-    {
-      "name": "Rampurhat Govt. Mch Blood Centre",
-      "district": "Birbhum",
-      "contact": "6290795740 ",
-      "address": "P.O. Rampurhat, Rampurhat District Hospital, P.O. : Rampurhat, Dist - Birbhu, Birbhum, Birbhum, West Bengal"
+      "name": "-",
+      "district": "Kolkata",
+      "contact": "-",
+      "address": "138 AJC BOSE ROAD , KOLKATA, Kolkata, Kolkata, West Bengal"
     },
     {
       "name": "S.D. Hospital, Chandannagar",
@@ -24082,25 +24081,19 @@
     },
     {
       "name": "-",
-      "district": "Kolkata",
+      "district": "Krishnanagar",
       "contact": "-",
-      "address": "138 AJC BOSE ROAD , KOLKATA, Kolkata, Kolkata, West Bengal"
+      "address": "Nadia District Hospital Blood Bank, krishnanagar, Krishnanagar, Nadia, West Bengal"
     },
     {
       "name": "Burdwan Medical College And Hospital",
       "district": "Burdwan",
-      "B+": 2,
       "O+": 1,
       "AB+": 5,
       "A+": 3,
+      "B+": 2,
       "contact": "9474638140,9831964064 ",
       "address": "Purba Burdwan, Burdwan Medical College & Hospital BB, P.O. & Dist. - Burdwa, Burdwan, Purba Bardhaman, West Bengal"
-    },
-    {
-      "name": "-",
-      "district": "Krishnanagar",
-      "contact": "-",
-      "address": "Nadia District Hospital Blood Bank, krishnanagar, Krishnanagar, Nadia, West Bengal"
     },
     {
       "name": "Midnapur Medical College And Hospital",
@@ -24109,39 +24102,15 @@
       "address": "P.O.- Midnapore , Medinipur Medical College & Hospital, P.O. & Dist - Medinipu, Medinipur, Paschim Medinipur, West Bengal"
     },
     {
-      "name": "Basirhat District Hospital Blood Centre",
-      "district": "North Twenty Four Parganas",
-      "contact": "9883523048 ",
-      "address": "S.D. Hospital Basirhat, P.O. : Basirhat, North Twenty Four Parganas, North Twenty Four Parganas, West Bengal"
-    },
-    {
-      "name": "-",
-      "district": "Kalyani",
-      "O+": 6,
-      "B+": 4,
-      "A+": 3,
-      "AB+": 1,
-      "contact": "-",
-      "address": "kalyani nadia, , Kalyani, Nadia, West Bengal"
-    },
-    {
-      "name": "Serampore S.D. Hospital (Walsh)",
-      "district": "Hooghly",
-      "contact": "9883015023,9433114019 ",
-      "address": "P.O.Serampore, Serampore (Walsh) S.D. Hospital, P.O. -Serampore, Dist.-Hoog, Hooghly, Hooghly, West Bengal"
-    },
-    {
-      "name": "Diamond Harbour Govt Medical College And Hospital Blood Centre",
-      "district": "Diamond Harbour",
-      "contact": "9832880657 ",
-      "address": "P.O. +P.S. : Diamond Harbour, Dist - South 24 Parganas, , Diamond Harbour, South Twenty Four Parganas, West Bengal"
-    },
-    {
-      "name": "Gandhi Memorial Hospital Blood Centre",
-      "district": "Kalyani",
-      "A+": 1,
-      "contact": "8336865404 ",
-      "address": "P.O. NSS & P.S, Kalyani, Gandhi Memorial Hospital, P.O. : Kalyani, Dist - Nadia, Kalyani, Nadia, West Bengal"
+      "name": "Durgapurs.D. Hospital",
+      "district": "DURGAPUR",
+      "AB+": 14,
+      "B-": 2,
+      "O+": 130,
+      "A+": 31,
+      "B+": 66,
+      "contact": "9433609994 ",
+      "address": "P.O. Durgapur, Durgapur S.D. Hospital, P.O. : Durgapur, Dist - Burdwan, DURGAPUR, Purba Bardhaman, West Bengal"
     },
     {
       "name": "Tehatta Sdh Blood Centre",
@@ -24157,6 +24126,41 @@
       "address": "Barrackpore, District- North 24 Parganas P.O. Barrackpore, Barrackpore S.D. Hospital (Dr. B.N. Bose) Hospital, P.O. : B, North Twenty Four Parganas, North Twenty Four Parganas, West Bengal"
     },
     {
+      "name": "Basirhat District Hospital Blood Centre",
+      "district": "North Twenty Four Parganas",
+      "contact": "9883523048 ",
+      "address": "S.D. Hospital Basirhat, P.O. : Basirhat, North Twenty Four Parganas, North Twenty Four Parganas, West Bengal"
+    },
+    {
+      "name": "Gandhi Memorial Hospital Blood Centre",
+      "district": "Kalyani",
+      "A+": 1,
+      "contact": "8336865404 ",
+      "address": "P.O. NSS & P.S, Kalyani, Gandhi Memorial Hospital, P.O. : Kalyani, Dist - Nadia, Kalyani, Nadia, West Bengal"
+    },
+    {
+      "name": "-",
+      "district": "Kalyani",
+      "A+": 3,
+      "O+": 6,
+      "B+": 4,
+      "AB+": 1,
+      "contact": "-",
+      "address": "kalyani nadia, , Kalyani, Nadia, West Bengal"
+    },
+    {
+      "name": "Ranaghat S. D. Hospital Blood Centre",
+      "district": "Ranaghat",
+      "contact": "7477629944 ",
+      "address": "P.O.-Anulia, Ranaghat S.D. Hospital, P.O. : Anulia, Dist - Nadia , Ranaghat, Nadia, West Bengal"
+    },
+    {
+      "name": "Diamond Harbour Govt Medical College And Hospital Blood Centre",
+      "district": "Diamond Harbour",
+      "contact": "9832880657 ",
+      "address": "P.O. +P.S. : Diamond Harbour, Dist - South 24 Parganas, , Diamond Harbour, South Twenty Four Parganas, West Bengal"
+    },
+    {
       "name": "Sub Divisional Hospital Arambagh",
       "district": "Arambagh",
       "A+": 3,
@@ -24166,17 +24170,17 @@
       "address": "P.O. Arambagh, Arambagh S.D. Hospital Blood Bank, P.O. - Arambagh, Dist.-Ho, Arambagh, Hooghly, West Bengal"
     },
     {
-      "name": "Ranaghat S. D. Hospital Blood Centre",
-      "district": "Ranaghat",
-      "contact": "7477629944 ",
-      "address": "P.O.-Anulia, Ranaghat S.D. Hospital, P.O. : Anulia, Dist - Nadia , Ranaghat, Nadia, West Bengal"
+      "name": "Serampore S.D. Hospital (Walsh)",
+      "district": "Hooghly",
+      "contact": "9883015023,9433114019 ",
+      "address": "P.O.Serampore, Serampore (Walsh) S.D. Hospital, P.O. -Serampore, Dist.-Hoog, Hooghly, Hooghly, West Bengal"
     },
     {
       "name": "The Indian Iron And Steel Company, Burnpur Hospital",
       "district": "Asansol",
-      "A+": 5,
-      "B+": 8,
       "AB+": 2,
+      "B+": 8,
+      "A+": 5,
       "O+": 16,
       "contact": "9434776664 ",
       "address": "Burnpur Hospital, SAIL-IISCO Steel Plant, Burnpur, Burnpur,  Asansol, Purba Bardhaman, West Bengal"
@@ -24289,8 +24293,8 @@
     {
       "name": "Anandalok Blood Centre",
       "district": "RANIGANJ",
-      "AB+": 1,
       "B+": 4,
+      "AB+": 1,
       "contact": "7602799484 ",
       "address": "Holding No. 147, NSB Road West, PO-Searsol Rajbari, PS-Raniganj, DO, RANIGANJ, Paschim Bardhaman, West Bengal"
     },
@@ -24586,9 +24590,9 @@
     {
       "name": "-",
       "district": "RANIGANJ",
-      "AB+": 1,
-      "B+": 5,
       "O+": 6,
+      "B+": 5,
+      "AB+": 1,
       "contact": "-",
       "address": "B N AGARWAL MEMORIAL HOSPITAL, RANIGANJ, RANIGANJ, Paschim Bardhaman, West Bengal"
     },
@@ -24602,9 +24606,9 @@
     {
       "name": "-",
       "district": "Haldia",
+      "B+": 3,
       "A-": 1,
       "AB+": 1,
-      "B+": 3,
       "A+": 3,
       "O+": 4,
       "contact": "-",
